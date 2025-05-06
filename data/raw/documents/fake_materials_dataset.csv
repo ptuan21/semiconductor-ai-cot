@@ -1,0 +1,2001 @@
+material_name,crystal_structure,surface_morphology,bandgap_energy (eV),conductivity (S/cm),absorption_coefficient (cm^-1),target_application_potential
+CuMnSnO,Monoclinic,Nanoparticles,2.2,4.4221,389524.03,General Semiconductor
+CuO,Hexagonal,Porous,3.0,5.6272,344319.39,General Semiconductor
+ZnO,Monoclinic,Grainy,1.25,8.6658,479165.73,Solar Absorber Potential
+GaAs,Cubic,Smooth,2.31,3.9374,572655.17,General Semiconductor
+Si,Orthorhombic,Nanoparticles,1.4,0.471,624088.38,Solar Absorber Potential
+ZnO,Tetragonal,Rough,2.78,1.4671,449811.9,General Semiconductor
+Si,Orthorhombic,Nanoparticles,2.95,6.448,474409.27,General Semiconductor
+Si,Hexagonal,Porous,1.98,6.8439,924962.29,General Semiconductor
+ZnO,Tetragonal,Rough,2.81,8.4885,312455.22,General Semiconductor
+CuMnSnO,Cubic,Smooth,1.72,0.0482,47292.84,General Semiconductor
+ZnO,Monoclinic,Grainy,1.12,7.5735,271938.5,Solar Absorber Potential
+GaAs,Hexagonal,Grainy,2.6,6.5147,494621.36,General Semiconductor
+CuMnSnO,Hexagonal,Nanoparticles,2.81,6.9105,154825.4,General Semiconductor
+Si,Cubic,Smooth,2.42,7.3938,738553.27,General Semiconductor
+ZnO,Hexagonal,Rough,1.81,8.9966,163123.84,General Semiconductor
+CuO,Cubic,Rough,1.33,6.2438,731343.33,Solar Absorber Potential
+Si,Hexagonal,Smooth,1.68,9.3096,593138.19,Solar Absorber Potential
+GaAs,Tetragonal,Nanoparticles,2.94,0.5673,362262.39,General Semiconductor
+Ge,Cubic,Nanoparticles,2.08,2.4066,520560.95,General Semiconductor
+GaAs,Orthorhombic,Smooth,1.87,6.2664,320073.94,General Semiconductor
+CuMnSnO,Tetragonal,Nanoparticles,3.45,8.3922,558461.37,Transparent Conductor (TCO)
+CuMnSnO,Cubic,Grainy,2.31,8.7338,989913.58,General Semiconductor
+CuO,Hexagonal,Porous,1.99,2.3649,272704.97,General Semiconductor
+CuO,Monoclinic,Smooth,1.18,5.5467,56905.65,Solar Absorber Potential
+ZnO,Tetragonal,Nanoparticles,2.19,7.4459,768527.35,General Semiconductor
+CuO,Hexagonal,Rough,2.99,9.3912,889295.83,General Semiconductor
+GaAs,Orthorhombic,Rough,3.26,2.8626,722877.76,Transparent Conductor (TCO)
+Si,Orthorhombic,Nanoparticles,1.11,3.1646,734744.83,Solar Absorber Potential
+CuO,Monoclinic,Porous,2.21,6.9728,778025.71,General Semiconductor
+CuMnSnO,Cubic,Rough,1.88,8.0427,195645.97,General Semiconductor
+Si,Cubic,Grainy,3.33,1.9871,172028.11,Transparent Conductor (TCO)
+Ge,Hexagonal,Rough,1.82,7.823,592938.5,General Semiconductor
+Ge,Orthorhombic,Smooth,2.83,5.5729,993242.45,General Semiconductor
+CuO,Tetragonal,Smooth,1.74,0.4439,869681.04,General Semiconductor
+CuO,Tetragonal,Smooth,1.94,9.7936,816709.21,General Semiconductor
+ZnO,Monoclinic,Rough,2.08,1.8082,932261.27,General Semiconductor
+Si,Orthorhombic,Nanoparticles,2.09,0.9397,177861.87,General Semiconductor
+Ge,Cubic,Rough,2.74,0.995,479948.4,General Semiconductor
+ZnO,Hexagonal,Smooth,1.59,5.8818,773484.25,Solar Absorber Potential
+Si,Tetragonal,Smooth,1.89,3.8761,225875.82,General Semiconductor
+Si,Tetragonal,Nanoparticles,1.75,3.5339,762822.56,General Semiconductor
+CuMnSnO,Cubic,Smooth,3.16,0.0068,578072.56,UV Application Potential
+CuO,Cubic,Nanoparticles,3.45,1.0133,651681.04,Transparent Conductor (TCO)
+ZnO,Orthorhombic,Porous,3.46,3.7102,119776.16,Transparent Conductor (TCO)
+CuO,Orthorhombic,Smooth,2.55,0.3408,575985.54,General Semiconductor
+CuO,Monoclinic,Nanoparticles,1.66,4.1757,383433.18,Solar Absorber Potential
+GaAs,Tetragonal,Rough,1.5,4.3269,132839.15,Solar Absorber Potential
+CuMnSnO,Hexagonal,Porous,2.99,3.8441,479228.06,General Semiconductor
+ZnO,Cubic,Porous,2.47,5.4543,515476.3,General Semiconductor
+CuO,Monoclinic,Grainy,1.78,5.7578,146334.63,General Semiconductor
+ZnO,Hexagonal,Grainy,2.06,6.2914,574491.52,General Semiconductor
+Ge,Tetragonal,Smooth,2.49,3.7552,79889.1,General Semiconductor
+CuMnSnO,Tetragonal,Smooth,1.32,4.6167,342240.21,Solar Absorber Potential
+ZnO,Monoclinic,Smooth,1.91,0.4461,644308.57,General Semiconductor
+Si,Orthorhombic,Porous,3.29,3.3007,178741.42,Transparent Conductor (TCO)
+CuO,Hexagonal,Porous,3.48,3.4524,287462.34,Transparent Conductor (TCO)
+CuMnSnO,Orthorhombic,Rough,2.59,7.1047,381114.74,General Semiconductor
+ZnO,Cubic,Smooth,1.92,1.8469,50972.07,General Semiconductor
+CuO,Orthorhombic,Smooth,2.47,7.1221,294676.72,General Semiconductor
+CuMnSnO,Orthorhombic,Grainy,2.54,4.4222,904588.73,General Semiconductor
+ZnO,Cubic,Rough,1.97,5.7375,494458.43,General Semiconductor
+GaAs,Orthorhombic,Nanoparticles,3.2,3.2055,964475.78,Transparent Conductor (TCO)
+Ge,Tetragonal,Nanoparticles,2.93,1.6621,892798.05,General Semiconductor
+Si,Hexagonal,Smooth,2.75,5.4687,188404.61,General Semiconductor
+CuMnSnO,Orthorhombic,Smooth,2.49,7.9336,255083.41,General Semiconductor
+GaAs,Cubic,Nanoparticles,3.04,5.5291,54171.27,Transparent Conductor (TCO)
+CuO,Cubic,Nanoparticles,2.83,1.4434,634746.8,General Semiconductor
+CuO,Hexagonal,Grainy,1.41,9.6366,924820.11,Solar Absorber Potential
+CuO,Orthorhombic,Rough,1.58,1.1063,300821.7,Solar Absorber Potential
+CuO,Cubic,Porous,2.06,0.6784,559387.83,General Semiconductor
+CuO,Orthorhombic,Grainy,1.48,1.7469,689574.18,Solar Absorber Potential
+CuO,Hexagonal,Porous,3.48,6.9736,778001.58,Transparent Conductor (TCO)
+CuO,Cubic,Smooth,2.87,5.4601,717468.9,General Semiconductor
+GaAs,Hexagonal,Porous,1.02,3.3015,438970.06,Solar Absorber Potential
+CuMnSnO,Cubic,Nanoparticles,1.78,3.159,97202.43,General Semiconductor
+Si,Orthorhombic,Nanoparticles,2.63,9.2089,112921.67,General Semiconductor
+Si,Monoclinic,Smooth,1.01,7.2476,791082.57,Solar Absorber Potential
+ZnO,Orthorhombic,Nanoparticles,1.42,3.6059,313425.52,Solar Absorber Potential
+GaAs,Hexagonal,Porous,2.02,0.2697,342396.85,General Semiconductor
+ZnO,Hexagonal,Smooth,1.08,5.8987,865669.36,Solar Absorber Potential
+ZnO,Tetragonal,Grainy,1.78,1.1415,71516.54,General Semiconductor
+CuO,Hexagonal,Smooth,3.33,9.0232,547836.72,Transparent Conductor (TCO)
+ZnO,Hexagonal,Smooth,3.16,8.1444,470399.86,Transparent Conductor (TCO)
+CuMnSnO,Monoclinic,Nanoparticles,1.78,7.3794,106016.62,General Semiconductor
+ZnO,Orthorhombic,Rough,2.94,8.0711,25813.35,General Semiconductor
+Si,Orthorhombic,Smooth,1.01,3.6002,191832.95,Solar Absorber Potential
+ZnO,Hexagonal,Nanoparticles,2.44,9.4855,281142.57,General Semiconductor
+Ge,Hexagonal,Nanoparticles,3.44,2.5298,392652.41,Transparent Conductor (TCO)
+CuO,Cubic,Grainy,1.71,7.8001,242056.37,General Semiconductor
+ZnO,Tetragonal,Smooth,3.14,6.522,982570.05,Transparent Conductor (TCO)
+GaAs,Monoclinic,Smooth,3.17,9.0121,507913.16,Transparent Conductor (TCO)
+CuMnSnO,Hexagonal,Porous,2.78,2.9689,356906.79,General Semiconductor
+Si,Tetragonal,Porous,1.86,6.6325,211616.27,General Semiconductor
+CuMnSnO,Cubic,Smooth,3.29,1.9616,445936.45,Transparent Conductor (TCO)
+GaAs,Cubic,Rough,1.61,1.0077,320553.23,Solar Absorber Potential
+GaAs,Tetragonal,Rough,1.99,6.6039,429186.55,General Semiconductor
+GaAs,Hexagonal,Smooth,1.54,6.7371,507710.64,Solar Absorber Potential
+GaAs,Tetragonal,Nanoparticles,1.21,4.5464,302367.36,Solar Absorber Potential
+Ge,Monoclinic,Rough,3.19,1.1913,983686.57,Transparent Conductor (TCO)
+CuO,Tetragonal,Porous,1.35,5.2293,706108.99,Solar Absorber Potential
+Ge,Monoclinic,Rough,1.84,7.471,753763.46,General Semiconductor
+ZnO,Monoclinic,Grainy,1.54,5.466,915975.59,Solar Absorber Potential
+Ge,Orthorhombic,Nanoparticles,3.01,8.5641,449177.7,Transparent Conductor (TCO)
+Ge,Cubic,Rough,1.93,7.963,743376.49,General Semiconductor
+Si,Cubic,Grainy,1.05,1.5424,510058.08,Solar Absorber Potential
+CuO,Tetragonal,Porous,2.07,3.8731,636620.93,General Semiconductor
+Si,Hexagonal,Smooth,2.3,0.1353,954220.36,General Semiconductor
+ZnO,Monoclinic,Smooth,1.11,6.3778,229441.51,Solar Absorber Potential
+ZnO,Hexagonal,Porous,1.05,4.1557,624794.89,Solar Absorber Potential
+ZnO,Hexagonal,Porous,2.43,5.9679,929809.57,General Semiconductor
+CuMnSnO,Monoclinic,Porous,1.8,8.4354,675602.67,General Semiconductor
+CuO,Tetragonal,Nanoparticles,1.31,3.7138,452843.07,Solar Absorber Potential
+CuO,Orthorhombic,Grainy,2.14,8.6819,708343.41,General Semiconductor
+Ge,Monoclinic,Smooth,2.09,6.1558,596451.2,General Semiconductor
+Ge,Orthorhombic,Nanoparticles,1.95,6.3552,100008.3,General Semiconductor
+CuO,Orthorhombic,Porous,1.31,7.485,346350.56,Solar Absorber Potential
+GaAs,Cubic,Porous,1.9,8.7762,350804.08,General Semiconductor
+GaAs,Orthorhombic,Rough,3.44,3.3461,669874.78,Transparent Conductor (TCO)
+CuMnSnO,Hexagonal,Rough,2.63,5.5855,509566.3,General Semiconductor
+Si,Orthorhombic,Grainy,2.71,6.6653,643874.61,General Semiconductor
+Ge,Orthorhombic,Porous,1.02,3.2345,350517.29,Solar Absorber Potential
+CuO,Cubic,Smooth,2.55,0.0115,825955.41,General Semiconductor
+Ge,Monoclinic,Nanoparticles,3.28,4.047,185322.79,Transparent Conductor (TCO)
+Ge,Tetragonal,Smooth,1.84,6.2438,153541.62,General Semiconductor
+Si,Hexagonal,Porous,2.52,7.4386,439077.36,General Semiconductor
+GaAs,Orthorhombic,Smooth,1.78,7.1488,561806.79,General Semiconductor
+Si,Monoclinic,Porous,3.38,9.3749,15934.67,Transparent Conductor (TCO)
+ZnO,Orthorhombic,Smooth,1.54,8.8054,98802.51,Solar Absorber Potential
+CuO,Orthorhombic,Rough,1.1,7.4854,776795.57,Solar Absorber Potential
+CuO,Cubic,Smooth,3.43,0.5151,357777.04,UV Application Potential
+CuO,Cubic,Smooth,2.71,6.4935,470188.97,General Semiconductor
+Si,Hexagonal,Grainy,2.49,2.8577,164748.75,General Semiconductor
+CuMnSnO,Tetragonal,Nanoparticles,1.36,2.9109,547980.69,Solar Absorber Potential
+CuO,Monoclinic,Smooth,1.01,2.6393,560775.96,Solar Absorber Potential
+GaAs,Hexagonal,Smooth,3.36,7.2545,669994.32,Transparent Conductor (TCO)
+Ge,Cubic,Smooth,2.52,5.7116,417267.95,General Semiconductor
+CuMnSnO,Monoclinic,Rough,1.21,1.6805,104691.02,Solar Absorber Potential
+CuMnSnO,Hexagonal,Nanoparticles,2.78,8.3237,449952.08,General Semiconductor
+ZnO,Monoclinic,Smooth,2.52,4.9607,726928.7,General Semiconductor
+Si,Cubic,Nanoparticles,2.96,5.727,641427.17,General Semiconductor
+CuMnSnO,Tetragonal,Smooth,2.21,3.0837,88615.99,General Semiconductor
+Si,Hexagonal,Grainy,1.81,7.0626,142146.72,General Semiconductor
+Si,Orthorhombic,Smooth,1.46,3.4736,405696.63,Solar Absorber Potential
+CuO,Monoclinic,Nanoparticles,3.27,6.0133,504539.78,Transparent Conductor (TCO)
+CuO,Tetragonal,Grainy,1.55,1.5703,99077.74,Solar Absorber Potential
+ZnO,Orthorhombic,Smooth,2.27,9.2446,232112.36,General Semiconductor
+ZnO,Cubic,Grainy,1.41,2.9517,129100.29,Solar Absorber Potential
+CuMnSnO,Monoclinic,Smooth,3.46,4.3712,156193.26,Transparent Conductor (TCO)
+CuMnSnO,Cubic,Grainy,2.01,3.7179,362696.85,General Semiconductor
+GaAs,Monoclinic,Smooth,3.42,4.0002,358124.66,Transparent Conductor (TCO)
+CuO,Tetragonal,Grainy,1.34,9.6891,888575.63,Solar Absorber Potential
+Si,Cubic,Nanoparticles,1.55,6.7247,271168.15,Solar Absorber Potential
+Si,Orthorhombic,Nanoparticles,2.61,7.8994,256191.66,General Semiconductor
+Si,Tetragonal,Rough,3.14,4.6411,340474.79,Transparent Conductor (TCO)
+CuO,Monoclinic,Rough,2.83,9.3389,950491.02,General Semiconductor
+Si,Monoclinic,Rough,1.61,9.0428,78280.09,Solar Absorber Potential
+CuMnSnO,Orthorhombic,Porous,2.97,0.3237,180364.06,General Semiconductor
+CuMnSnO,Tetragonal,Nanoparticles,2.17,2.9663,854431.15,General Semiconductor
+CuMnSnO,Orthorhombic,Rough,3.33,0.4884,172807.55,UV Application Potential
+ZnO,Cubic,Nanoparticles,2.71,1.0989,43994.38,General Semiconductor
+GaAs,Hexagonal,Porous,2.47,9.2176,730327.74,General Semiconductor
+CuO,Monoclinic,Porous,1.44,2.167,335770.25,Solar Absorber Potential
+GaAs,Cubic,Rough,1.08,1.2095,266996.94,Solar Absorber Potential
+ZnO,Orthorhombic,Smooth,2.42,4.4752,656470.36,General Semiconductor
+Si,Orthorhombic,Smooth,1.16,5.7988,915750.94,Solar Absorber Potential
+ZnO,Monoclinic,Smooth,2.49,9.1947,174579.11,General Semiconductor
+CuO,Tetragonal,Nanoparticles,1.07,4.298,44708.58,General Semiconductor
+Ge,Hexagonal,Porous,3.32,2.4026,163815.31,Transparent Conductor (TCO)
+Ge,Cubic,Smooth,1.96,7.9165,836486.18,General Semiconductor
+Ge,Cubic,Smooth,2.15,9.5796,234203.13,General Semiconductor
+GaAs,Cubic,Smooth,1.61,6.8434,727129.59,Solar Absorber Potential
+CuMnSnO,Tetragonal,Grainy,2.83,7.1558,258308.27,General Semiconductor
+GaAs,Monoclinic,Porous,1.07,2.2726,292364.78,Solar Absorber Potential
+GaAs,Tetragonal,Rough,2.98,1.3677,800289.74,General Semiconductor
+CuO,Hexagonal,Nanoparticles,3.19,6.2861,258760.86,Transparent Conductor (TCO)
+Si,Monoclinic,Nanoparticles,3.18,7.4493,980216.7,Transparent Conductor (TCO)
+ZnO,Tetragonal,Porous,3.36,3.2305,865136.14,Transparent Conductor (TCO)
+Si,Hexagonal,Grainy,2.21,5.1068,564290.23,General Semiconductor
+Si,Orthorhombic,Porous,1.76,5.0349,724258.87,General Semiconductor
+CuO,Hexagonal,Smooth,1.19,8.5516,856700.51,Solar Absorber Potential
+CuMnSnO,Monoclinic,Rough,3.46,9.2764,413855.02,Transparent Conductor (TCO)
+CuO,Cubic,Porous,1.19,0.0637,811391.07,Solar Absorber Potential
+CuMnSnO,Cubic,Porous,1.46,8.2492,812236.23,Solar Absorber Potential
+Si,Tetragonal,Rough,1.62,5.5938,327615.63,Solar Absorber Potential
+CuMnSnO,Hexagonal,Nanoparticles,1.78,2.7326,101090.18,General Semiconductor
+CuO,Orthorhombic,Nanoparticles,1.14,9.4738,800855.35,Solar Absorber Potential
+CuO,Hexagonal,Grainy,2.73,5.8887,298710.52,General Semiconductor
+Ge,Monoclinic,Nanoparticles,1.99,6.2455,851013.03,General Semiconductor
+CuMnSnO,Hexagonal,Smooth,3.32,8.0933,494554.09,Transparent Conductor (TCO)
+Ge,Cubic,Smooth,3.23,0.9764,305856.01,UV Application Potential
+ZnO,Hexagonal,Rough,3.14,7.8822,454630.35,Transparent Conductor (TCO)
+GaAs,Orthorhombic,Porous,1.41,9.5189,798672.29,Solar Absorber Potential
+Ge,Orthorhombic,Smooth,2.01,7.1459,432108.28,General Semiconductor
+ZnO,Cubic,Grainy,2.77,3.5386,90993.82,General Semiconductor
+ZnO,Hexagonal,Nanoparticles,2.91,4.0357,159887.9,General Semiconductor
+ZnO,Orthorhombic,Rough,2.25,2.2729,724047.98,General Semiconductor
+GaAs,Monoclinic,Porous,1.49,1.1097,905803.41,Solar Absorber Potential
+CuO,Monoclinic,Grainy,1.97,5.2503,327557.26,General Semiconductor
+CuO,Hexagonal,Porous,2.92,8.5349,665120.41,General Semiconductor
+CuMnSnO,Orthorhombic,Porous,2.13,7.413,948642.53,General Semiconductor
+CuO,Cubic,Porous,3.26,8.6725,23079.62,Transparent Conductor (TCO)
+Si,Orthorhombic,Nanoparticles,1.16,1.6045,679353.79,Solar Absorber Potential
+Ge,Monoclinic,Grainy,2.54,3.4723,99849.61,General Semiconductor
+Si,Cubic,Smooth,2.35,4.3192,473668.72,General Semiconductor
+CuMnSnO,Tetragonal,Grainy,3.1,6.6865,756260.09,Transparent Conductor (TCO)
+GaAs,Hexagonal,Porous,2.89,0.3971,382644.86,General Semiconductor
+ZnO,Tetragonal,Porous,1.41,3.4232,145261.04,Solar Absorber Potential
+GaAs,Orthorhombic,Nanoparticles,1.3,0.3694,98448.24,Solar Absorber Potential
+Si,Cubic,Nanoparticles,2.96,3.9591,403492.41,General Semiconductor
+Si,Orthorhombic,Nanoparticles,2.66,1.3215,232550.65,General Semiconductor
+ZnO,Orthorhombic,Rough,1.03,0.1229,119203.9,Solar Absorber Potential
+ZnO,Cubic,Porous,2.14,1.2716,374608.94,General Semiconductor
+CuMnSnO,Monoclinic,Grainy,2.61,0.6706,669160.61,General Semiconductor
+Si,Monoclinic,Nanoparticles,3.1,7.7472,950262.59,Transparent Conductor (TCO)
+GaAs,Hexagonal,Rough,2.14,4.0341,619650.59,General Semiconductor
+Ge,Orthorhombic,Rough,1.85,1.6373,268832.59,General Semiconductor
+ZnO,Monoclinic,Nanoparticles,1.52,4.9925,902582.78,Solar Absorber Potential
+ZnO,Tetragonal,Porous,1.43,6.1706,153983.57,Solar Absorber Potential
+GaAs,Hexagonal,Rough,1.71,2.9656,400261.85,General Semiconductor
+Ge,Hexagonal,Porous,2.09,0.6895,424509.58,General Semiconductor
+Ge,Cubic,Nanoparticles,1.58,6.4156,464211.93,Solar Absorber Potential
+CuMnSnO,Hexagonal,Grainy,2.47,4.561,536782.33,General Semiconductor
+GaAs,Tetragonal,Porous,1.14,3.4247,74012.09,Solar Absorber Potential
+Si,Tetragonal,Rough,1.68,7.297,113781.14,Solar Absorber Potential
+Si,Hexagonal,Porous,1.46,9.0859,98810.73,Solar Absorber Potential
+Ge,Cubic,Rough,3.44,9.6084,529317.11,Transparent Conductor (TCO)
+Ge,Cubic,Rough,3.28,8.3612,98033.4,Transparent Conductor (TCO)
+ZnO,Orthorhombic,Nanoparticles,1.68,3.5737,677433.87,Solar Absorber Potential
+ZnO,Orthorhombic,Rough,3.29,5.0525,74670.59,Transparent Conductor (TCO)
+CuMnSnO,Cubic,Grainy,2.03,1.2518,538023.79,General Semiconductor
+GaAs,Monoclinic,Smooth,2.17,1.2259,980457.67,General Semiconductor
+ZnO,Monoclinic,Rough,3.31,4.5218,908935.33,Transparent Conductor (TCO)
+CuO,Orthorhombic,Rough,3.12,8.6086,106908.38,Transparent Conductor (TCO)
+CuMnSnO,Tetragonal,Rough,1.49,4.2203,247129.82,Solar Absorber Potential
+GaAs,Orthorhombic,Porous,2.32,2.6798,516790.58,General Semiconductor
+Si,Monoclinic,Nanoparticles,3.25,6.2188,858435.77,Transparent Conductor (TCO)
+CuMnSnO,Monoclinic,Smooth,2.44,7.0876,628029.95,General Semiconductor
+Si,Monoclinic,Grainy,1.29,4.6153,738558.11,Solar Absorber Potential
+CuMnSnO,Monoclinic,Grainy,2.59,8.3654,633505.64,General Semiconductor
+Ge,Cubic,Grainy,1.57,9.3494,915459.49,Solar Absorber Potential
+CuMnSnO,Cubic,Grainy,1.41,0.6348,726880.93,Solar Absorber Potential
+Ge,Hexagonal,Smooth,1.65,3.0763,428623.29,Solar Absorber Potential
+Ge,Monoclinic,Grainy,1.68,3.3372,610813.95,Solar Absorber Potential
+GaAs,Monoclinic,Grainy,2.28,9.3508,896181.0,General Semiconductor
+Si,Tetragonal,Rough,2.88,1.102,41389.12,General Semiconductor
+Ge,Hexagonal,Rough,2.37,4.7223,982293.8,General Semiconductor
+Si,Tetragonal,Smooth,2.47,5.1976,415413.09,General Semiconductor
+Si,Cubic,Grainy,1.03,5.8223,921529.14,Solar Absorber Potential
+ZnO,Tetragonal,Smooth,2.21,0.7958,241233.8,General Semiconductor
+Si,Cubic,Nanoparticles,1.3,8.0203,393270.39,Solar Absorber Potential
+CuO,Cubic,Rough,3.13,7.4257,56590.12,Transparent Conductor (TCO)
+CuO,Hexagonal,Nanoparticles,2.97,8.2356,211030.03,General Semiconductor
+ZnO,Cubic,Porous,2.07,2.0648,844861.0,General Semiconductor
+GaAs,Orthorhombic,Rough,1.19,1.7873,733684.14,Solar Absorber Potential
+GaAs,Orthorhombic,Smooth,3.35,4.5664,782355.95,Transparent Conductor (TCO)
+Ge,Monoclinic,Rough,2.84,6.8625,862471.22,General Semiconductor
+Si,Cubic,Nanoparticles,3.25,2.2368,25241.98,Transparent Conductor (TCO)
+Si,Monoclinic,Nanoparticles,2.08,2.689,877585.07,General Semiconductor
+Ge,Monoclinic,Rough,2.9,7.2653,468148.05,General Semiconductor
+CuMnSnO,Tetragonal,Grainy,2.48,9.116,71991.48,General Semiconductor
+ZnO,Monoclinic,Grainy,1.22,6.3691,439617.95,Solar Absorber Potential
+CuO,Cubic,Porous,2.47,1.0625,627733.36,General Semiconductor
+Ge,Hexagonal,Grainy,3.17,8.2347,524149.18,Transparent Conductor (TCO)
+Ge,Monoclinic,Porous,2.22,3.6614,831876.87,General Semiconductor
+Ge,Hexagonal,Smooth,1.93,1.711,339745.99,General Semiconductor
+Ge,Hexagonal,Smooth,1.74,3.6192,98102.35,General Semiconductor
+ZnO,Hexagonal,Smooth,2.42,4.2894,95667.51,General Semiconductor
+GaAs,Cubic,Porous,2.63,8.6826,591493.68,General Semiconductor
+Ge,Hexagonal,Grainy,1.92,8.6899,889744.41,General Semiconductor
+CuMnSnO,Monoclinic,Grainy,1.13,4.3444,864136.07,Solar Absorber Potential
+Ge,Orthorhombic,Rough,2.77,0.6212,788044.87,General Semiconductor
+Si,Monoclinic,Smooth,3.36,7.0871,934513.19,Transparent Conductor (TCO)
+Ge,Orthorhombic,Nanoparticles,2.37,2.9404,661599.62,General Semiconductor
+CuMnSnO,Monoclinic,Smooth,1.62,3.62,988048.37,Solar Absorber Potential
+GaAs,Cubic,Grainy,1.23,4.8531,589777.74,Solar Absorber Potential
+Si,Monoclinic,Rough,1.15,5.9005,951454.92,Solar Absorber Potential
+CuMnSnO,Cubic,Smooth,2.43,8.9322,596660.29,General Semiconductor
+CuO,Hexagonal,Grainy,2.8,1.19,405084.0,General Semiconductor
+ZnO,Monoclinic,Porous,2.96,5.3211,548799.07,General Semiconductor
+CuO,Orthorhombic,Nanoparticles,3.33,8.4462,577427.47,Transparent Conductor (TCO)
+ZnO,Hexagonal,Rough,3.39,1.2493,418329.43,Transparent Conductor (TCO)
+CuMnSnO,Tetragonal,Nanoparticles,2.68,9.659,715329.07,General Semiconductor
+CuMnSnO,Cubic,Smooth,1.16,7.7584,981411.5,Solar Absorber Potential
+CuMnSnO,Monoclinic,Porous,3.34,7.63,505007.25,Transparent Conductor (TCO)
+CuMnSnO,Tetragonal,Smooth,2.42,8.6861,491914.76,General Semiconductor
+CuO,Tetragonal,Porous,1.16,1.1581,186943.73,Solar Absorber Potential
+CuMnSnO,Orthorhombic,Rough,2.35,3.1089,492716.93,General Semiconductor
+Si,Tetragonal,Porous,1.02,9.1917,175469.68,Solar Absorber Potential
+CuMnSnO,Monoclinic,Porous,2.44,0.271,505736.22,General Semiconductor
+CuMnSnO,Orthorhombic,Nanoparticles,1.85,1.8692,112677.29,General Semiconductor
+Si,Cubic,Nanoparticles,2.14,3.3748,872312.01,General Semiconductor
+GaAs,Orthorhombic,Porous,3.19,8.1268,436138.49,Transparent Conductor (TCO)
+ZnO,Tetragonal,Smooth,1.2,6.3986,105536.55,Solar Absorber Potential
+ZnO,Monoclinic,Nanoparticles,1.92,3.0462,40830.18,General Semiconductor
+Ge,Cubic,Nanoparticles,2.7,8.7499,615158.89,General Semiconductor
+ZnO,Orthorhombic,Rough,1.61,6.4904,41566.2,General Semiconductor
+ZnO,Monoclinic,Porous,3.09,7.2196,518609.41,Transparent Conductor (TCO)
+Si,Orthorhombic,Smooth,2.32,0.4122,195233.31,General Semiconductor
+CuO,Cubic,Rough,2.76,5.1143,350728.8,General Semiconductor
+GaAs,Cubic,Porous,2.53,0.2007,643815.62,General Semiconductor
+Si,Cubic,Grainy,1.63,5.8221,732205.07,Solar Absorber Potential
+CuO,Hexagonal,Porous,2.2,7.3017,262292.52,General Semiconductor
+GaAs,Orthorhombic,Smooth,2.61,8.1545,141356.86,General Semiconductor
+CuO,Monoclinic,Grainy,2.01,7.4429,269432.05,General Semiconductor
+ZnO,Orthorhombic,Grainy,3.15,2.6151,307657.21,Transparent Conductor (TCO)
+CuMnSnO,Tetragonal,Grainy,2.68,8.0091,998895.87,General Semiconductor
+ZnO,Orthorhombic,Nanoparticles,3.08,1.0708,341241.84,Transparent Conductor (TCO)
+CuO,Monoclinic,Nanoparticles,1.32,4.5399,787593.86,Solar Absorber Potential
+Si,Tetragonal,Nanoparticles,2.89,0.1221,505875.41,General Semiconductor
+CuO,Hexagonal,Grainy,1.49,2.5039,709745.98,Solar Absorber Potential
+CuMnSnO,Cubic,Nanoparticles,3.2,7.8583,613933.16,Transparent Conductor (TCO)
+ZnO,Orthorhombic,Nanoparticles,1.46,0.9909,128933.91,Solar Absorber Potential
+CuMnSnO,Cubic,Nanoparticles,2.05,8.8246,675416.34,General Semiconductor
+Si,Tetragonal,Smooth,2.43,9.7491,842664.19,General Semiconductor
+ZnO,Hexagonal,Smooth,2.6,2.7058,21501.09,General Semiconductor
+GaAs,Tetragonal,Porous,2.68,4.9698,758193.07,General Semiconductor
+CuO,Monoclinic,Porous,2.26,6.5406,238217.88,General Semiconductor
+CuO,Monoclinic,Porous,2.32,3.8692,996505.54,General Semiconductor
+CuO,Orthorhombic,Grainy,2.29,7.5961,576556.37,General Semiconductor
+GaAs,Hexagonal,Nanoparticles,1.15,3.1157,194634.98,Solar Absorber Potential
+Si,Cubic,Smooth,3.04,4.2541,827085.68,Transparent Conductor (TCO)
+Ge,Hexagonal,Smooth,1.43,8.4724,616353.62,Solar Absorber Potential
+ZnO,Hexagonal,Nanoparticles,2.62,2.6515,79003.6,General Semiconductor
+GaAs,Cubic,Smooth,1.66,2.0227,971709.61,Solar Absorber Potential
+Ge,Cubic,Smooth,3.32,8.0535,372158.22,Transparent Conductor (TCO)
+ZnO,Hexagonal,Rough,3.35,4.6912,288445.38,Transparent Conductor (TCO)
+GaAs,Orthorhombic,Porous,1.03,4.4027,521380.91,Solar Absorber Potential
+Ge,Monoclinic,Grainy,2.18,0.855,59044.74,General Semiconductor
+GaAs,Monoclinic,Smooth,2.95,5.4145,918199.81,General Semiconductor
+Si,Tetragonal,Porous,1.19,4.4137,440555.94,Solar Absorber Potential
+CuMnSnO,Cubic,Grainy,1.35,5.6757,536686.36,Solar Absorber Potential
+Si,Orthorhombic,Rough,2.36,6.1571,933273.3,General Semiconductor
+Si,Monoclinic,Rough,2.46,7.3526,833734.52,General Semiconductor
+CuO,Tetragonal,Porous,1.87,8.7313,135363.82,General Semiconductor
+Ge,Monoclinic,Porous,3.06,3.8034,228904.41,Transparent Conductor (TCO)
+GaAs,Tetragonal,Nanoparticles,2.85,7.3665,395944.8,General Semiconductor
+GaAs,Hexagonal,Grainy,2.41,2.3031,897886.55,General Semiconductor
+Si,Tetragonal,Smooth,1.36,1.3107,396452.03,Solar Absorber Potential
+GaAs,Orthorhombic,Rough,1.18,4.5873,277651.19,Solar Absorber Potential
+CuMnSnO,Hexagonal,Nanoparticles,2.54,6.1826,163264.7,General Semiconductor
+Si,Hexagonal,Grainy,2.73,8.6598,62723.7,General Semiconductor
+Ge,Cubic,Grainy,2.32,1.8438,677215.17,General Semiconductor
+CuO,Tetragonal,Porous,2.94,3.9536,714784.2,General Semiconductor
+GaAs,Hexagonal,Nanoparticles,2.94,3.125,35745.48,General Semiconductor
+Si,Orthorhombic,Smooth,1.32,7.2421,600458.94,Solar Absorber Potential
+Si,Cubic,Nanoparticles,2.22,7.8812,574786.49,General Semiconductor
+Ge,Hexagonal,Smooth,1.09,3.9389,691518.46,Solar Absorber Potential
+ZnO,Cubic,Nanoparticles,2.19,1.3425,614057.01,General Semiconductor
+Ge,Hexagonal,Nanoparticles,1.45,6.7822,337813.18,Solar Absorber Potential
+GaAs,Hexagonal,Nanoparticles,2.56,8.5621,857342.06,General Semiconductor
+CuO,Hexagonal,Rough,2.08,8.1978,92039.9,General Semiconductor
+Si,Orthorhombic,Porous,3.01,5.5648,603457.85,Transparent Conductor (TCO)
+Si,Tetragonal,Nanoparticles,2.71,1.1786,926781.46,General Semiconductor
+Ge,Monoclinic,Nanoparticles,3.16,2.3634,913680.64,Transparent Conductor (TCO)
+CuMnSnO,Cubic,Smooth,2.8,5.1578,909865.2,General Semiconductor
+Ge,Cubic,Porous,2.68,8.2871,479289.7,General Semiconductor
+CuMnSnO,Tetragonal,Porous,1.72,9.6909,309531.34,General Semiconductor
+CuMnSnO,Orthorhombic,Rough,1.91,1.9592,446884.3,General Semiconductor
+GaAs,Tetragonal,Porous,1.71,6.4784,188839.13,General Semiconductor
+CuO,Cubic,Nanoparticles,2.41,1.0538,732693.42,General Semiconductor
+CuMnSnO,Tetragonal,Smooth,2.22,2.3897,745261.01,General Semiconductor
+Si,Orthorhombic,Smooth,3.13,3.1774,563569.91,Transparent Conductor (TCO)
+GaAs,Cubic,Rough,1.1,4.5244,782804.18,Solar Absorber Potential
+Ge,Hexagonal,Rough,1.16,2.9565,966228.5,Solar Absorber Potential
+CuMnSnO,Tetragonal,Rough,2.45,1.7951,121408.27,General Semiconductor
+Ge,Tetragonal,Grainy,1.42,4.2924,242666.44,Solar Absorber Potential
+ZnO,Hexagonal,Rough,1.59,5.7593,391333.3,Solar Absorber Potential
+Si,Tetragonal,Grainy,1.33,8.0954,728908.9,Solar Absorber Potential
+CuO,Cubic,Porous,1.75,6.9074,701194.56,General Semiconductor
+CuMnSnO,Orthorhombic,Rough,3.25,9.4223,993093.12,Transparent Conductor (TCO)
+Si,Monoclinic,Rough,3.3,8.829,884981.93,Transparent Conductor (TCO)
+GaAs,Hexagonal,Rough,2.51,4.7014,89649.66,General Semiconductor
+Si,Tetragonal,Nanoparticles,1.02,2.3061,764031.6,Solar Absorber Potential
+GaAs,Hexagonal,Nanoparticles,2.76,2.0465,922842.57,General Semiconductor
+CuO,Monoclinic,Grainy,2.48,4.9848,481794.07,General Semiconductor
+ZnO,Monoclinic,Porous,3.14,7.698,544040.58,Transparent Conductor (TCO)
+GaAs,Tetragonal,Nanoparticles,1.83,2.011,776567.28,General Semiconductor
+ZnO,Hexagonal,Nanoparticles,1.01,5.8012,86747.05,Solar Absorber Potential
+CuMnSnO,Orthorhombic,Rough,1.56,2.141,145092.7,Solar Absorber Potential
+CuO,Hexagonal,Porous,1.86,4.3277,86611.11,General Semiconductor
+Si,Hexagonal,Smooth,1.08,4.5478,412108.79,Solar Absorber Potential
+Si,Orthorhombic,Nanoparticles,2.76,3.5233,229704.65,General Semiconductor
+ZnO,Hexagonal,Smooth,2.72,2.4697,778325.32,General Semiconductor
+ZnO,Hexagonal,Smooth,2.3,1.8285,412061.91,General Semiconductor
+CuO,Tetragonal,Nanoparticles,2.45,4.3988,713423.71,General Semiconductor
+Si,Hexagonal,Rough,1.34,3.4444,85388.2,Solar Absorber Potential
+Ge,Monoclinic,Smooth,2.65,1.6291,331138.34,General Semiconductor
+CuMnSnO,Tetragonal,Grainy,3.46,6.021,340100.15,Transparent Conductor (TCO)
+CuO,Orthorhombic,Nanoparticles,3.4,5.48,322047.97,Transparent Conductor (TCO)
+Ge,Monoclinic,Porous,2.11,7.33,755688.76,General Semiconductor
+Ge,Hexagonal,Grainy,2.63,6.852,867821.41,General Semiconductor
+Ge,Tetragonal,Smooth,1.83,0.0961,981490.17,General Semiconductor
+Si,Tetragonal,Porous,1.67,1.533,923631.96,Solar Absorber Potential
+CuO,Cubic,Smooth,2.94,1.4701,697851.56,General Semiconductor
+CuMnSnO,Cubic,Nanoparticles,1.81,8.5924,881667.76,General Semiconductor
+CuO,Orthorhombic,Smooth,3.26,8.9845,235003.35,Transparent Conductor (TCO)
+CuMnSnO,Hexagonal,Grainy,1.77,4.9228,388034.3,General Semiconductor
+Si,Orthorhombic,Porous,1.63,9.4476,312294.33,Solar Absorber Potential
+GaAs,Monoclinic,Nanoparticles,3.08,7.449,41720.81,Transparent Conductor (TCO)
+CuO,Tetragonal,Smooth,2.01,6.5522,143862.4,General Semiconductor
+Si,Monoclinic,Grainy,2.86,2.8696,337202.03,General Semiconductor
+Ge,Monoclinic,Porous,2.3,2.7145,625623.2,General Semiconductor
+Si,Cubic,Grainy,2.5,3.9616,218721.71,General Semiconductor
+GaAs,Hexagonal,Smooth,3.01,2.939,524514.63,Transparent Conductor (TCO)
+GaAs,Monoclinic,Smooth,1.33,5.0391,751322.52,Solar Absorber Potential
+ZnO,Hexagonal,Nanoparticles,1.13,1.4653,433942.81,Solar Absorber Potential
+CuO,Cubic,Nanoparticles,1.37,5.2571,661890.4,Solar Absorber Potential
+Si,Orthorhombic,Grainy,1.77,6.096,540505.57,General Semiconductor
+ZnO,Hexagonal,Porous,2.41,2.6728,700897.43,General Semiconductor
+Ge,Tetragonal,Grainy,1.49,3.3919,695840.63,Solar Absorber Potential
+CuMnSnO,Monoclinic,Rough,3.17,4.9842,755367.01,Transparent Conductor (TCO)
+Ge,Hexagonal,Nanoparticles,2.0,6.3648,256053.91,General Semiconductor
+CuO,Cubic,Smooth,2.62,1.9621,233163.08,General Semiconductor
+Si,Tetragonal,Smooth,1.85,4.2094,571271.67,General Semiconductor
+GaAs,Tetragonal,Nanoparticles,2.47,1.1121,566198.91,General Semiconductor
+ZnO,Monoclinic,Nanoparticles,2.21,8.8236,391213.35,General Semiconductor
+ZnO,Orthorhombic,Grainy,1.71,3.2051,903332.97,General Semiconductor
+Ge,Monoclinic,Rough,1.54,5.2504,368550.1,Solar Absorber Potential
+Si,Orthorhombic,Rough,1.32,2.5185,391132.09,Solar Absorber Potential
+ZnO,Monoclinic,Grainy,1.88,1.1948,506036.17,General Semiconductor
+CuMnSnO,Tetragonal,Nanoparticles,2.17,3.4103,489851.36,General Semiconductor
+CuMnSnO,Cubic,Smooth,3.39,2.457,466796.99,Transparent Conductor (TCO)
+Ge,Cubic,Nanoparticles,3.46,2.8431,296047.92,Transparent Conductor (TCO)
+ZnO,Cubic,Porous,1.4,7.5171,245185.55,Solar Absorber Potential
+ZnO,Tetragonal,Nanoparticles,2.48,2.5864,307815.9,General Semiconductor
+Ge,Tetragonal,Nanoparticles,1.92,4.0038,446040.96,General Semiconductor
+Si,Orthorhombic,Smooth,2.56,9.678,102187.55,General Semiconductor
+Ge,Tetragonal,Nanoparticles,1.89,5.1988,67781.3,General Semiconductor
+CuMnSnO,Hexagonal,Porous,3.37,6.4936,470077.66,Transparent Conductor (TCO)
+Si,Monoclinic,Nanoparticles,1.64,4.1075,292280.18,Solar Absorber Potential
+CuMnSnO,Hexagonal,Rough,3.5,9.3149,766761.1,Transparent Conductor (TCO)
+CuO,Orthorhombic,Smooth,3.47,4.664,826336.86,Transparent Conductor (TCO)
+Si,Cubic,Porous,2.77,0.2262,821246.51,General Semiconductor
+Ge,Tetragonal,Porous,2.02,4.1707,178445.68,General Semiconductor
+Ge,Orthorhombic,Porous,1.88,8.6913,354910.59,General Semiconductor
+Ge,Hexagonal,Porous,2.87,5.2493,131550.47,General Semiconductor
+ZnO,Cubic,Nanoparticles,2.26,3.2555,133480.65,General Semiconductor
+ZnO,Tetragonal,Rough,1.08,1.4841,22675.52,General Semiconductor
+Ge,Hexagonal,Nanoparticles,1.24,4.1492,979828.93,Solar Absorber Potential
+GaAs,Tetragonal,Rough,3.45,2.0737,882152.82,Transparent Conductor (TCO)
+Ge,Orthorhombic,Smooth,1.49,8.459,208106.77,Solar Absorber Potential
+CuO,Cubic,Porous,2.87,8.9604,232747.22,General Semiconductor
+CuMnSnO,Tetragonal,Rough,3.27,6.9092,555912.99,Transparent Conductor (TCO)
+Si,Monoclinic,Nanoparticles,2.83,3.8507,784059.48,General Semiconductor
+CuO,Tetragonal,Porous,1.4,9.3318,510220.98,Solar Absorber Potential
+CuO,Orthorhombic,Porous,1.64,0.1025,77646.2,Solar Absorber Potential
+Si,Tetragonal,Smooth,3.05,4.8846,667773.7,Transparent Conductor (TCO)
+GaAs,Monoclinic,Porous,1.22,6.2055,83286.56,Solar Absorber Potential
+ZnO,Tetragonal,Rough,2.92,8.889,518124.8,General Semiconductor
+CuO,Monoclinic,Nanoparticles,1.98,1.8355,232911.97,General Semiconductor
+GaAs,Tetragonal,Rough,1.24,8.9904,725615.21,Solar Absorber Potential
+ZnO,Orthorhombic,Smooth,2.8,6.5128,163740.19,General Semiconductor
+Si,Monoclinic,Smooth,1.55,6.9321,317268.08,Solar Absorber Potential
+Si,Orthorhombic,Rough,1.59,7.0321,722109.71,Solar Absorber Potential
+Ge,Hexagonal,Smooth,2.71,7.8053,707256.95,General Semiconductor
+GaAs,Monoclinic,Porous,1.6,0.1452,391713.14,Solar Absorber Potential
+Si,Tetragonal,Rough,1.86,4.9642,807505.66,General Semiconductor
+Si,Hexagonal,Nanoparticles,2.28,8.4964,120635.16,General Semiconductor
+CuMnSnO,Orthorhombic,Rough,1.56,8.296,797446.41,Solar Absorber Potential
+CuO,Hexagonal,Grainy,1.05,9.6255,25035.54,General Semiconductor
+CuO,Hexagonal,Grainy,2.76,4.6201,252815.92,General Semiconductor
+CuMnSnO,Tetragonal,Grainy,3.07,4.1307,984805.33,Transparent Conductor (TCO)
+Ge,Cubic,Grainy,3.39,2.2496,819138.85,Transparent Conductor (TCO)
+Ge,Cubic,Nanoparticles,2.8,2.6699,512866.29,General Semiconductor
+Si,Hexagonal,Rough,2.44,1.3462,272884.85,General Semiconductor
+Si,Cubic,Rough,1.4,2.2314,391912.73,Solar Absorber Potential
+Si,Hexagonal,Porous,1.52,1.8935,936113.9,Solar Absorber Potential
+Si,Orthorhombic,Grainy,2.9,8.2628,826372.78,General Semiconductor
+CuMnSnO,Hexagonal,Grainy,1.44,0.9346,105926.5,Solar Absorber Potential
+Si,Cubic,Grainy,1.86,2.7484,209513.12,General Semiconductor
+GaAs,Orthorhombic,Nanoparticles,2.14,1.8345,364793.02,General Semiconductor
+GaAs,Tetragonal,Grainy,2.03,9.2447,233928.05,General Semiconductor
+CuMnSnO,Hexagonal,Grainy,3.17,1.6631,409130.43,Transparent Conductor (TCO)
+CuMnSnO,Tetragonal,Porous,3.03,7.7772,729220.2,Transparent Conductor (TCO)
+Ge,Hexagonal,Porous,2.0,5.5738,157112.18,General Semiconductor
+GaAs,Tetragonal,Nanoparticles,1.13,5.7612,472313.59,Solar Absorber Potential
+CuMnSnO,Tetragonal,Smooth,3.03,1.7897,911479.28,Transparent Conductor (TCO)
+CuO,Cubic,Rough,2.38,4.0706,391305.08,General Semiconductor
+ZnO,Tetragonal,Rough,1.99,2.1522,202409.9,General Semiconductor
+Si,Monoclinic,Nanoparticles,2.93,1.9575,971429.95,General Semiconductor
+Ge,Orthorhombic,Nanoparticles,3.11,4.5598,131813.7,Transparent Conductor (TCO)
+Si,Tetragonal,Nanoparticles,1.77,8.4246,258610.67,General Semiconductor
+CuO,Monoclinic,Porous,3.06,5.6949,145697.14,Transparent Conductor (TCO)
+CuO,Tetragonal,Smooth,3.4,9.572,179074.68,Transparent Conductor (TCO)
+GaAs,Monoclinic,Smooth,2.66,1.874,639719.18,General Semiconductor
+Ge,Tetragonal,Smooth,3.04,1.6789,30077.97,Transparent Conductor (TCO)
+Si,Hexagonal,Rough,1.65,5.3386,29360.84,General Semiconductor
+Si,Hexagonal,Smooth,3.12,2.3402,443169.21,Transparent Conductor (TCO)
+CuMnSnO,Cubic,Grainy,1.31,3.1153,954473.48,Solar Absorber Potential
+Ge,Monoclinic,Grainy,3.27,3.3474,982363.67,Transparent Conductor (TCO)
+GaAs,Orthorhombic,Smooth,1.24,6.7942,899102.19,Solar Absorber Potential
+CuO,Monoclinic,Nanoparticles,2.73,9.3084,763535.06,General Semiconductor
+GaAs,Tetragonal,Smooth,2.75,6.508,847267.52,General Semiconductor
+GaAs,Hexagonal,Porous,3.21,5.7014,616365.52,Transparent Conductor (TCO)
+CuMnSnO,Orthorhombic,Rough,3.26,8.3347,435587.99,Transparent Conductor (TCO)
+Si,Tetragonal,Nanoparticles,1.26,5.6973,74704.99,Solar Absorber Potential
+ZnO,Orthorhombic,Porous,3.45,8.839,544854.91,Transparent Conductor (TCO)
+Ge,Monoclinic,Rough,3.46,1.5475,481820.14,Transparent Conductor (TCO)
+CuO,Hexagonal,Rough,1.76,1.496,722532.3,General Semiconductor
+Ge,Cubic,Grainy,1.69,6.832,276801.95,Solar Absorber Potential
+CuO,Monoclinic,Porous,1.72,8.7594,876228.98,General Semiconductor
+GaAs,Hexagonal,Nanoparticles,2.89,5.3613,108094.62,General Semiconductor
+Ge,Orthorhombic,Rough,3.32,6.5843,198303.5,Transparent Conductor (TCO)
+CuMnSnO,Monoclinic,Nanoparticles,2.69,3.8394,364707.66,General Semiconductor
+CuMnSnO,Hexagonal,Porous,3.0,8.7638,552278.04,General Semiconductor
+CuO,Orthorhombic,Porous,2.98,2.6401,547616.97,General Semiconductor
+GaAs,Cubic,Smooth,3.45,9.3175,105278.46,Transparent Conductor (TCO)
+Si,Monoclinic,Grainy,1.66,3.3553,804405.59,Solar Absorber Potential
+CuMnSnO,Monoclinic,Nanoparticles,2.97,2.4575,513265.71,General Semiconductor
+Ge,Cubic,Smooth,2.42,4.6856,345516.43,General Semiconductor
+CuMnSnO,Orthorhombic,Porous,1.33,1.8124,234315.65,Solar Absorber Potential
+CuO,Monoclinic,Smooth,2.85,2.3537,362086.92,General Semiconductor
+CuMnSnO,Orthorhombic,Smooth,2.79,7.8006,258273.27,General Semiconductor
+CuMnSnO,Tetragonal,Nanoparticles,3.08,8.1492,150505.61,Transparent Conductor (TCO)
+CuMnSnO,Hexagonal,Nanoparticles,2.52,7.4712,975506.4,General Semiconductor
+ZnO,Monoclinic,Grainy,1.79,4.5721,802634.45,General Semiconductor
+ZnO,Hexagonal,Rough,2.99,3.1622,632956.56,General Semiconductor
+ZnO,Orthorhombic,Rough,2.66,8.713,648789.64,General Semiconductor
+CuO,Monoclinic,Rough,2.54,6.5379,985697.7,General Semiconductor
+ZnO,Cubic,Grainy,1.4,3.7973,514024.35,Solar Absorber Potential
+GaAs,Tetragonal,Grainy,2.92,4.9999,13505.08,General Semiconductor
+Si,Monoclinic,Rough,2.75,2.4672,895055.01,General Semiconductor
+GaAs,Orthorhombic,Smooth,2.19,8.0353,945916.64,General Semiconductor
+ZnO,Orthorhombic,Smooth,1.36,6.8365,118379.51,Solar Absorber Potential
+CuMnSnO,Hexagonal,Smooth,3.22,7.8965,325218.53,Transparent Conductor (TCO)
+ZnO,Cubic,Nanoparticles,2.88,7.657,800163.3,General Semiconductor
+Si,Cubic,Nanoparticles,2.37,2.3211,226984.48,General Semiconductor
+Ge,Hexagonal,Nanoparticles,2.65,2.7377,128467.47,General Semiconductor
+ZnO,Cubic,Smooth,2.47,3.5058,738747.5,General Semiconductor
+Ge,Cubic,Smooth,1.12,8.5375,589923.83,Solar Absorber Potential
+GaAs,Cubic,Nanoparticles,3.32,6.2002,855215.83,Transparent Conductor (TCO)
+Ge,Hexagonal,Grainy,2.9,8.0542,117398.2,General Semiconductor
+GaAs,Hexagonal,Nanoparticles,1.61,8.2913,260824.62,Solar Absorber Potential
+ZnO,Tetragonal,Smooth,2.87,6.9255,725983.87,General Semiconductor
+Si,Hexagonal,Grainy,2.02,8.613,513279.86,General Semiconductor
+ZnO,Monoclinic,Porous,3.26,1.9603,314438.94,Transparent Conductor (TCO)
+CuO,Hexagonal,Grainy,2.33,1.1114,28079.32,General Semiconductor
+Si,Tetragonal,Rough,3.45,9.284,671142.67,Transparent Conductor (TCO)
+Si,Orthorhombic,Smooth,2.27,0.8977,435376.55,General Semiconductor
+CuMnSnO,Monoclinic,Nanoparticles,3.37,3.7407,303726.33,Transparent Conductor (TCO)
+CuMnSnO,Cubic,Porous,2.19,8.0574,86749.15,General Semiconductor
+Ge,Hexagonal,Porous,1.3,3.9102,115864.09,Solar Absorber Potential
+CuO,Monoclinic,Nanoparticles,1.22,6.6476,433589.66,Solar Absorber Potential
+GaAs,Orthorhombic,Grainy,1.75,4.194,710512.98,General Semiconductor
+Ge,Cubic,Porous,3.31,2.2831,575070.52,Transparent Conductor (TCO)
+Si,Cubic,Rough,3.15,3.4796,630374.63,Transparent Conductor (TCO)
+CuO,Tetragonal,Porous,1.92,9.4208,705132.66,General Semiconductor
+ZnO,Monoclinic,Grainy,1.98,3.2189,654350.51,General Semiconductor
+CuO,Orthorhombic,Rough,3.44,4.8492,953963.23,Transparent Conductor (TCO)
+CuMnSnO,Tetragonal,Rough,2.36,9.1749,787949.57,General Semiconductor
+ZnO,Tetragonal,Nanoparticles,1.36,0.4454,636279.24,Solar Absorber Potential
+Ge,Tetragonal,Rough,3.39,1.2235,486640.33,Transparent Conductor (TCO)
+GaAs,Tetragonal,Rough,3.18,8.8193,515437.79,Transparent Conductor (TCO)
+CuMnSnO,Cubic,Porous,2.94,0.4157,689464.7,General Semiconductor
+ZnO,Cubic,Grainy,3.34,8.3036,196615.82,Transparent Conductor (TCO)
+ZnO,Tetragonal,Grainy,3.43,9.9985,690042.1,Transparent Conductor (TCO)
+Si,Cubic,Rough,1.97,8.1896,423142.0,General Semiconductor
+CuO,Orthorhombic,Rough,2.91,2.8171,841719.14,General Semiconductor
+CuO,Monoclinic,Nanoparticles,1.25,1.3225,311758.03,Solar Absorber Potential
+CuMnSnO,Cubic,Smooth,2.53,4.364,447120.41,General Semiconductor
+GaAs,Orthorhombic,Grainy,2.11,2.5803,871967.87,General Semiconductor
+CuMnSnO,Cubic,Smooth,2.86,4.184,904681.2,General Semiconductor
+CuO,Cubic,Smooth,2.91,0.7106,496245.04,General Semiconductor
+CuMnSnO,Cubic,Porous,2.32,4.7132,828262.16,General Semiconductor
+CuO,Hexagonal,Porous,3.24,5.7893,88986.74,Transparent Conductor (TCO)
+CuO,Orthorhombic,Grainy,2.76,3.2998,472614.68,General Semiconductor
+GaAs,Orthorhombic,Grainy,2.12,4.8053,989713.84,General Semiconductor
+CuO,Tetragonal,Porous,1.04,1.9554,967079.1,Solar Absorber Potential
+CuO,Hexagonal,Grainy,3.41,6.9289,856880.36,Transparent Conductor (TCO)
+Si,Tetragonal,Porous,1.07,1.1967,124725.01,Solar Absorber Potential
+Si,Cubic,Porous,2.63,5.3199,632118.47,General Semiconductor
+CuMnSnO,Orthorhombic,Porous,1.25,9.0943,880740.15,Solar Absorber Potential
+CuO,Tetragonal,Grainy,3.04,9.6511,780961.45,Transparent Conductor (TCO)
+Si,Monoclinic,Rough,2.28,7.6975,193678.62,General Semiconductor
+CuO,Cubic,Nanoparticles,2.93,5.8942,471933.06,General Semiconductor
+ZnO,Monoclinic,Porous,1.29,7.7403,461224.16,Solar Absorber Potential
+ZnO,Tetragonal,Rough,2.06,2.8821,229805.92,General Semiconductor
+Ge,Orthorhombic,Rough,2.68,2.3703,199363.02,General Semiconductor
+Ge,Cubic,Smooth,1.85,8.4853,429057.57,General Semiconductor
+CuO,Cubic,Smooth,3.34,9.5606,617501.06,Transparent Conductor (TCO)
+Si,Cubic,Nanoparticles,1.37,4.1579,598160.54,Solar Absorber Potential
+CuMnSnO,Monoclinic,Nanoparticles,2.81,1.1362,437295.79,General Semiconductor
+CuMnSnO,Tetragonal,Nanoparticles,1.65,5.0638,782011.4,Solar Absorber Potential
+Ge,Orthorhombic,Porous,1.76,0.0375,872785.32,General Semiconductor
+Ge,Hexagonal,Smooth,2.51,3.8057,408490.75,General Semiconductor
+GaAs,Cubic,Grainy,1.07,5.2657,196980.71,Solar Absorber Potential
+Si,Cubic,Grainy,1.05,3.47,840789.34,Solar Absorber Potential
+GaAs,Hexagonal,Porous,2.82,3.7028,172616.71,General Semiconductor
+GaAs,Hexagonal,Porous,2.73,6.6641,904453.56,General Semiconductor
+GaAs,Orthorhombic,Smooth,1.41,2.3476,996327.08,Solar Absorber Potential
+ZnO,Hexagonal,Porous,1.63,7.2856,941522.96,Solar Absorber Potential
+CuMnSnO,Tetragonal,Porous,1.57,6.0859,843860.09,Solar Absorber Potential
+GaAs,Tetragonal,Smooth,2.13,4.0995,422344.51,General Semiconductor
+CuMnSnO,Orthorhombic,Rough,1.87,0.6996,795321.39,General Semiconductor
+Ge,Hexagonal,Smooth,1.67,3.0144,497129.86,Solar Absorber Potential
+GaAs,Tetragonal,Porous,1.45,4.5545,18532.55,General Semiconductor
+CuO,Cubic,Smooth,3.22,5.6415,476537.16,Transparent Conductor (TCO)
+ZnO,Hexagonal,Smooth,3.17,0.2912,995636.4,UV Application Potential
+ZnO,Cubic,Smooth,1.88,4.9305,862791.38,General Semiconductor
+ZnO,Tetragonal,Rough,1.02,2.3416,630593.93,Solar Absorber Potential
+CuMnSnO,Cubic,Grainy,2.9,8.2753,193432.84,General Semiconductor
+GaAs,Orthorhombic,Grainy,3.21,5.0731,43136.76,Transparent Conductor (TCO)
+Ge,Orthorhombic,Smooth,2.1,2.1567,216131.85,General Semiconductor
+CuO,Orthorhombic,Grainy,1.71,7.012,509503.26,General Semiconductor
+ZnO,Monoclinic,Rough,3.42,3.0185,936624.57,Transparent Conductor (TCO)
+Ge,Hexagonal,Nanoparticles,2.76,8.6927,280025.18,General Semiconductor
+CuO,Hexagonal,Nanoparticles,1.97,8.3525,331334.71,General Semiconductor
+Si,Orthorhombic,Nanoparticles,2.28,6.9209,329526.2,General Semiconductor
+CuO,Tetragonal,Porous,3.17,6.0843,820288.38,Transparent Conductor (TCO)
+CuO,Monoclinic,Smooth,2.58,3.3132,486688.09,General Semiconductor
+Ge,Tetragonal,Smooth,1.0,3.8893,785308.56,Solar Absorber Potential
+Si,Hexagonal,Porous,2.42,8.3416,41116.09,General Semiconductor
+GaAs,Monoclinic,Nanoparticles,2.64,2.2143,652358.48,General Semiconductor
+GaAs,Hexagonal,Nanoparticles,1.73,6.8411,658552.11,General Semiconductor
+Si,Orthorhombic,Smooth,2.8,9.0518,592955.1,General Semiconductor
+CuO,Hexagonal,Rough,3.33,2.9332,695048.95,Transparent Conductor (TCO)
+GaAs,Hexagonal,Porous,1.94,8.7495,787386.19,General Semiconductor
+Ge,Tetragonal,Nanoparticles,2.46,0.1892,109378.02,General Semiconductor
+CuO,Cubic,Rough,1.88,8.5559,921091.29,General Semiconductor
+CuO,Cubic,Grainy,2.12,4.1665,721248.37,General Semiconductor
+Ge,Cubic,Grainy,1.08,2.3464,823092.31,Solar Absorber Potential
+Si,Monoclinic,Grainy,3.21,3.1991,623938.04,Transparent Conductor (TCO)
+CuO,Monoclinic,Grainy,1.47,2.3083,251946.51,Solar Absorber Potential
+ZnO,Cubic,Nanoparticles,1.08,4.6203,624372.63,Solar Absorber Potential
+CuMnSnO,Tetragonal,Nanoparticles,1.85,6.4406,261688.72,General Semiconductor
+Si,Monoclinic,Smooth,2.84,5.8381,999458.98,General Semiconductor
+Si,Monoclinic,Smooth,1.57,3.4005,551430.42,Solar Absorber Potential
+CuO,Monoclinic,Grainy,2.39,1.2121,11013.51,General Semiconductor
+ZnO,Monoclinic,Porous,3.41,5.1027,199321.9,Transparent Conductor (TCO)
+Si,Cubic,Grainy,2.15,1.6817,178819.12,General Semiconductor
+Ge,Tetragonal,Rough,1.92,0.1178,815595.54,General Semiconductor
+CuO,Orthorhombic,Rough,3.17,3.4308,628211.17,Transparent Conductor (TCO)
+ZnO,Monoclinic,Porous,2.44,9.8332,400804.39,General Semiconductor
+GaAs,Monoclinic,Rough,1.92,8.3309,480593.48,General Semiconductor
+ZnO,Hexagonal,Smooth,2.29,6.7632,279004.82,General Semiconductor
+Ge,Tetragonal,Rough,2.2,3.7043,913027.06,General Semiconductor
+Ge,Monoclinic,Smooth,3.35,6.4077,394599.57,Transparent Conductor (TCO)
+CuO,Tetragonal,Porous,1.88,7.778,681283.53,General Semiconductor
+CuO,Hexagonal,Smooth,1.24,1.7707,613752.73,Solar Absorber Potential
+Ge,Cubic,Rough,3.18,8.7305,860041.61,Transparent Conductor (TCO)
+CuO,Tetragonal,Grainy,2.72,9.8465,44889.18,General Semiconductor
+GaAs,Monoclinic,Nanoparticles,1.37,2.4284,917817.65,Solar Absorber Potential
+GaAs,Hexagonal,Rough,2.99,7.8501,268188.02,General Semiconductor
+Si,Monoclinic,Nanoparticles,2.5,5.6168,295650.61,General Semiconductor
+ZnO,Orthorhombic,Smooth,3.21,4.4943,691480.28,Transparent Conductor (TCO)
+CuMnSnO,Tetragonal,Grainy,2.68,7.7615,217972.15,General Semiconductor
+GaAs,Cubic,Porous,2.96,8.1805,799201.38,General Semiconductor
+Ge,Tetragonal,Grainy,3.3,5.5103,414010.76,Transparent Conductor (TCO)
+Ge,Tetragonal,Smooth,1.12,4.2526,770830.43,Solar Absorber Potential
+CuMnSnO,Hexagonal,Porous,2.02,9.6621,33130.6,General Semiconductor
+Ge,Cubic,Porous,2.11,5.1783,416000.52,General Semiconductor
+CuMnSnO,Orthorhombic,Nanoparticles,2.5,0.0795,378073.64,General Semiconductor
+CuO,Tetragonal,Smooth,3.13,9.8973,207555.26,Transparent Conductor (TCO)
+Si,Cubic,Nanoparticles,2.27,0.3236,177706.31,General Semiconductor
+CuO,Tetragonal,Smooth,3.24,9.6181,790867.73,Transparent Conductor (TCO)
+Ge,Orthorhombic,Rough,1.61,0.6611,307740.8,Solar Absorber Potential
+ZnO,Cubic,Grainy,1.91,1.9153,969102.05,General Semiconductor
+GaAs,Cubic,Grainy,3.25,8.6101,859239.12,Transparent Conductor (TCO)
+ZnO,Monoclinic,Smooth,2.81,6.6325,314656.48,General Semiconductor
+Ge,Cubic,Nanoparticles,1.94,7.9842,693318.52,General Semiconductor
+ZnO,Hexagonal,Rough,2.76,6.3049,382354.87,General Semiconductor
+CuMnSnO,Orthorhombic,Nanoparticles,1.23,1.7083,628374.1,Solar Absorber Potential
+CuO,Orthorhombic,Smooth,2.71,4.7487,23015.68,General Semiconductor
+Ge,Cubic,Rough,2.2,8.7496,88898.43,General Semiconductor
+ZnO,Hexagonal,Smooth,2.59,3.5679,129950.61,General Semiconductor
+Si,Hexagonal,Nanoparticles,2.79,7.8106,913591.51,General Semiconductor
+Si,Cubic,Smooth,2.51,6.9403,317611.22,General Semiconductor
+GaAs,Hexagonal,Nanoparticles,2.45,3.1862,21088.2,General Semiconductor
+Si,Tetragonal,Smooth,1.03,2.9335,901226.05,Solar Absorber Potential
+Si,Monoclinic,Rough,2.06,9.3365,977296.88,General Semiconductor
+GaAs,Orthorhombic,Grainy,1.58,5.3759,483187.9,Solar Absorber Potential
+Si,Cubic,Grainy,1.46,4.8645,330243.63,Solar Absorber Potential
+GaAs,Hexagonal,Porous,1.77,7.7133,208449.44,General Semiconductor
+GaAs,Monoclinic,Grainy,1.48,6.2834,892923.83,Solar Absorber Potential
+CuO,Monoclinic,Smooth,1.95,3.2329,500220.44,General Semiconductor
+CuMnSnO,Monoclinic,Rough,1.54,4.7715,656271.33,Solar Absorber Potential
+Si,Cubic,Porous,2.42,9.6715,815783.61,General Semiconductor
+ZnO,Monoclinic,Grainy,1.12,9.717,135353.17,Solar Absorber Potential
+ZnO,Tetragonal,Porous,2.57,8.5881,74656.42,General Semiconductor
+Ge,Monoclinic,Grainy,2.34,2.4318,83371.36,General Semiconductor
+Si,Cubic,Grainy,1.49,0.8194,714929.39,Solar Absorber Potential
+ZnO,Hexagonal,Rough,2.29,8.0447,201088.4,General Semiconductor
+ZnO,Hexagonal,Nanoparticles,1.05,7.5987,186660.41,Solar Absorber Potential
+ZnO,Monoclinic,Nanoparticles,1.08,7.4345,518759.41,Solar Absorber Potential
+Si,Orthorhombic,Rough,2.59,3.4978,814202.63,General Semiconductor
+ZnO,Cubic,Smooth,3.18,9.6799,108005.97,Transparent Conductor (TCO)
+CuMnSnO,Monoclinic,Rough,1.46,8.7547,215538.67,Solar Absorber Potential
+Ge,Orthorhombic,Porous,1.27,0.614,353048.42,Solar Absorber Potential
+Si,Monoclinic,Porous,1.04,7.5815,467842.67,Solar Absorber Potential
+GaAs,Monoclinic,Grainy,2.16,5.8488,633050.95,General Semiconductor
+Ge,Cubic,Grainy,3.39,4.9948,539700.35,Transparent Conductor (TCO)
+CuO,Hexagonal,Porous,2.77,1.6266,257577.31,General Semiconductor
+Si,Tetragonal,Rough,1.52,4.9206,394078.21,Solar Absorber Potential
+Ge,Tetragonal,Grainy,3.29,7.2244,664924.61,Transparent Conductor (TCO)
+ZnO,Monoclinic,Nanoparticles,1.72,4.6651,868147.19,General Semiconductor
+ZnO,Orthorhombic,Nanoparticles,2.37,2.9005,37666.08,General Semiconductor
+Si,Monoclinic,Smooth,2.45,8.4623,609682.26,General Semiconductor
+ZnO,Hexagonal,Nanoparticles,2.8,5.181,281345.4,General Semiconductor
+CuO,Orthorhombic,Porous,2.8,4.2886,985921.56,General Semiconductor
+GaAs,Tetragonal,Grainy,2.44,8.9326,463567.6,General Semiconductor
+Si,Hexagonal,Nanoparticles,2.28,8.256,115173.06,General Semiconductor
+Si,Tetragonal,Porous,2.72,2.928,578174.73,General Semiconductor
+Si,Orthorhombic,Grainy,1.23,6.3446,855227.26,Solar Absorber Potential
+Si,Cubic,Nanoparticles,1.97,0.1664,930890.23,General Semiconductor
+CuO,Orthorhombic,Smooth,2.4,3.3673,243156.65,General Semiconductor
+CuMnSnO,Orthorhombic,Smooth,1.02,9.6402,433140.36,Solar Absorber Potential
+Si,Hexagonal,Grainy,3.39,1.0488,27973.73,Transparent Conductor (TCO)
+CuMnSnO,Orthorhombic,Smooth,1.61,5.3938,833304.17,Solar Absorber Potential
+Ge,Monoclinic,Nanoparticles,3.02,6.4913,15311.19,Transparent Conductor (TCO)
+ZnO,Cubic,Smooth,1.75,4.9448,354860.68,General Semiconductor
+ZnO,Orthorhombic,Grainy,3.13,8.6476,494875.4,Transparent Conductor (TCO)
+GaAs,Tetragonal,Grainy,2.37,5.3913,218664.24,General Semiconductor
+ZnO,Cubic,Porous,2.94,8.7827,458434.59,General Semiconductor
+CuO,Monoclinic,Nanoparticles,1.32,0.3087,642540.11,Solar Absorber Potential
+CuMnSnO,Orthorhombic,Porous,1.82,7.1491,373480.05,General Semiconductor
+GaAs,Orthorhombic,Smooth,1.26,7.0154,793671.8,Solar Absorber Potential
+Ge,Monoclinic,Porous,2.44,3.5851,459749.47,General Semiconductor
+CuMnSnO,Orthorhombic,Nanoparticles,1.56,8.6161,521961.1,Solar Absorber Potential
+Si,Cubic,Smooth,3.05,1.2536,362627.15,Transparent Conductor (TCO)
+Ge,Orthorhombic,Rough,1.36,2.2,48363.65,General Semiconductor
+CuO,Monoclinic,Rough,1.7,3.4964,134946.24,Solar Absorber Potential
+Si,Monoclinic,Smooth,3.19,4.938,460577.6,Transparent Conductor (TCO)
+CuO,Tetragonal,Porous,2.27,0.1592,236752.27,General Semiconductor
+GaAs,Cubic,Rough,2.66,6.7806,812600.6,General Semiconductor
+Si,Cubic,Smooth,1.51,6.4121,647841.27,Solar Absorber Potential
+CuO,Monoclinic,Grainy,2.09,0.2839,474558.69,General Semiconductor
+CuMnSnO,Hexagonal,Porous,2.82,1.198,175181.11,General Semiconductor
+GaAs,Cubic,Nanoparticles,3.17,4.5743,953707.31,Transparent Conductor (TCO)
+ZnO,Cubic,Rough,1.68,4.6173,354147.0,Solar Absorber Potential
+Ge,Monoclinic,Smooth,2.39,6.5629,538317.91,General Semiconductor
+Si,Tetragonal,Rough,1.01,8.8197,472462.9,Solar Absorber Potential
+CuMnSnO,Hexagonal,Porous,3.06,7.2937,56176.29,Transparent Conductor (TCO)
+ZnO,Monoclinic,Porous,1.68,0.7751,943795.68,Solar Absorber Potential
+CuMnSnO,Tetragonal,Smooth,2.0,5.0496,512634.72,General Semiconductor
+ZnO,Tetragonal,Nanoparticles,2.86,3.893,79459.15,General Semiconductor
+CuMnSnO,Tetragonal,Grainy,1.22,1.72,80480.41,Solar Absorber Potential
+Si,Monoclinic,Porous,1.54,4.4678,340443.49,Solar Absorber Potential
+GaAs,Cubic,Rough,1.66,5.8105,239368.55,Solar Absorber Potential
+GaAs,Tetragonal,Nanoparticles,2.49,0.4013,383032.37,General Semiconductor
+GaAs,Monoclinic,Smooth,1.86,9.8664,216968.04,General Semiconductor
+CuO,Hexagonal,Porous,3.19,3.7736,192865.99,Transparent Conductor (TCO)
+Si,Monoclinic,Porous,2.86,7.2599,366088.17,General Semiconductor
+CuMnSnO,Hexagonal,Porous,2.51,1.5077,774155.15,General Semiconductor
+CuMnSnO,Tetragonal,Porous,1.96,3.5462,419985.98,General Semiconductor
+Ge,Hexagonal,Rough,2.08,9.9969,407430.56,General Semiconductor
+Si,Cubic,Rough,3.23,7.8455,750387.45,Transparent Conductor (TCO)
+CuO,Monoclinic,Smooth,2.63,4.8296,329280.58,General Semiconductor
+Si,Orthorhombic,Nanoparticles,2.82,8.7251,227459.74,General Semiconductor
+ZnO,Cubic,Smooth,1.27,0.7664,646353.03,Solar Absorber Potential
+GaAs,Tetragonal,Rough,1.89,1.4174,291497.99,General Semiconductor
+Ge,Monoclinic,Grainy,1.42,0.9098,756570.49,Solar Absorber Potential
+GaAs,Tetragonal,Smooth,1.64,6.2892,490336.4,Solar Absorber Potential
+GaAs,Orthorhombic,Rough,2.6,0.2712,831762.84,General Semiconductor
+CuO,Tetragonal,Porous,3.23,2.0488,736338.42,Transparent Conductor (TCO)
+GaAs,Tetragonal,Nanoparticles,1.1,6.3097,750391.27,Solar Absorber Potential
+CuMnSnO,Cubic,Grainy,2.07,0.1331,836944.8,General Semiconductor
+CuMnSnO,Monoclinic,Grainy,1.24,9.1279,738173.69,Solar Absorber Potential
+ZnO,Orthorhombic,Grainy,2.35,0.0415,474346.04,General Semiconductor
+Si,Tetragonal,Rough,1.98,4.8871,649427.96,General Semiconductor
+ZnO,Cubic,Nanoparticles,1.19,0.5326,215091.64,Solar Absorber Potential
+GaAs,Hexagonal,Smooth,2.2,8.4597,876168.3,General Semiconductor
+Ge,Monoclinic,Porous,2.29,2.9056,154789.61,General Semiconductor
+CuMnSnO,Orthorhombic,Porous,1.64,2.9606,61023.89,Solar Absorber Potential
+Ge,Tetragonal,Rough,3.32,3.406,581835.39,Transparent Conductor (TCO)
+GaAs,Monoclinic,Grainy,3.05,2.3301,66722.36,Transparent Conductor (TCO)
+GaAs,Monoclinic,Rough,3.29,5.5637,336631.56,Transparent Conductor (TCO)
+ZnO,Hexagonal,Rough,2.13,9.189,170999.39,General Semiconductor
+Ge,Orthorhombic,Porous,1.69,5.7519,941057.41,Solar Absorber Potential
+Si,Monoclinic,Nanoparticles,2.9,8.6735,952445.11,General Semiconductor
+ZnO,Orthorhombic,Nanoparticles,2.98,6.5321,137589.84,General Semiconductor
+Ge,Cubic,Nanoparticles,3.25,9.1335,631831.72,Transparent Conductor (TCO)
+Si,Monoclinic,Porous,1.93,0.942,785390.96,General Semiconductor
+Ge,Tetragonal,Smooth,1.13,9.0348,504524.9,Solar Absorber Potential
+GaAs,Monoclinic,Rough,1.08,5.4954,469801.09,Solar Absorber Potential
+CuO,Cubic,Grainy,2.3,8.6969,641700.9,General Semiconductor
+CuMnSnO,Orthorhombic,Smooth,1.38,3.0584,473693.85,Solar Absorber Potential
+Si,Monoclinic,Porous,3.34,2.74,480387.73,Transparent Conductor (TCO)
+CuO,Orthorhombic,Rough,2.57,0.0162,221087.08,General Semiconductor
+CuMnSnO,Orthorhombic,Nanoparticles,1.07,9.9191,374156.9,Solar Absorber Potential
+Ge,Tetragonal,Nanoparticles,1.31,5.9515,638737.83,Solar Absorber Potential
+CuO,Monoclinic,Porous,2.52,1.8983,784273.66,General Semiconductor
+ZnO,Orthorhombic,Nanoparticles,1.47,8.7047,151400.5,Solar Absorber Potential
+ZnO,Orthorhombic,Nanoparticles,1.46,5.2428,796808.05,Solar Absorber Potential
+GaAs,Cubic,Porous,1.49,3.7966,500617.47,Solar Absorber Potential
+CuO,Hexagonal,Nanoparticles,3.17,2.0951,16251.65,Transparent Conductor (TCO)
+ZnO,Orthorhombic,Grainy,2.53,6.1767,619021.38,General Semiconductor
+ZnO,Hexagonal,Smooth,1.85,3.3116,979634.09,General Semiconductor
+CuMnSnO,Tetragonal,Rough,1.39,3.6675,475835.73,Solar Absorber Potential
+GaAs,Monoclinic,Porous,1.82,2.182,260077.52,General Semiconductor
+Si,Cubic,Porous,2.96,4.3,367424.45,General Semiconductor
+Si,Tetragonal,Rough,3.0,2.0766,593306.63,General Semiconductor
+Ge,Orthorhombic,Smooth,1.53,6.5456,135978.62,Solar Absorber Potential
+Ge,Monoclinic,Nanoparticles,3.06,0.4363,800708.72,UV Application Potential
+CuMnSnO,Cubic,Rough,3.12,4.9813,671919.57,Transparent Conductor (TCO)
+ZnO,Tetragonal,Grainy,1.82,2.8385,440394.42,General Semiconductor
+Si,Cubic,Grainy,3.46,9.8707,455622.98,Transparent Conductor (TCO)
+ZnO,Cubic,Grainy,2.87,5.2238,256944.95,General Semiconductor
+CuO,Cubic,Nanoparticles,3.33,0.2958,528601.18,UV Application Potential
+CuMnSnO,Cubic,Nanoparticles,2.35,7.9322,11257.0,General Semiconductor
+GaAs,Cubic,Nanoparticles,3.14,0.1607,182622.43,UV Application Potential
+Ge,Tetragonal,Porous,2.81,8.5469,104409.37,General Semiconductor
+CuO,Cubic,Grainy,2.89,2.3794,620305.03,General Semiconductor
+GaAs,Cubic,Rough,1.69,8.304,242302.42,Solar Absorber Potential
+GaAs,Tetragonal,Grainy,2.19,3.1142,423564.05,General Semiconductor
+GaAs,Orthorhombic,Porous,1.43,9.497,111422.13,Solar Absorber Potential
+Ge,Tetragonal,Porous,1.5,4.9913,302512.1,Solar Absorber Potential
+Si,Monoclinic,Grainy,3.32,5.8533,849889.53,Transparent Conductor (TCO)
+CuO,Tetragonal,Rough,2.35,8.6769,100521.99,General Semiconductor
+CuO,Monoclinic,Grainy,3.07,6.0769,134305.36,Transparent Conductor (TCO)
+GaAs,Hexagonal,Nanoparticles,2.79,2.6889,221124.88,General Semiconductor
+CuO,Cubic,Smooth,1.56,2.3227,858022.17,Solar Absorber Potential
+Si,Monoclinic,Porous,1.79,2.636,360129.2,General Semiconductor
+Si,Orthorhombic,Porous,1.86,2.1919,953532.87,General Semiconductor
+CuMnSnO,Cubic,Nanoparticles,1.21,1.9237,681193.65,Solar Absorber Potential
+CuO,Monoclinic,Porous,2.12,7.4237,769976.56,General Semiconductor
+Ge,Tetragonal,Smooth,2.55,8.5397,124826.2,General Semiconductor
+Ge,Cubic,Nanoparticles,1.51,8.0521,225090.39,Solar Absorber Potential
+Si,Hexagonal,Grainy,3.13,9.3229,339259.42,Transparent Conductor (TCO)
+ZnO,Cubic,Nanoparticles,2.47,7.8128,213727.69,General Semiconductor
+ZnO,Monoclinic,Porous,2.36,7.6213,847911.34,General Semiconductor
+CuO,Orthorhombic,Grainy,1.25,4.5351,485148.42,Solar Absorber Potential
+GaAs,Orthorhombic,Grainy,2.44,8.5305,616334.49,General Semiconductor
+CuO,Cubic,Rough,3.27,4.6165,17255.79,Transparent Conductor (TCO)
+Si,Tetragonal,Grainy,3.32,4.1477,872472.07,Transparent Conductor (TCO)
+GaAs,Tetragonal,Grainy,1.21,0.2657,742681.82,Solar Absorber Potential
+ZnO,Orthorhombic,Grainy,2.98,8.0924,552381.72,General Semiconductor
+CuMnSnO,Orthorhombic,Nanoparticles,2.29,8.3036,878629.5,General Semiconductor
+CuMnSnO,Cubic,Nanoparticles,3.13,6.3705,537798.88,Transparent Conductor (TCO)
+GaAs,Orthorhombic,Grainy,2.18,1.716,245413.97,General Semiconductor
+Ge,Tetragonal,Rough,2.43,0.7088,658739.1,General Semiconductor
+GaAs,Monoclinic,Porous,1.36,2.1727,153506.24,Solar Absorber Potential
+CuMnSnO,Tetragonal,Rough,3.36,0.5627,838755.72,UV Application Potential
+CuMnSnO,Tetragonal,Grainy,3.15,6.1528,183308.42,Transparent Conductor (TCO)
+GaAs,Hexagonal,Porous,2.46,0.9933,938860.01,General Semiconductor
+GaAs,Tetragonal,Smooth,3.24,1.2819,581595.45,Transparent Conductor (TCO)
+ZnO,Hexagonal,Rough,1.65,0.0496,247899.43,Solar Absorber Potential
+CuMnSnO,Monoclinic,Nanoparticles,1.48,5.9735,454639.84,Solar Absorber Potential
+ZnO,Cubic,Nanoparticles,1.41,3.2732,210416.56,Solar Absorber Potential
+GaAs,Tetragonal,Grainy,1.6,1.3638,804283.16,Solar Absorber Potential
+Ge,Monoclinic,Smooth,2.91,1.2586,861318.34,General Semiconductor
+CuMnSnO,Monoclinic,Rough,1.66,1.3446,378433.95,Solar Absorber Potential
+Ge,Orthorhombic,Nanoparticles,3.18,7.6427,103000.82,Transparent Conductor (TCO)
+Si,Monoclinic,Porous,3.48,8.6641,883869.9,Transparent Conductor (TCO)
+Si,Cubic,Grainy,3.43,2.6656,101144.15,Transparent Conductor (TCO)
+CuMnSnO,Hexagonal,Nanoparticles,3.49,9.209,568621.89,Transparent Conductor (TCO)
+ZnO,Cubic,Smooth,3.36,5.3304,887947.11,Transparent Conductor (TCO)
+Si,Hexagonal,Grainy,1.69,0.7632,26443.12,General Semiconductor
+Ge,Orthorhombic,Rough,3.43,7.1233,431770.13,Transparent Conductor (TCO)
+ZnO,Monoclinic,Porous,2.49,6.8526,155859.52,General Semiconductor
+CuMnSnO,Monoclinic,Nanoparticles,1.32,8.6881,761882.36,Solar Absorber Potential
+Si,Tetragonal,Nanoparticles,1.8,6.2314,343464.04,General Semiconductor
+CuMnSnO,Hexagonal,Porous,3.31,9.995,332787.38,Transparent Conductor (TCO)
+CuO,Hexagonal,Porous,1.43,2.3871,928946.56,Solar Absorber Potential
+CuMnSnO,Hexagonal,Smooth,1.52,7.1158,827464.66,Solar Absorber Potential
+Si,Monoclinic,Smooth,1.25,0.2242,837274.39,Solar Absorber Potential
+CuO,Monoclinic,Rough,2.59,4.0351,250535.04,General Semiconductor
+CuO,Cubic,Porous,3.01,7.2051,472504.25,Transparent Conductor (TCO)
+ZnO,Tetragonal,Nanoparticles,1.65,9.0213,791828.2,Solar Absorber Potential
+ZnO,Monoclinic,Grainy,3.24,9.4233,221876.44,Transparent Conductor (TCO)
+CuMnSnO,Tetragonal,Porous,1.52,0.6191,917336.67,Solar Absorber Potential
+CuO,Cubic,Smooth,1.21,7.1849,378408.8,Solar Absorber Potential
+CuMnSnO,Orthorhombic,Smooth,3.4,9.8996,26046.25,Transparent Conductor (TCO)
+Ge,Monoclinic,Porous,1.69,4.7359,378391.62,Solar Absorber Potential
+CuO,Hexagonal,Smooth,1.14,8.8432,380655.84,Solar Absorber Potential
+Ge,Hexagonal,Smooth,3.31,2.8922,714782.88,Transparent Conductor (TCO)
+ZnO,Tetragonal,Grainy,1.2,9.8541,882361.32,Solar Absorber Potential
+Si,Cubic,Porous,2.77,7.3696,672486.34,General Semiconductor
+Ge,Monoclinic,Grainy,3.1,1.4184,856609.62,Transparent Conductor (TCO)
+GaAs,Tetragonal,Porous,3.47,3.5465,24151.08,Transparent Conductor (TCO)
+GaAs,Hexagonal,Porous,1.86,2.9566,986332.95,General Semiconductor
+CuMnSnO,Orthorhombic,Porous,3.07,8.1064,297831.7,Transparent Conductor (TCO)
+ZnO,Tetragonal,Rough,2.88,5.8884,114453.24,General Semiconductor
+Ge,Orthorhombic,Porous,1.01,1.965,708914.52,Solar Absorber Potential
+Ge,Monoclinic,Nanoparticles,2.1,9.1583,145089.05,General Semiconductor
+CuO,Hexagonal,Rough,3.4,7.4043,214981.82,Transparent Conductor (TCO)
+CuMnSnO,Tetragonal,Nanoparticles,3.06,9.7866,38995.22,Transparent Conductor (TCO)
+ZnO,Orthorhombic,Porous,2.32,0.2494,940499.85,General Semiconductor
+CuO,Cubic,Rough,2.85,3.8026,726258.77,General Semiconductor
+CuMnSnO,Cubic,Rough,2.39,8.1812,554468.6,General Semiconductor
+Si,Hexagonal,Grainy,2.3,5.0657,227647.14,General Semiconductor
+GaAs,Monoclinic,Porous,3.31,2.3689,728165.67,Transparent Conductor (TCO)
+Ge,Orthorhombic,Nanoparticles,1.55,8.9669,637003.12,Solar Absorber Potential
+CuO,Tetragonal,Grainy,3.33,9.5267,293601.55,Transparent Conductor (TCO)
+CuMnSnO,Tetragonal,Porous,1.01,4.801,868675.21,Solar Absorber Potential
+CuMnSnO,Monoclinic,Porous,1.01,5.5944,268144.89,Solar Absorber Potential
+Ge,Tetragonal,Grainy,2.39,2.0129,339733.08,General Semiconductor
+Si,Orthorhombic,Grainy,1.23,7.9494,328261.59,Solar Absorber Potential
+Ge,Cubic,Rough,2.63,3.5128,882231.68,General Semiconductor
+Ge,Hexagonal,Grainy,1.52,7.1113,262813.49,Solar Absorber Potential
+ZnO,Orthorhombic,Grainy,1.31,6.8772,308484.42,Solar Absorber Potential
+Si,Tetragonal,Grainy,2.46,6.3847,167208.0,General Semiconductor
+CuMnSnO,Hexagonal,Rough,3.13,3.1702,676373.27,Transparent Conductor (TCO)
+CuMnSnO,Tetragonal,Rough,2.25,1.2125,695630.39,General Semiconductor
+CuO,Cubic,Nanoparticles,2.54,2.1633,995725.51,General Semiconductor
+Ge,Cubic,Grainy,1.34,8.5695,736121.83,Solar Absorber Potential
+ZnO,Cubic,Nanoparticles,1.63,2.049,443285.67,Solar Absorber Potential
+GaAs,Tetragonal,Nanoparticles,3.08,1.5725,306601.56,Transparent Conductor (TCO)
+Ge,Hexagonal,Smooth,1.38,2.0762,256750.38,Solar Absorber Potential
+Ge,Tetragonal,Nanoparticles,3.43,0.1724,630971.05,UV Application Potential
+CuMnSnO,Hexagonal,Porous,2.48,2.0893,576289.48,General Semiconductor
+CuMnSnO,Orthorhombic,Grainy,2.63,2.4773,91626.21,General Semiconductor
+Ge,Tetragonal,Nanoparticles,1.31,4.9754,563271.2,Solar Absorber Potential
+ZnO,Tetragonal,Rough,1.24,0.5833,790445.49,Solar Absorber Potential
+Ge,Hexagonal,Smooth,2.01,0.8067,732071.43,General Semiconductor
+ZnO,Cubic,Grainy,3.29,6.767,190092.46,Transparent Conductor (TCO)
+CuMnSnO,Hexagonal,Grainy,1.92,2.7208,662896.42,General Semiconductor
+Ge,Cubic,Nanoparticles,1.93,5.4439,548074.33,General Semiconductor
+GaAs,Monoclinic,Smooth,1.95,5.7415,639053.43,General Semiconductor
+Ge,Tetragonal,Grainy,1.51,2.8792,277186.33,Solar Absorber Potential
+CuO,Tetragonal,Nanoparticles,1.51,4.3335,954116.34,Solar Absorber Potential
+ZnO,Tetragonal,Porous,1.85,8.7697,491707.32,General Semiconductor
+CuO,Cubic,Smooth,2.95,6.796,309162.82,General Semiconductor
+Si,Tetragonal,Nanoparticles,2.94,8.4712,483064.04,General Semiconductor
+Ge,Tetragonal,Nanoparticles,3.14,8.7617,393552.59,Transparent Conductor (TCO)
+ZnO,Orthorhombic,Smooth,2.04,0.5095,80812.4,General Semiconductor
+Ge,Hexagonal,Rough,2.28,5.5053,697629.74,General Semiconductor
+ZnO,Orthorhombic,Porous,1.63,6.6413,761133.52,Solar Absorber Potential
+Ge,Tetragonal,Nanoparticles,2.92,5.437,386516.47,General Semiconductor
+Si,Orthorhombic,Nanoparticles,3.02,0.3947,405384.94,UV Application Potential
+GaAs,Hexagonal,Rough,1.06,5.9455,220432.46,Solar Absorber Potential
+CuO,Tetragonal,Porous,3.48,4.1146,697586.22,Transparent Conductor (TCO)
+ZnO,Tetragonal,Smooth,2.91,6.7695,609962.51,General Semiconductor
+Ge,Hexagonal,Nanoparticles,3.16,5.1094,106120.04,Transparent Conductor (TCO)
+ZnO,Tetragonal,Porous,1.22,9.2463,113494.17,Solar Absorber Potential
+ZnO,Hexagonal,Porous,1.64,1.5906,689683.37,Solar Absorber Potential
+Si,Cubic,Rough,3.2,7.0971,493553.75,Transparent Conductor (TCO)
+Ge,Orthorhombic,Grainy,1.76,6.3078,956515.55,General Semiconductor
+Si,Hexagonal,Porous,3.21,3.059,889159.01,Transparent Conductor (TCO)
+CuO,Orthorhombic,Porous,2.11,0.8649,472592.4,General Semiconductor
+ZnO,Tetragonal,Rough,3.26,9.0821,384439.13,Transparent Conductor (TCO)
+Si,Monoclinic,Grainy,2.25,3.9145,754230.28,General Semiconductor
+GaAs,Tetragonal,Nanoparticles,3.3,7.1102,914499.28,Transparent Conductor (TCO)
+CuMnSnO,Monoclinic,Smooth,2.47,1.4463,111311.57,General Semiconductor
+ZnO,Orthorhombic,Rough,3.04,2.1646,365086.29,Transparent Conductor (TCO)
+Si,Orthorhombic,Rough,1.2,5.6074,256769.54,Solar Absorber Potential
+ZnO,Orthorhombic,Nanoparticles,1.76,9.2941,319013.27,General Semiconductor
+GaAs,Cubic,Porous,2.08,9.846,161887.09,General Semiconductor
+ZnO,Orthorhombic,Nanoparticles,2.71,3.7994,394171.93,General Semiconductor
+Ge,Hexagonal,Smooth,2.01,3.0265,525640.75,General Semiconductor
+GaAs,Orthorhombic,Grainy,1.58,5.5463,713043.78,Solar Absorber Potential
+CuO,Hexagonal,Smooth,1.65,4.3488,433987.17,Solar Absorber Potential
+CuO,Tetragonal,Nanoparticles,1.78,8.3488,619459.58,General Semiconductor
+Si,Tetragonal,Porous,3.21,7.0582,715692.95,Transparent Conductor (TCO)
+ZnO,Monoclinic,Porous,3.21,1.6666,43935.94,Transparent Conductor (TCO)
+Si,Hexagonal,Smooth,2.12,0.3251,795036.16,General Semiconductor
+Si,Cubic,Smooth,3.37,7.7564,841663.4,Transparent Conductor (TCO)
+Ge,Orthorhombic,Nanoparticles,1.03,0.2613,610643.48,Solar Absorber Potential
+CuMnSnO,Cubic,Smooth,2.12,1.4372,383653.63,General Semiconductor
+CuMnSnO,Cubic,Grainy,1.4,3.3862,428064.49,Solar Absorber Potential
+CuMnSnO,Orthorhombic,Porous,1.12,4.2613,968996.72,Solar Absorber Potential
+Si,Monoclinic,Porous,1.39,1.0481,37779.01,General Semiconductor
+GaAs,Tetragonal,Grainy,3.17,8.3549,717296.75,Transparent Conductor (TCO)
+Ge,Orthorhombic,Porous,1.59,8.1466,680484.3,Solar Absorber Potential
+Si,Orthorhombic,Rough,3.17,0.6335,108989.94,UV Application Potential
+CuMnSnO,Cubic,Grainy,2.58,7.5968,276870.95,General Semiconductor
+Ge,Monoclinic,Nanoparticles,2.64,1.2808,286000.34,General Semiconductor
+CuO,Monoclinic,Smooth,2.5,5.954,443128.75,General Semiconductor
+CuMnSnO,Monoclinic,Grainy,1.13,1.5898,765069.68,Solar Absorber Potential
+GaAs,Hexagonal,Grainy,1.78,0.8992,980611.05,General Semiconductor
+GaAs,Hexagonal,Porous,1.81,7.4843,326852.26,General Semiconductor
+CuMnSnO,Cubic,Nanoparticles,3.07,1.7707,167160.36,Transparent Conductor (TCO)
+CuO,Orthorhombic,Rough,1.56,1.1728,931241.93,Solar Absorber Potential
+CuMnSnO,Cubic,Grainy,1.31,5.7996,208940.94,Solar Absorber Potential
+CuO,Tetragonal,Rough,3.1,5.4345,734125.36,Transparent Conductor (TCO)
+Ge,Cubic,Smooth,3.14,0.7872,898271.35,UV Application Potential
+GaAs,Monoclinic,Porous,3.28,0.4282,21812.81,UV Application Potential
+CuMnSnO,Tetragonal,Porous,1.24,0.1389,855133.66,Solar Absorber Potential
+CuO,Hexagonal,Rough,3.49,2.9112,982361.63,Transparent Conductor (TCO)
+Si,Orthorhombic,Nanoparticles,2.66,8.0122,234166.57,General Semiconductor
+CuMnSnO,Orthorhombic,Smooth,1.67,4.8386,359865.95,Solar Absorber Potential
+ZnO,Cubic,Smooth,1.09,7.2234,14470.9,General Semiconductor
+GaAs,Hexagonal,Grainy,1.03,4.6733,565916.83,Solar Absorber Potential
+ZnO,Orthorhombic,Grainy,2.21,8.1842,97228.32,General Semiconductor
+Si,Tetragonal,Smooth,1.38,2.4274,482244.58,Solar Absorber Potential
+CuO,Hexagonal,Grainy,1.77,0.8606,399625.49,General Semiconductor
+CuO,Tetragonal,Smooth,1.76,7.4809,504731.28,General Semiconductor
+CuO,Tetragonal,Porous,3.36,3.8724,821167.31,Transparent Conductor (TCO)
+ZnO,Hexagonal,Nanoparticles,2.11,8.6191,166198.8,General Semiconductor
+Ge,Monoclinic,Porous,2.82,7.0525,338705.24,General Semiconductor
+ZnO,Cubic,Smooth,1.18,3.3508,715238.25,Solar Absorber Potential
+CuO,Tetragonal,Nanoparticles,1.32,2.1531,607281.77,Solar Absorber Potential
+GaAs,Hexagonal,Porous,2.98,9.5444,827453.5,General Semiconductor
+Si,Tetragonal,Smooth,2.9,0.3214,379461.83,General Semiconductor
+ZnO,Cubic,Nanoparticles,3.46,7.5973,585374.17,Transparent Conductor (TCO)
+CuMnSnO,Cubic,Porous,1.05,6.0147,234082.94,Solar Absorber Potential
+Si,Monoclinic,Smooth,2.91,2.2761,654579.98,General Semiconductor
+CuO,Tetragonal,Smooth,1.78,3.8636,687624.62,General Semiconductor
+ZnO,Hexagonal,Grainy,1.08,2.8783,898275.41,Solar Absorber Potential
+ZnO,Hexagonal,Grainy,1.55,0.4672,705248.03,Solar Absorber Potential
+CuMnSnO,Hexagonal,Grainy,1.29,5.1413,300688.75,Solar Absorber Potential
+ZnO,Orthorhombic,Grainy,1.68,2.9391,227391.54,Solar Absorber Potential
+CuO,Tetragonal,Smooth,3.21,8.134,815335.49,Transparent Conductor (TCO)
+Ge,Hexagonal,Porous,2.81,0.5431,910616.33,General Semiconductor
+CuO,Tetragonal,Smooth,3.27,2.0001,322130.73,Transparent Conductor (TCO)
+Ge,Cubic,Smooth,1.18,6.1084,296599.87,Solar Absorber Potential
+Ge,Orthorhombic,Grainy,1.06,9.0066,399042.97,Solar Absorber Potential
+GaAs,Cubic,Nanoparticles,1.52,5.167,945469.65,Solar Absorber Potential
+Ge,Cubic,Porous,1.4,3.397,354772.09,Solar Absorber Potential
+ZnO,Hexagonal,Nanoparticles,2.5,7.9421,612948.89,General Semiconductor
+CuO,Orthorhombic,Grainy,2.21,4.2527,719923.78,General Semiconductor
+CuO,Cubic,Nanoparticles,1.73,1.1776,854206.74,General Semiconductor
+Si,Cubic,Smooth,3.28,1.1947,22291.19,Transparent Conductor (TCO)
+Si,Monoclinic,Nanoparticles,2.84,3.4396,174823.99,General Semiconductor
+CuO,Cubic,Porous,2.46,8.9467,627927.75,General Semiconductor
+ZnO,Tetragonal,Porous,3.31,3.6565,983499.22,Transparent Conductor (TCO)
+CuO,Cubic,Smooth,3.47,8.6639,661299.47,Transparent Conductor (TCO)
+CuO,Monoclinic,Porous,2.26,9.4577,664278.88,General Semiconductor
+CuMnSnO,Orthorhombic,Rough,2.67,1.2282,824543.63,General Semiconductor
+ZnO,Tetragonal,Grainy,2.46,3.4707,858961.94,General Semiconductor
+CuMnSnO,Hexagonal,Nanoparticles,2.05,1.1891,312363.26,General Semiconductor
+CuMnSnO,Hexagonal,Grainy,1.32,4.2125,147958.07,Solar Absorber Potential
+CuMnSnO,Cubic,Rough,2.13,7.9338,150308.37,General Semiconductor
+CuO,Hexagonal,Rough,1.8,9.2457,120767.16,General Semiconductor
+CuO,Hexagonal,Smooth,3.27,8.7166,782483.27,Transparent Conductor (TCO)
+CuMnSnO,Tetragonal,Rough,1.6,9.2788,39801.29,General Semiconductor
+CuO,Orthorhombic,Porous,1.64,4.8871,440860.43,Solar Absorber Potential
+Si,Hexagonal,Porous,1.14,1.6093,726270.09,Solar Absorber Potential
+Si,Hexagonal,Porous,3.27,2.4954,347757.94,Transparent Conductor (TCO)
+Ge,Orthorhombic,Porous,2.55,5.7171,337087.55,General Semiconductor
+CuMnSnO,Orthorhombic,Smooth,2.38,0.3767,268853.64,General Semiconductor
+Si,Cubic,Smooth,2.56,0.4103,941755.57,General Semiconductor
+Ge,Monoclinic,Smooth,2.46,1.9508,150769.33,General Semiconductor
+GaAs,Tetragonal,Grainy,1.99,9.0152,869958.0,General Semiconductor
+CuMnSnO,Tetragonal,Grainy,1.74,5.7024,570865.4,General Semiconductor
+Ge,Tetragonal,Rough,2.0,7.9944,766840.72,General Semiconductor
+ZnO,Monoclinic,Smooth,1.53,8.4827,744084.5,Solar Absorber Potential
+ZnO,Cubic,Smooth,2.1,8.1068,826897.63,General Semiconductor
+Ge,Tetragonal,Grainy,3.44,9.1148,315637.94,Transparent Conductor (TCO)
+CuO,Monoclinic,Smooth,1.78,7.1144,103825.46,General Semiconductor
+CuMnSnO,Orthorhombic,Smooth,1.2,5.8744,210052.1,Solar Absorber Potential
+Si,Monoclinic,Grainy,1.59,6.4328,481354.39,Solar Absorber Potential
+CuMnSnO,Cubic,Grainy,1.46,1.8887,29272.36,General Semiconductor
+ZnO,Orthorhombic,Nanoparticles,3.23,6.4236,445326.63,Transparent Conductor (TCO)
+Si,Tetragonal,Rough,2.22,5.2406,526399.16,General Semiconductor
+CuMnSnO,Hexagonal,Grainy,2.88,0.4706,22160.37,General Semiconductor
+ZnO,Tetragonal,Grainy,2.95,8.5141,138011.81,General Semiconductor
+Si,Hexagonal,Grainy,1.83,6.2038,74093.05,General Semiconductor
+Ge,Monoclinic,Rough,3.02,6.1736,553069.11,Transparent Conductor (TCO)
+Si,Tetragonal,Rough,2.25,1.8754,908968.63,General Semiconductor
+GaAs,Orthorhombic,Porous,1.87,3.3166,669485.65,General Semiconductor
+CuO,Orthorhombic,Grainy,2.78,5.2402,699846.89,General Semiconductor
+CuMnSnO,Tetragonal,Grainy,3.34,9.6029,54522.36,Transparent Conductor (TCO)
+CuO,Tetragonal,Nanoparticles,2.48,7.7683,170433.0,General Semiconductor
+GaAs,Cubic,Grainy,2.0,9.6084,245358.41,General Semiconductor
+ZnO,Orthorhombic,Rough,2.9,0.339,613991.81,General Semiconductor
+CuMnSnO,Monoclinic,Porous,2.87,2.6209,161324.16,General Semiconductor
+ZnO,Tetragonal,Nanoparticles,1.79,9.6252,364070.31,General Semiconductor
+Ge,Hexagonal,Grainy,3.13,8.711,389612.62,Transparent Conductor (TCO)
+Si,Monoclinic,Smooth,3.02,0.4084,60743.23,UV Application Potential
+CuO,Hexagonal,Smooth,2.01,3.2426,266275.75,General Semiconductor
+ZnO,Tetragonal,Porous,1.62,3.8458,403638.55,Solar Absorber Potential
+GaAs,Tetragonal,Grainy,2.7,8.2452,164991.23,General Semiconductor
+CuO,Hexagonal,Smooth,1.97,8.025,431906.52,General Semiconductor
+Si,Monoclinic,Rough,3.07,3.43,582887.94,Transparent Conductor (TCO)
+Si,Tetragonal,Rough,2.59,7.806,286477.21,General Semiconductor
+ZnO,Hexagonal,Smooth,1.3,4.5171,698632.78,Solar Absorber Potential
+Si,Orthorhombic,Nanoparticles,1.14,5.5973,349637.7,Solar Absorber Potential
+ZnO,Cubic,Porous,2.94,2.6666,499441.05,General Semiconductor
+Si,Orthorhombic,Nanoparticles,2.64,9.5388,761839.34,General Semiconductor
+ZnO,Hexagonal,Smooth,1.9,7.7561,871149.11,General Semiconductor
+CuMnSnO,Hexagonal,Porous,1.53,7.5525,479689.82,Solar Absorber Potential
+Si,Hexagonal,Grainy,3.04,7.6527,940302.46,Transparent Conductor (TCO)
+GaAs,Cubic,Rough,2.65,7.0954,156837.27,General Semiconductor
+CuMnSnO,Monoclinic,Rough,3.26,8.3074,845909.39,Transparent Conductor (TCO)
+ZnO,Orthorhombic,Porous,2.03,5.972,645824.34,General Semiconductor
+CuMnSnO,Orthorhombic,Porous,1.72,0.5725,589677.02,General Semiconductor
+CuO,Tetragonal,Porous,1.09,6.7385,606614.95,Solar Absorber Potential
+CuMnSnO,Cubic,Smooth,2.67,8.4186,35314.3,General Semiconductor
+CuMnSnO,Hexagonal,Grainy,2.17,7.0788,820818.17,General Semiconductor
+ZnO,Orthorhombic,Smooth,3.0,5.9109,71165.7,General Semiconductor
+GaAs,Cubic,Nanoparticles,1.09,7.3918,330199.07,Solar Absorber Potential
+CuO,Hexagonal,Smooth,1.46,7.0989,180615.88,Solar Absorber Potential
+ZnO,Tetragonal,Nanoparticles,3.35,3.5364,992540.26,Transparent Conductor (TCO)
+GaAs,Orthorhombic,Porous,3.36,5.5938,36333.83,Transparent Conductor (TCO)
+Si,Monoclinic,Grainy,2.87,4.4749,115118.13,General Semiconductor
+CuO,Hexagonal,Nanoparticles,2.61,6.6366,867705.48,General Semiconductor
+ZnO,Orthorhombic,Rough,3.28,0.4253,750147.54,UV Application Potential
+CuMnSnO,Tetragonal,Smooth,1.6,0.6538,600372.92,Solar Absorber Potential
+GaAs,Monoclinic,Porous,3.12,4.7928,383394.97,Transparent Conductor (TCO)
+CuO,Orthorhombic,Nanoparticles,2.51,8.6337,164308.44,General Semiconductor
+CuO,Hexagonal,Grainy,1.41,6.6229,657826.87,Solar Absorber Potential
+CuO,Monoclinic,Rough,3.39,1.8434,740337.84,Transparent Conductor (TCO)
+Si,Orthorhombic,Smooth,2.49,8.0211,569332.07,General Semiconductor
+Ge,Orthorhombic,Porous,1.35,8.2679,176274.8,Solar Absorber Potential
+CuMnSnO,Cubic,Nanoparticles,1.33,0.8905,108961.14,Solar Absorber Potential
+Si,Cubic,Porous,3.21,6.5665,939008.9,Transparent Conductor (TCO)
+CuMnSnO,Cubic,Rough,2.55,6.9015,942352.07,General Semiconductor
+ZnO,Orthorhombic,Rough,2.7,4.0611,538388.89,General Semiconductor
+Si,Monoclinic,Grainy,1.4,7.7932,807042.0,Solar Absorber Potential
+ZnO,Hexagonal,Porous,3.12,5.7664,63776.26,Transparent Conductor (TCO)
+Ge,Hexagonal,Porous,1.72,0.5249,893231.26,General Semiconductor
+Ge,Tetragonal,Rough,2.68,5.5671,26620.8,General Semiconductor
+Si,Cubic,Rough,1.23,1.6725,921860.79,Solar Absorber Potential
+GaAs,Cubic,Rough,3.14,9.4719,941533.97,Transparent Conductor (TCO)
+CuMnSnO,Orthorhombic,Smooth,2.17,2.2824,335475.74,General Semiconductor
+Ge,Cubic,Smooth,1.14,3.4815,130127.84,Solar Absorber Potential
+CuMnSnO,Orthorhombic,Porous,1.35,0.2148,66545.2,Solar Absorber Potential
+Si,Orthorhombic,Rough,1.05,2.0958,26373.28,General Semiconductor
+CuMnSnO,Orthorhombic,Rough,3.16,4.4434,607331.11,Transparent Conductor (TCO)
+CuMnSnO,Orthorhombic,Rough,1.72,5.0973,786165.18,General Semiconductor
+GaAs,Monoclinic,Porous,2.98,1.8356,747270.79,General Semiconductor
+Si,Hexagonal,Nanoparticles,2.81,7.3055,419530.37,General Semiconductor
+CuMnSnO,Monoclinic,Nanoparticles,3.09,8.6406,401299.26,Transparent Conductor (TCO)
+GaAs,Orthorhombic,Smooth,1.05,9.5514,563171.27,Solar Absorber Potential
+Ge,Orthorhombic,Grainy,1.02,3.5904,467839.44,Solar Absorber Potential
+CuMnSnO,Hexagonal,Porous,2.72,3.8874,870639.74,General Semiconductor
+Si,Hexagonal,Porous,2.97,7.1094,568153.89,General Semiconductor
+GaAs,Orthorhombic,Nanoparticles,2.71,2.566,489894.37,General Semiconductor
+CuMnSnO,Monoclinic,Nanoparticles,1.98,2.8822,666704.18,General Semiconductor
+ZnO,Monoclinic,Smooth,1.14,2.4347,236065.14,Solar Absorber Potential
+CuMnSnO,Orthorhombic,Grainy,2.33,5.9502,79336.2,General Semiconductor
+Si,Monoclinic,Porous,1.51,9.7303,298100.84,Solar Absorber Potential
+Ge,Orthorhombic,Smooth,1.76,7.3777,239662.12,General Semiconductor
+ZnO,Monoclinic,Rough,1.95,8.0886,377643.36,General Semiconductor
+Si,Tetragonal,Smooth,1.23,6.8857,615794.13,Solar Absorber Potential
+Ge,Hexagonal,Nanoparticles,2.91,0.9234,764066.99,General Semiconductor
+CuO,Orthorhombic,Grainy,3.44,3.1245,93983.96,Transparent Conductor (TCO)
+Si,Monoclinic,Smooth,2.82,1.7965,197073.48,General Semiconductor
+CuMnSnO,Tetragonal,Nanoparticles,2.17,3.5516,867590.86,General Semiconductor
+CuMnSnO,Monoclinic,Porous,1.96,4.4301,31983.92,General Semiconductor
+Si,Cubic,Smooth,3.3,1.6937,129197.41,Transparent Conductor (TCO)
+Ge,Hexagonal,Grainy,2.12,4.2356,885224.93,General Semiconductor
+Si,Cubic,Grainy,2.81,3.5414,692889.93,General Semiconductor
+Si,Hexagonal,Porous,2.21,5.3437,318997.57,General Semiconductor
+CuMnSnO,Monoclinic,Nanoparticles,1.76,7.4403,959662.83,General Semiconductor
+CuO,Monoclinic,Porous,2.59,8.1591,233673.71,General Semiconductor
+ZnO,Cubic,Rough,3.18,2.3538,654830.07,Transparent Conductor (TCO)
+ZnO,Monoclinic,Porous,3.2,5.3966,60575.87,Transparent Conductor (TCO)
+CuMnSnO,Orthorhombic,Nanoparticles,2.45,1.8362,450665.84,General Semiconductor
+ZnO,Hexagonal,Porous,2.26,5.1715,346141.11,General Semiconductor
+GaAs,Cubic,Rough,1.9,9.4948,198365.76,General Semiconductor
+GaAs,Orthorhombic,Smooth,1.43,1.7392,507147.28,Solar Absorber Potential
+ZnO,Tetragonal,Smooth,3.38,5.1912,309203.41,Transparent Conductor (TCO)
+CuO,Tetragonal,Grainy,2.78,8.3055,812401.56,General Semiconductor
+GaAs,Orthorhombic,Smooth,2.71,3.58,94544.95,General Semiconductor
+CuO,Monoclinic,Grainy,2.62,8.5151,252513.3,General Semiconductor
+CuMnSnO,Orthorhombic,Porous,1.45,0.5276,512183.81,Solar Absorber Potential
+GaAs,Monoclinic,Rough,3.44,0.2365,770074.78,UV Application Potential
+CuO,Tetragonal,Nanoparticles,1.17,5.5873,405828.64,Solar Absorber Potential
+Ge,Orthorhombic,Porous,2.49,4.9556,526637.63,General Semiconductor
+Ge,Monoclinic,Rough,3.45,0.783,832390.83,UV Application Potential
+GaAs,Monoclinic,Rough,3.19,7.9863,428699.97,Transparent Conductor (TCO)
+ZnO,Cubic,Nanoparticles,2.71,9.2176,509788.19,General Semiconductor
+CuO,Cubic,Grainy,2.63,1.9782,68154.8,General Semiconductor
+Ge,Cubic,Porous,1.85,4.8637,591889.8,General Semiconductor
+Si,Tetragonal,Rough,1.1,1.7498,538338.08,Solar Absorber Potential
+ZnO,Orthorhombic,Porous,1.83,5.4723,614454.63,General Semiconductor
+CuMnSnO,Hexagonal,Rough,2.98,9.4069,713495.46,General Semiconductor
+Si,Cubic,Nanoparticles,3.49,4.8315,636484.47,Transparent Conductor (TCO)
+Si,Hexagonal,Nanoparticles,3.31,0.7095,233585.75,UV Application Potential
+Ge,Orthorhombic,Grainy,3.49,5.535,26579.27,Transparent Conductor (TCO)
+CuO,Hexagonal,Smooth,2.29,0.0421,788537.84,General Semiconductor
+CuMnSnO,Tetragonal,Grainy,1.58,0.9718,775613.82,Solar Absorber Potential
+Si,Orthorhombic,Smooth,3.11,7.8283,239774.41,Transparent Conductor (TCO)
+Si,Orthorhombic,Nanoparticles,2.57,5.532,874462.37,General Semiconductor
+CuO,Tetragonal,Grainy,1.47,3.1835,117168.63,Solar Absorber Potential
+Si,Cubic,Smooth,2.28,1.8222,244251.67,General Semiconductor
+CuMnSnO,Hexagonal,Nanoparticles,1.14,5.2483,168574.21,Solar Absorber Potential
+Ge,Monoclinic,Rough,3.37,6.0042,230948.51,Transparent Conductor (TCO)
+ZnO,Hexagonal,Smooth,3.45,0.7847,694385.45,UV Application Potential
+CuO,Monoclinic,Nanoparticles,2.25,3.044,502266.8,General Semiconductor
+CuMnSnO,Hexagonal,Grainy,1.3,8.5262,680222.77,Solar Absorber Potential
+GaAs,Cubic,Grainy,3.01,8.9353,116904.69,Transparent Conductor (TCO)
+CuO,Cubic,Rough,2.67,7.2725,532477.63,General Semiconductor
+Si,Cubic,Nanoparticles,2.65,9.0084,385712.02,General Semiconductor
+Si,Orthorhombic,Grainy,2.77,2.8013,243244.93,General Semiconductor
+CuMnSnO,Tetragonal,Porous,2.24,3.3435,59044.22,General Semiconductor
+Ge,Tetragonal,Grainy,2.58,7.9129,129228.48,General Semiconductor
+CuO,Cubic,Nanoparticles,2.6,0.3262,371289.75,General Semiconductor
+Si,Hexagonal,Porous,2.27,6.488,971022.0,General Semiconductor
+CuMnSnO,Cubic,Rough,3.34,0.3424,903582.51,UV Application Potential
+CuO,Monoclinic,Porous,1.21,9.9137,458629.71,Solar Absorber Potential
+Si,Cubic,Nanoparticles,2.05,7.176,354346.73,General Semiconductor
+CuMnSnO,Monoclinic,Rough,2.67,6.4136,463313.22,General Semiconductor
+Ge,Monoclinic,Grainy,1.97,3.0754,682796.44,General Semiconductor
+Si,Orthorhombic,Nanoparticles,1.3,8.1205,518160.79,Solar Absorber Potential
+ZnO,Monoclinic,Smooth,2.2,4.6395,586352.28,General Semiconductor
+CuMnSnO,Tetragonal,Porous,1.37,2.1819,116502.95,Solar Absorber Potential
+ZnO,Orthorhombic,Grainy,1.77,5.2834,974128.21,General Semiconductor
+Ge,Hexagonal,Grainy,2.63,3.9983,763274.59,General Semiconductor
+CuO,Monoclinic,Grainy,1.23,3.425,702385.83,Solar Absorber Potential
+ZnO,Tetragonal,Porous,2.38,2.9666,600115.57,General Semiconductor
+GaAs,Monoclinic,Nanoparticles,2.93,6.54,740868.23,General Semiconductor
+CuMnSnO,Orthorhombic,Grainy,2.29,7.2025,622611.81,General Semiconductor
+Ge,Orthorhombic,Grainy,2.93,6.2394,791063.97,General Semiconductor
+GaAs,Monoclinic,Rough,2.34,7.8732,614997.37,General Semiconductor
+Ge,Cubic,Porous,1.7,6.8997,282156.41,Solar Absorber Potential
+Si,Orthorhombic,Smooth,1.77,1.5029,459609.36,General Semiconductor
+ZnO,Cubic,Porous,3.34,6.5455,354263.24,Transparent Conductor (TCO)
+GaAs,Tetragonal,Nanoparticles,1.97,7.0368,71339.69,General Semiconductor
+CuMnSnO,Cubic,Smooth,1.61,1.6065,978870.18,Solar Absorber Potential
+GaAs,Tetragonal,Rough,1.26,2.3996,777692.68,Solar Absorber Potential
+Ge,Cubic,Nanoparticles,2.58,6.9447,983421.38,General Semiconductor
+Ge,Hexagonal,Nanoparticles,3.26,8.5397,808040.38,Transparent Conductor (TCO)
+CuO,Orthorhombic,Porous,1.75,1.3351,447685.33,General Semiconductor
+Ge,Orthorhombic,Rough,2.77,6.4937,734881.53,General Semiconductor
+CuMnSnO,Cubic,Porous,2.51,5.0522,525030.03,General Semiconductor
+CuMnSnO,Monoclinic,Porous,2.63,1.4732,82627.35,General Semiconductor
+Ge,Cubic,Porous,1.85,9.9105,108931.33,General Semiconductor
+Ge,Hexagonal,Porous,2.3,1.3816,318854.25,General Semiconductor
+CuO,Cubic,Rough,2.42,8.3607,918005.44,General Semiconductor
+Ge,Hexagonal,Rough,2.57,4.7941,216281.41,General Semiconductor
+Si,Monoclinic,Porous,1.94,1.6701,471954.25,General Semiconductor
+CuMnSnO,Orthorhombic,Nanoparticles,2.78,3.9398,959472.67,General Semiconductor
+CuMnSnO,Cubic,Smooth,1.69,8.6944,140274.71,Solar Absorber Potential
+ZnO,Cubic,Rough,3.35,6.8349,88562.77,Transparent Conductor (TCO)
+Si,Cubic,Grainy,2.67,5.6343,759317.76,General Semiconductor
+ZnO,Monoclinic,Rough,2.68,2.1986,490436.63,General Semiconductor
+CuO,Orthorhombic,Rough,1.11,5.7727,462614.22,Solar Absorber Potential
+GaAs,Hexagonal,Nanoparticles,1.6,8.5234,569691.86,Solar Absorber Potential
+Ge,Hexagonal,Rough,2.56,6.3495,490794.25,General Semiconductor
+Si,Tetragonal,Porous,1.49,0.4183,68484.07,Solar Absorber Potential
+ZnO,Orthorhombic,Grainy,2.83,1.1411,566809.98,General Semiconductor
+CuO,Hexagonal,Grainy,1.06,2.941,481873.33,Solar Absorber Potential
+ZnO,Orthorhombic,Grainy,2.18,8.3014,998390.52,General Semiconductor
+Ge,Cubic,Smooth,2.46,8.802,269161.1,General Semiconductor
+ZnO,Orthorhombic,Rough,1.25,9.7505,966563.95,Solar Absorber Potential
+CuO,Cubic,Porous,1.02,1.9859,210842.77,Solar Absorber Potential
+CuO,Monoclinic,Smooth,1.64,2.3675,404608.3,Solar Absorber Potential
+GaAs,Monoclinic,Smooth,2.46,8.0937,550221.4,General Semiconductor
+Ge,Monoclinic,Grainy,2.88,1.404,920472.31,General Semiconductor
+ZnO,Orthorhombic,Rough,2.12,2.2753,929426.54,General Semiconductor
+CuMnSnO,Hexagonal,Nanoparticles,1.92,5.4611,178308.22,General Semiconductor
+CuO,Tetragonal,Porous,1.71,8.133,133038.55,General Semiconductor
+Ge,Hexagonal,Rough,3.12,4.8149,640616.75,Transparent Conductor (TCO)
+GaAs,Orthorhombic,Smooth,1.99,2.7998,842795.3,General Semiconductor
+Ge,Hexagonal,Rough,2.03,1.5756,149914.33,General Semiconductor
+Ge,Cubic,Nanoparticles,1.58,6.9161,601877.62,Solar Absorber Potential
+Si,Tetragonal,Rough,2.96,4.8825,113584.19,General Semiconductor
+CuMnSnO,Cubic,Nanoparticles,1.89,2.0678,879135.83,General Semiconductor
+CuMnSnO,Hexagonal,Grainy,3.45,2.0604,626183.24,Transparent Conductor (TCO)
+Ge,Hexagonal,Grainy,1.31,6.3091,416516.89,Solar Absorber Potential
+Ge,Monoclinic,Porous,1.31,8.1837,21705.68,General Semiconductor
+Si,Orthorhombic,Nanoparticles,2.26,4.2612,700241.5,General Semiconductor
+CuMnSnO,Tetragonal,Nanoparticles,3.24,3.8077,830115.49,Transparent Conductor (TCO)
+ZnO,Monoclinic,Smooth,2.57,4.9816,514229.86,General Semiconductor
+Si,Cubic,Rough,3.1,3.0921,529681.07,Transparent Conductor (TCO)
+CuO,Hexagonal,Smooth,2.99,3.4949,17108.07,General Semiconductor
+Si,Tetragonal,Nanoparticles,2.61,5.9763,125649.12,General Semiconductor
+Ge,Cubic,Rough,2.12,9.5682,149463.26,General Semiconductor
+CuMnSnO,Tetragonal,Nanoparticles,3.03,1.2831,892142.94,Transparent Conductor (TCO)
+GaAs,Tetragonal,Rough,1.54,7.5695,271410.42,Solar Absorber Potential
+Ge,Monoclinic,Porous,1.73,5.5298,408877.42,General Semiconductor
+GaAs,Cubic,Nanoparticles,1.21,8.211,657567.31,Solar Absorber Potential
+Ge,Monoclinic,Nanoparticles,1.55,9.6761,158668.76,Solar Absorber Potential
+ZnO,Orthorhombic,Rough,2.77,7.438,699677.44,General Semiconductor
+Si,Orthorhombic,Smooth,2.74,4.7597,345269.27,General Semiconductor
+Ge,Tetragonal,Porous,3.45,3.0178,374348.59,Transparent Conductor (TCO)
+Ge,Hexagonal,Rough,1.37,5.5801,710392.77,Solar Absorber Potential
+Ge,Tetragonal,Rough,2.02,9.418,943435.41,General Semiconductor
+Si,Hexagonal,Porous,3.27,4.0425,570921.6,Transparent Conductor (TCO)
+ZnO,Tetragonal,Nanoparticles,1.67,6.1057,842488.18,Solar Absorber Potential
+CuO,Orthorhombic,Rough,1.19,6.2385,519291.61,Solar Absorber Potential
+Si,Hexagonal,Rough,1.63,3.8676,360671.81,Solar Absorber Potential
+ZnO,Cubic,Porous,2.64,7.8723,877534.0,General Semiconductor
+GaAs,Cubic,Porous,2.64,4.3892,834134.23,General Semiconductor
+Si,Cubic,Smooth,1.4,9.4602,963314.59,Solar Absorber Potential
+ZnO,Cubic,Porous,1.05,7.5058,683614.16,Solar Absorber Potential
+GaAs,Cubic,Rough,2.65,0.6065,733829.28,General Semiconductor
+GaAs,Monoclinic,Smooth,1.73,3.6216,22917.26,General Semiconductor
+Si,Cubic,Nanoparticles,2.82,6.284,912373.84,General Semiconductor
+ZnO,Tetragonal,Nanoparticles,1.56,6.9993,191728.32,Solar Absorber Potential
+CuO,Hexagonal,Grainy,2.92,8.6305,842562.07,General Semiconductor
+CuMnSnO,Monoclinic,Rough,1.75,8.8565,424395.42,General Semiconductor
+Ge,Hexagonal,Smooth,2.65,4.3834,171161.11,General Semiconductor
+Si,Orthorhombic,Grainy,1.37,4.9378,536124.93,Solar Absorber Potential
+GaAs,Tetragonal,Grainy,3.21,0.244,841088.9,UV Application Potential
+CuMnSnO,Monoclinic,Porous,1.35,2.9291,774016.7,Solar Absorber Potential
+GaAs,Monoclinic,Porous,2.83,5.0195,536004.02,General Semiconductor
+Si,Hexagonal,Porous,2.34,5.3342,124756.94,General Semiconductor
+GaAs,Orthorhombic,Smooth,1.04,6.2085,118366.1,Solar Absorber Potential
+CuMnSnO,Hexagonal,Rough,2.89,0.9196,395571.65,General Semiconductor
+CuO,Orthorhombic,Nanoparticles,2.58,0.0225,764516.05,General Semiconductor
+GaAs,Cubic,Nanoparticles,1.47,2.1549,644970.87,Solar Absorber Potential
+CuMnSnO,Orthorhombic,Smooth,1.64,2.0924,224242.18,Solar Absorber Potential
+GaAs,Hexagonal,Rough,2.7,8.8725,232517.37,General Semiconductor
+ZnO,Orthorhombic,Nanoparticles,3.13,1.3273,834431.09,Transparent Conductor (TCO)
+CuMnSnO,Monoclinic,Smooth,2.02,5.7792,827718.61,General Semiconductor
+Si,Orthorhombic,Rough,1.87,0.1452,723649.03,General Semiconductor
+GaAs,Orthorhombic,Smooth,2.15,5.1115,951666.26,General Semiconductor
+CuO,Monoclinic,Nanoparticles,3.29,9.7677,948695.53,Transparent Conductor (TCO)
+GaAs,Cubic,Rough,2.14,6.4344,193475.91,General Semiconductor
+ZnO,Monoclinic,Grainy,3.09,7.2308,52267.95,Transparent Conductor (TCO)
+GaAs,Orthorhombic,Porous,1.82,9.3553,291050.32,General Semiconductor
+ZnO,Tetragonal,Nanoparticles,2.11,5.4954,871321.33,General Semiconductor
+CuO,Tetragonal,Smooth,1.78,9.1867,902154.4,General Semiconductor
+Ge,Hexagonal,Nanoparticles,2.12,0.2142,562727.01,General Semiconductor
+Ge,Hexagonal,Porous,2.11,4.4761,947440.74,General Semiconductor
+ZnO,Hexagonal,Rough,2.65,6.0765,907066.33,General Semiconductor
+CuO,Monoclinic,Rough,2.81,3.2343,81709.79,General Semiconductor
+CuO,Tetragonal,Rough,1.62,9.3954,374067.11,Solar Absorber Potential
+ZnO,Monoclinic,Nanoparticles,2.3,1.2122,611587.6,General Semiconductor
+CuMnSnO,Orthorhombic,Nanoparticles,2.47,6.7251,836384.51,General Semiconductor
+CuO,Cubic,Grainy,3.48,5.3477,645636.98,Transparent Conductor (TCO)
+Ge,Tetragonal,Grainy,3.32,5.0514,418661.45,Transparent Conductor (TCO)
+CuMnSnO,Tetragonal,Porous,2.78,8.1693,282611.81,General Semiconductor
+Si,Cubic,Rough,2.37,5.5879,76642.08,General Semiconductor
+CuMnSnO,Hexagonal,Porous,3.42,1.1155,830582.61,Transparent Conductor (TCO)
+GaAs,Hexagonal,Rough,3.41,9.2177,637830.55,Transparent Conductor (TCO)
+Ge,Monoclinic,Grainy,1.71,0.7097,463462.09,General Semiconductor
+GaAs,Monoclinic,Grainy,2.35,1.8823,81889.66,General Semiconductor
+Si,Hexagonal,Grainy,2.74,0.8501,492115.45,General Semiconductor
+CuO,Hexagonal,Smooth,2.08,0.6303,433006.72,General Semiconductor
+GaAs,Orthorhombic,Nanoparticles,1.2,3.7084,255507.45,Solar Absorber Potential
+ZnO,Hexagonal,Nanoparticles,1.7,6.7,246823.45,Solar Absorber Potential
+ZnO,Orthorhombic,Porous,3.36,7.9273,775207.7,Transparent Conductor (TCO)
+Si,Hexagonal,Smooth,3.06,9.6306,748200.72,Transparent Conductor (TCO)
+ZnO,Cubic,Rough,2.32,6.7754,30213.41,General Semiconductor
+Ge,Hexagonal,Porous,1.33,9.1955,321939.8,Solar Absorber Potential
+ZnO,Tetragonal,Smooth,3.23,6.2242,983944.1,Transparent Conductor (TCO)
+Si,Cubic,Rough,2.16,9.0057,567433.38,General Semiconductor
+GaAs,Hexagonal,Grainy,3.28,2.8802,204482.24,Transparent Conductor (TCO)
+Ge,Hexagonal,Grainy,1.57,9.2936,411787.03,Solar Absorber Potential
+Ge,Tetragonal,Smooth,2.15,9.0185,476821.76,General Semiconductor
+ZnO,Hexagonal,Smooth,2.37,1.6175,318500.43,General Semiconductor
+ZnO,Cubic,Smooth,1.81,3.0553,935749.77,General Semiconductor
+GaAs,Orthorhombic,Grainy,2.02,8.7438,500337.38,General Semiconductor
+Si,Tetragonal,Rough,3.08,6.8801,912682.06,Transparent Conductor (TCO)
+GaAs,Hexagonal,Grainy,2.58,2.2601,557409.35,General Semiconductor
+Ge,Hexagonal,Nanoparticles,1.16,3.4362,396909.31,Solar Absorber Potential
+ZnO,Hexagonal,Rough,1.13,1.1615,910067.64,Solar Absorber Potential
+CuO,Tetragonal,Nanoparticles,3.2,7.0827,93174.9,Transparent Conductor (TCO)
+Ge,Hexagonal,Rough,2.44,7.5567,138856.45,General Semiconductor
+ZnO,Cubic,Nanoparticles,1.52,9.2478,386606.82,Solar Absorber Potential
+GaAs,Orthorhombic,Porous,1.08,1.4293,286460.08,Solar Absorber Potential
+CuMnSnO,Hexagonal,Smooth,2.95,1.8812,890144.99,General Semiconductor
+ZnO,Orthorhombic,Grainy,1.74,2.5057,780962.53,General Semiconductor
+CuO,Orthorhombic,Rough,2.98,7.5552,733884.0,General Semiconductor
+CuO,Orthorhombic,Nanoparticles,2.97,1.0554,786290.35,General Semiconductor
+CuO,Cubic,Nanoparticles,1.29,1.6498,327738.32,Solar Absorber Potential
+Si,Tetragonal,Nanoparticles,1.85,5.2026,225670.62,General Semiconductor
+CuO,Tetragonal,Rough,2.5,8.9452,353655.84,General Semiconductor
+ZnO,Monoclinic,Nanoparticles,2.61,9.1652,212041.45,General Semiconductor
+ZnO,Orthorhombic,Rough,1.4,3.7866,96450.86,Solar Absorber Potential
+Ge,Hexagonal,Grainy,2.14,8.0545,504358.71,General Semiconductor
+GaAs,Monoclinic,Grainy,1.78,5.3073,191747.81,General Semiconductor
+GaAs,Orthorhombic,Smooth,1.52,8.0617,705590.86,Solar Absorber Potential
+ZnO,Monoclinic,Rough,2.09,0.2947,981026.09,General Semiconductor
+CuMnSnO,Orthorhombic,Nanoparticles,2.93,2.5683,631120.8,General Semiconductor
+ZnO,Orthorhombic,Porous,1.47,7.08,663511.08,Solar Absorber Potential
+Ge,Orthorhombic,Rough,1.47,9.9279,926763.21,Solar Absorber Potential
+GaAs,Orthorhombic,Smooth,2.71,4.9866,256757.66,General Semiconductor
+ZnO,Monoclinic,Grainy,3.14,3.2729,487585.75,Transparent Conductor (TCO)
+CuO,Monoclinic,Rough,1.18,8.3468,744947.39,Solar Absorber Potential
+CuO,Orthorhombic,Rough,2.22,4.7962,848404.28,General Semiconductor
+CuMnSnO,Hexagonal,Grainy,2.19,0.9016,510679.59,General Semiconductor
+Ge,Cubic,Porous,1.82,5.3252,132975.75,General Semiconductor
+Ge,Tetragonal,Rough,2.96,7.6443,814203.62,General Semiconductor
+Ge,Hexagonal,Smooth,1.28,5.4648,679854.14,Solar Absorber Potential
+ZnO,Cubic,Smooth,1.7,5.2025,400115.73,Solar Absorber Potential
+CuMnSnO,Cubic,Grainy,1.65,6.5047,552679.81,Solar Absorber Potential
+CuO,Hexagonal,Porous,3.3,9.835,732299.2,Transparent Conductor (TCO)
+Ge,Orthorhombic,Smooth,2.31,8.3502,750413.47,General Semiconductor
+Si,Tetragonal,Porous,3.22,0.4352,692760.42,UV Application Potential
+Si,Cubic,Grainy,3.32,1.0454,10547.89,Transparent Conductor (TCO)
+ZnO,Orthorhombic,Porous,1.51,2.6451,920382.16,Solar Absorber Potential
+Ge,Tetragonal,Rough,3.4,9.1581,959791.32,Transparent Conductor (TCO)
+ZnO,Monoclinic,Nanoparticles,2.88,9.7267,43558.82,General Semiconductor
+CuO,Monoclinic,Grainy,1.17,8.7012,133155.79,Solar Absorber Potential
+Si,Cubic,Grainy,1.07,7.189,172436.01,Solar Absorber Potential
+Ge,Orthorhombic,Rough,1.72,8.0115,54239.0,General Semiconductor
+Si,Tetragonal,Grainy,1.17,7.7364,226142.75,Solar Absorber Potential
+Ge,Tetragonal,Grainy,1.74,5.1453,169536.15,General Semiconductor
+GaAs,Hexagonal,Nanoparticles,3.25,6.3296,191897.63,Transparent Conductor (TCO)
+CuMnSnO,Hexagonal,Porous,1.29,1.7666,884975.15,Solar Absorber Potential
+Si,Cubic,Nanoparticles,2.08,6.7148,529983.99,General Semiconductor
+GaAs,Cubic,Nanoparticles,1.46,5.4181,720146.31,Solar Absorber Potential
+CuMnSnO,Cubic,Porous,1.7,9.1308,173033.74,Solar Absorber Potential
+Ge,Orthorhombic,Porous,1.05,6.8115,389671.06,Solar Absorber Potential
+Ge,Monoclinic,Nanoparticles,3.23,4.7936,812117.47,Transparent Conductor (TCO)
+GaAs,Cubic,Smooth,2.67,9.9375,867039.32,General Semiconductor
+CuMnSnO,Hexagonal,Smooth,2.02,0.0612,332641.47,General Semiconductor
+GaAs,Tetragonal,Smooth,1.16,0.9339,713168.14,Solar Absorber Potential
+Si,Tetragonal,Nanoparticles,2.65,8.9947,619821.51,General Semiconductor
+ZnO,Orthorhombic,Nanoparticles,2.19,5.2686,566661.59,General Semiconductor
+Ge,Hexagonal,Rough,2.76,6.9455,641194.42,General Semiconductor
+CuMnSnO,Tetragonal,Smooth,2.53,3.9826,661736.19,General Semiconductor
+Si,Cubic,Grainy,1.6,4.2085,252136.32,Solar Absorber Potential
+Si,Orthorhombic,Smooth,1.26,6.3058,442002.61,Solar Absorber Potential
+CuMnSnO,Orthorhombic,Rough,2.59,0.1058,939433.51,General Semiconductor
+Si,Cubic,Nanoparticles,3.24,3.8692,146947.0,Transparent Conductor (TCO)
+Ge,Orthorhombic,Grainy,3.18,7.7019,259411.19,Transparent Conductor (TCO)
+Si,Tetragonal,Porous,1.69,9.1385,273642.68,Solar Absorber Potential
+Si,Orthorhombic,Nanoparticles,2.56,3.4741,473676.7,General Semiconductor
+Si,Monoclinic,Nanoparticles,2.81,4.158,160920.18,General Semiconductor
+Ge,Tetragonal,Smooth,1.23,6.5141,54144.53,Solar Absorber Potential
+CuO,Monoclinic,Rough,2.48,2.9989,339503.45,General Semiconductor
+ZnO,Cubic,Rough,2.74,8.6019,405883.82,General Semiconductor
+Si,Orthorhombic,Smooth,2.39,5.1263,165307.08,General Semiconductor
+Si,Tetragonal,Grainy,3.12,6.3529,225561.06,Transparent Conductor (TCO)
+Ge,Orthorhombic,Smooth,1.21,9.3819,336553.51,Solar Absorber Potential
+CuO,Orthorhombic,Nanoparticles,2.91,7.1435,682480.38,General Semiconductor
+CuO,Monoclinic,Smooth,2.75,6.7196,835607.09,General Semiconductor
+GaAs,Monoclinic,Grainy,3.19,1.6272,449248.37,Transparent Conductor (TCO)
+Ge,Hexagonal,Grainy,1.17,5.8724,608435.53,Solar Absorber Potential
+CuO,Monoclinic,Smooth,3.07,9.1717,476089.73,Transparent Conductor (TCO)
+CuMnSnO,Orthorhombic,Nanoparticles,3.33,6.6725,463620.44,Transparent Conductor (TCO)
+Si,Cubic,Rough,2.5,8.6951,199195.23,General Semiconductor
+ZnO,Monoclinic,Porous,1.42,6.0781,136561.2,Solar Absorber Potential
+CuO,Orthorhombic,Smooth,1.4,6.9943,500197.29,Solar Absorber Potential
+ZnO,Monoclinic,Grainy,2.04,9.0244,95975.86,General Semiconductor
+CuMnSnO,Monoclinic,Smooth,2.57,1.5523,742923.98,General Semiconductor
+CuO,Hexagonal,Rough,2.05,3.074,313096.38,General Semiconductor
+Si,Tetragonal,Rough,1.52,2.1392,535233.75,Solar Absorber Potential
+Si,Orthorhombic,Porous,2.96,6.2701,823747.58,General Semiconductor
+CuO,Tetragonal,Smooth,1.7,2.5121,830246.61,Solar Absorber Potential
+Ge,Hexagonal,Nanoparticles,1.77,3.5481,504705.7,General Semiconductor
+CuMnSnO,Cubic,Smooth,3.23,7.8556,449654.96,Transparent Conductor (TCO)
+CuMnSnO,Cubic,Nanoparticles,1.86,2.4262,334161.37,General Semiconductor
+Ge,Hexagonal,Rough,2.95,4.8771,631932.61,General Semiconductor
+Si,Orthorhombic,Nanoparticles,3.39,6.8469,168572.85,Transparent Conductor (TCO)
+CuO,Monoclinic,Smooth,1.55,4.1309,175625.65,Solar Absorber Potential
+ZnO,Cubic,Grainy,2.61,3.9617,471894.04,General Semiconductor
+CuO,Cubic,Smooth,1.53,3.084,364312.23,Solar Absorber Potential
+Si,Tetragonal,Nanoparticles,1.19,4.1125,849855.39,Solar Absorber Potential
+Si,Hexagonal,Smooth,1.75,6.2119,618309.91,General Semiconductor
+ZnO,Orthorhombic,Grainy,3.08,3.855,80638.76,Transparent Conductor (TCO)
+Si,Hexagonal,Smooth,2.15,3.3766,615165.72,General Semiconductor
+CuO,Hexagonal,Grainy,2.6,5.5133,454650.97,General Semiconductor
+Si,Tetragonal,Porous,3.2,2.8028,101457.04,Transparent Conductor (TCO)
+Si,Cubic,Grainy,2.15,1.7205,342499.66,General Semiconductor
+ZnO,Orthorhombic,Grainy,2.64,0.4391,580002.5,General Semiconductor
+Si,Orthorhombic,Rough,1.42,6.3498,691378.33,Solar Absorber Potential
+CuO,Orthorhombic,Porous,2.69,8.0253,473448.89,General Semiconductor
+Ge,Hexagonal,Grainy,1.31,0.4118,188627.75,Solar Absorber Potential
+ZnO,Monoclinic,Porous,3.39,4.4319,837921.76,Transparent Conductor (TCO)
+CuO,Tetragonal,Porous,1.19,6.848,374504.11,Solar Absorber Potential
+Ge,Hexagonal,Smooth,1.08,0.0189,728598.54,Solar Absorber Potential
+CuMnSnO,Cubic,Rough,1.46,4.8795,929509.16,Solar Absorber Potential
+CuMnSnO,Hexagonal,Nanoparticles,2.81,3.5219,570191.73,General Semiconductor
+CuMnSnO,Orthorhombic,Rough,3.11,0.1407,689019.52,UV Application Potential
+ZnO,Hexagonal,Nanoparticles,1.76,5.6376,339809.32,General Semiconductor
+Si,Cubic,Rough,1.0,0.0444,586715.93,Solar Absorber Potential
+CuMnSnO,Tetragonal,Rough,2.77,8.2508,731430.2,General Semiconductor
+Si,Cubic,Smooth,2.93,2.3315,484892.31,General Semiconductor
+ZnO,Hexagonal,Rough,1.94,6.7649,859351.31,General Semiconductor
+Si,Cubic,Rough,3.04,5.0833,111598.54,Transparent Conductor (TCO)
+Si,Monoclinic,Smooth,1.25,4.5193,191186.3,Solar Absorber Potential
+Si,Monoclinic,Grainy,1.03,3.782,983498.56,Solar Absorber Potential
+CuO,Hexagonal,Smooth,3.37,4.5953,448727.64,Transparent Conductor (TCO)
+Si,Monoclinic,Smooth,2.88,5.0645,33307.69,General Semiconductor
+Si,Cubic,Smooth,1.47,5.0443,583167.41,Solar Absorber Potential
+Si,Orthorhombic,Porous,2.69,6.6493,467822.44,General Semiconductor
+Ge,Monoclinic,Grainy,3.07,5.3908,538481.99,Transparent Conductor (TCO)
+GaAs,Cubic,Rough,3.39,7.7393,136979.43,Transparent Conductor (TCO)
+GaAs,Orthorhombic,Rough,2.96,7.572,194841.18,General Semiconductor
+GaAs,Hexagonal,Rough,1.46,7.9339,112408.77,Solar Absorber Potential
+Ge,Cubic,Grainy,2.35,3.062,365628.9,General Semiconductor
+GaAs,Cubic,Grainy,2.2,9.6258,910967.05,General Semiconductor
+ZnO,Orthorhombic,Smooth,1.13,5.5459,144122.83,Solar Absorber Potential
+CuO,Cubic,Rough,2.06,2.9219,623338.09,General Semiconductor
+CuO,Orthorhombic,Grainy,1.39,0.4274,694812.1,Solar Absorber Potential
+CuO,Tetragonal,Rough,2.6,8.6029,467317.78,General Semiconductor
+GaAs,Hexagonal,Smooth,1.75,5.276,275737.04,General Semiconductor
+ZnO,Cubic,Smooth,2.95,6.9788,455058.49,General Semiconductor
+CuMnSnO,Tetragonal,Rough,1.26,9.9438,937687.11,Solar Absorber Potential
+ZnO,Monoclinic,Nanoparticles,2.6,8.4026,472409.73,General Semiconductor
+Si,Orthorhombic,Rough,2.12,4.7948,458357.35,General Semiconductor
+Si,Hexagonal,Rough,2.82,2.3817,310667.03,General Semiconductor
+CuO,Cubic,Rough,1.49,8.4894,617892.42,Solar Absorber Potential
+CuMnSnO,Tetragonal,Smooth,1.13,9.2897,543364.23,Solar Absorber Potential
+CuO,Hexagonal,Grainy,2.69,3.4022,377110.18,General Semiconductor
+Ge,Hexagonal,Smooth,3.22,5.4391,968158.03,Transparent Conductor (TCO)
+CuMnSnO,Monoclinic,Smooth,2.32,5.4369,875175.54,General Semiconductor
+CuMnSnO,Tetragonal,Rough,3.29,6.591,123611.64,Transparent Conductor (TCO)
+ZnO,Hexagonal,Smooth,1.93,2.2785,12780.27,General Semiconductor
+Ge,Monoclinic,Rough,1.47,8.8581,365047.99,Solar Absorber Potential
+GaAs,Hexagonal,Smooth,1.08,7.7866,986183.87,Solar Absorber Potential
+Ge,Orthorhombic,Porous,2.13,4.3506,615821.46,General Semiconductor
+ZnO,Cubic,Smooth,1.7,7.386,684975.12,Solar Absorber Potential
+Si,Monoclinic,Smooth,2.2,7.4599,237623.29,General Semiconductor
+CuO,Tetragonal,Porous,1.93,1.746,999456.48,General Semiconductor
+CuMnSnO,Tetragonal,Rough,2.71,8.5468,458507.96,General Semiconductor
+GaAs,Tetragonal,Rough,2.65,9.4937,759717.15,General Semiconductor
+GaAs,Hexagonal,Nanoparticles,1.44,0.7403,733446.35,Solar Absorber Potential
+CuMnSnO,Cubic,Nanoparticles,2.47,5.2246,939910.68,General Semiconductor
+ZnO,Tetragonal,Nanoparticles,2.33,5.052,778831.62,General Semiconductor
+GaAs,Orthorhombic,Grainy,2.77,9.0932,674325.6,General Semiconductor
+Si,Monoclinic,Rough,2.25,0.6017,538986.38,General Semiconductor
+CuMnSnO,Tetragonal,Nanoparticles,2.96,6.1989,924983.43,General Semiconductor
+Ge,Hexagonal,Rough,2.7,8.2231,942697.22,General Semiconductor
+Si,Monoclinic,Rough,3.01,6.3389,320288.87,Transparent Conductor (TCO)
+ZnO,Tetragonal,Porous,2.74,2.3964,885808.97,General Semiconductor
+GaAs,Monoclinic,Nanoparticles,2.51,6.0434,230102.84,General Semiconductor
+GaAs,Monoclinic,Rough,1.54,7.6099,692124.56,Solar Absorber Potential
+ZnO,Hexagonal,Rough,2.38,8.1628,467755.5,General Semiconductor
+CuO,Monoclinic,Grainy,2.01,1.8743,849307.57,General Semiconductor
+ZnO,Tetragonal,Porous,2.62,2.5271,128237.14,General Semiconductor
+CuO,Orthorhombic,Porous,2.52,9.3647,806063.97,General Semiconductor
+Si,Orthorhombic,Nanoparticles,2.89,9.6862,395107.65,General Semiconductor
+Si,Monoclinic,Nanoparticles,3.48,8.0236,334036.32,Transparent Conductor (TCO)
+GaAs,Hexagonal,Rough,2.26,0.1494,912473.1,General Semiconductor
+CuMnSnO,Orthorhombic,Grainy,2.17,9.1923,45312.55,General Semiconductor
+ZnO,Orthorhombic,Smooth,2.54,2.4079,328087.96,General Semiconductor
+CuMnSnO,Hexagonal,Nanoparticles,1.05,1.4642,687383.58,Solar Absorber Potential
+Si,Orthorhombic,Grainy,1.68,9.1165,565359.88,Solar Absorber Potential
+Si,Hexagonal,Smooth,1.52,0.3743,52449.93,Solar Absorber Potential
+Ge,Hexagonal,Smooth,1.89,9.0246,27686.27,General Semiconductor
+Si,Monoclinic,Porous,3.16,3.2111,900971.37,Transparent Conductor (TCO)
+CuMnSnO,Hexagonal,Rough,2.58,8.6491,766256.32,General Semiconductor
+Si,Monoclinic,Nanoparticles,1.9,4.2516,229289.81,General Semiconductor
+CuMnSnO,Orthorhombic,Grainy,3.35,0.8109,521988.2,UV Application Potential
+CuO,Orthorhombic,Smooth,1.95,8.4554,351604.1,General Semiconductor
+CuMnSnO,Monoclinic,Nanoparticles,1.59,7.7444,656773.45,Solar Absorber Potential
+GaAs,Hexagonal,Nanoparticles,2.93,7.3167,615313.06,General Semiconductor
+Ge,Tetragonal,Porous,1.66,1.5684,851841.38,Solar Absorber Potential
+GaAs,Tetragonal,Grainy,1.14,2.0504,631485.43,Solar Absorber Potential
+CuO,Tetragonal,Rough,1.03,1.9524,180266.19,Solar Absorber Potential
+ZnO,Monoclinic,Rough,3.48,8.3318,214147.82,Transparent Conductor (TCO)
+Si,Cubic,Grainy,1.1,4.6914,812972.21,Solar Absorber Potential
+GaAs,Cubic,Smooth,3.14,1.836,673056.11,Transparent Conductor (TCO)
+Si,Tetragonal,Porous,1.79,8.3302,597097.72,General Semiconductor
+GaAs,Monoclinic,Nanoparticles,1.75,3.7341,158925.68,General Semiconductor
+GaAs,Orthorhombic,Rough,2.18,8.1251,485035.45,General Semiconductor
+GaAs,Cubic,Smooth,2.42,1.2591,490608.22,General Semiconductor
+GaAs,Orthorhombic,Smooth,2.48,5.1562,25904.38,General Semiconductor
+Si,Cubic,Grainy,1.05,5.2115,402803.47,Solar Absorber Potential
+CuO,Tetragonal,Grainy,2.74,0.1579,628095.84,General Semiconductor
+ZnO,Hexagonal,Nanoparticles,2.59,5.4003,394399.22,General Semiconductor
+CuO,Cubic,Smooth,1.64,1.9889,418111.01,Solar Absorber Potential
+CuMnSnO,Monoclinic,Nanoparticles,1.25,5.8652,271294.08,Solar Absorber Potential
+GaAs,Tetragonal,Grainy,1.51,9.4896,774668.17,Solar Absorber Potential
+Ge,Tetragonal,Porous,2.12,2.2938,502504.74,General Semiconductor
+CuMnSnO,Monoclinic,Porous,2.28,9.7422,256913.04,General Semiconductor
+Ge,Hexagonal,Porous,1.05,5.4895,122464.85,Solar Absorber Potential
+CuMnSnO,Hexagonal,Grainy,3.17,5.4902,394395.32,Transparent Conductor (TCO)
+CuMnSnO,Monoclinic,Grainy,3.11,1.9001,769175.24,Transparent Conductor (TCO)
+Ge,Cubic,Grainy,2.19,6.5145,81106.06,General Semiconductor
+CuO,Monoclinic,Grainy,1.77,6.5517,450453.91,General Semiconductor
+CuO,Tetragonal,Rough,1.5,9.4673,249841.18,Solar Absorber Potential
+Ge,Tetragonal,Rough,1.12,2.2899,391101.62,Solar Absorber Potential
+GaAs,Cubic,Nanoparticles,3.09,3.1143,955116.67,Transparent Conductor (TCO)
+Ge,Monoclinic,Rough,1.75,8.5179,545152.48,General Semiconductor
+CuMnSnO,Monoclinic,Nanoparticles,2.63,7.2882,287327.21,General Semiconductor
+Ge,Orthorhombic,Nanoparticles,1.14,5.0558,28639.79,General Semiconductor
+CuMnSnO,Monoclinic,Rough,2.24,2.5828,944101.11,General Semiconductor
+Ge,Hexagonal,Nanoparticles,3.37,6.4988,414713.14,Transparent Conductor (TCO)
+ZnO,Orthorhombic,Rough,2.99,8.2128,615394.81,General Semiconductor
+GaAs,Monoclinic,Smooth,2.77,9.2204,643578.1,General Semiconductor
+GaAs,Hexagonal,Grainy,1.99,2.2998,248839.02,General Semiconductor
+CuMnSnO,Tetragonal,Grainy,1.08,2.8504,98424.93,Solar Absorber Potential
+CuO,Cubic,Grainy,1.24,9.5003,609517.04,Solar Absorber Potential
+Si,Cubic,Rough,2.21,9.2416,284487.68,General Semiconductor
+Ge,Monoclinic,Grainy,3.2,4.8757,542816.82,Transparent Conductor (TCO)
+GaAs,Monoclinic,Grainy,1.35,1.6548,562224.5,Solar Absorber Potential
+CuO,Hexagonal,Porous,1.21,6.0345,648968.18,Solar Absorber Potential
+Si,Tetragonal,Porous,2.46,6.1788,128009.82,General Semiconductor
+CuMnSnO,Hexagonal,Smooth,2.12,3.9533,943138.0,General Semiconductor
+CuO,Cubic,Nanoparticles,2.66,7.377,793013.85,General Semiconductor
+Ge,Tetragonal,Grainy,1.69,6.0052,958551.01,Solar Absorber Potential
+GaAs,Hexagonal,Rough,1.88,0.2614,859117.5,General Semiconductor
+GaAs,Cubic,Smooth,2.6,7.3567,361130.84,General Semiconductor
+CuMnSnO,Tetragonal,Nanoparticles,2.45,2.8897,582352.2,General Semiconductor
+GaAs,Tetragonal,Nanoparticles,2.88,6.8467,811785.35,General Semiconductor
+GaAs,Cubic,Rough,1.5,8.1114,808433.01,Solar Absorber Potential
+ZnO,Tetragonal,Grainy,2.59,1.8456,12058.44,General Semiconductor
+ZnO,Monoclinic,Porous,3.46,2.6854,894032.28,Transparent Conductor (TCO)
+GaAs,Monoclinic,Grainy,1.06,9.5187,734361.98,Solar Absorber Potential
+CuMnSnO,Orthorhombic,Smooth,3.45,9.1038,653050.86,Transparent Conductor (TCO)
+GaAs,Orthorhombic,Smooth,2.32,6.1456,689662.21,General Semiconductor
+ZnO,Monoclinic,Porous,2.39,3.4425,989469.22,General Semiconductor
+ZnO,Monoclinic,Smooth,1.33,6.9311,627708.12,Solar Absorber Potential
+CuMnSnO,Cubic,Rough,3.3,4.3702,928314.91,Transparent Conductor (TCO)
+CuMnSnO,Tetragonal,Smooth,1.18,3.9918,931279.23,Solar Absorber Potential
+CuMnSnO,Hexagonal,Grainy,1.9,0.8979,464384.74,General Semiconductor
+Si,Hexagonal,Porous,1.27,7.9991,94750.3,Solar Absorber Potential
+GaAs,Tetragonal,Smooth,2.58,3.8936,346032.85,General Semiconductor
+CuMnSnO,Orthorhombic,Grainy,1.31,9.7528,665382.78,Solar Absorber Potential
+ZnO,Orthorhombic,Porous,2.8,4.8587,877909.53,General Semiconductor
+CuO,Tetragonal,Rough,2.99,8.4163,390824.27,General Semiconductor
+CuO,Tetragonal,Smooth,3.16,7.9184,38899.74,Transparent Conductor (TCO)
+Si,Orthorhombic,Rough,1.97,0.916,611085.98,General Semiconductor
+ZnO,Tetragonal,Grainy,3.23,9.8639,512648.05,Transparent Conductor (TCO)
+Ge,Cubic,Porous,1.31,3.7549,224369.19,Solar Absorber Potential
+CuMnSnO,Tetragonal,Nanoparticles,2.0,9.0472,975132.37,General Semiconductor
+ZnO,Hexagonal,Grainy,3.26,8.7019,488811.97,Transparent Conductor (TCO)
+Ge,Monoclinic,Nanoparticles,1.12,9.0213,470302.42,Solar Absorber Potential
+ZnO,Orthorhombic,Rough,1.12,5.3156,364089.74,Solar Absorber Potential
+Ge,Monoclinic,Grainy,1.38,6.9291,825498.14,Solar Absorber Potential
+ZnO,Tetragonal,Nanoparticles,3.27,9.9806,172550.56,Transparent Conductor (TCO)
+CuMnSnO,Hexagonal,Grainy,1.83,4.5766,480132.75,General Semiconductor
+CuMnSnO,Monoclinic,Rough,2.72,9.395,879889.43,General Semiconductor
+ZnO,Orthorhombic,Smooth,1.99,6.4597,495132.29,General Semiconductor
+GaAs,Hexagonal,Grainy,2.66,2.3526,92948.09,General Semiconductor
+CuMnSnO,Tetragonal,Smooth,3.44,5.1603,970475.37,Transparent Conductor (TCO)
+CuMnSnO,Cubic,Rough,3.26,9.2996,176990.03,Transparent Conductor (TCO)
+CuMnSnO,Monoclinic,Grainy,1.49,2.3396,949761.71,Solar Absorber Potential
+GaAs,Tetragonal,Rough,1.91,7.3758,109579.88,General Semiconductor
+CuO,Hexagonal,Rough,2.62,3.1079,287801.51,General Semiconductor
+GaAs,Cubic,Smooth,2.4,6.6634,824110.05,General Semiconductor
+CuMnSnO,Tetragonal,Rough,1.09,6.2818,693682.36,Solar Absorber Potential
+CuMnSnO,Cubic,Nanoparticles,1.33,8.5674,881725.94,Solar Absorber Potential
+CuMnSnO,Hexagonal,Grainy,2.44,3.6855,403493.28,General Semiconductor
+CuO,Hexagonal,Nanoparticles,2.46,1.9895,79597.01,General Semiconductor
+Ge,Cubic,Porous,1.32,1.4708,600474.15,Solar Absorber Potential
+ZnO,Cubic,Grainy,2.03,1.6638,647388.16,General Semiconductor
+CuMnSnO,Orthorhombic,Grainy,3.22,3.1045,859593.94,Transparent Conductor (TCO)
+CuO,Monoclinic,Smooth,1.24,8.7945,583571.78,Solar Absorber Potential
+CuO,Orthorhombic,Grainy,2.52,0.1075,809686.63,General Semiconductor
+GaAs,Hexagonal,Rough,1.29,1.8785,924790.07,Solar Absorber Potential
+CuO,Cubic,Nanoparticles,2.56,4.1355,562442.58,General Semiconductor
+Si,Cubic,Smooth,1.95,6.2473,21324.41,General Semiconductor
+GaAs,Cubic,Smooth,3.03,9.5041,660896.21,Transparent Conductor (TCO)
+Ge,Orthorhombic,Porous,1.96,5.5674,73323.56,General Semiconductor
+CuMnSnO,Tetragonal,Nanoparticles,2.75,5.3118,619944.47,General Semiconductor
+ZnO,Monoclinic,Smooth,2.96,6.9743,378557.83,General Semiconductor
+CuMnSnO,Hexagonal,Grainy,1.49,9.4022,608676.35,Solar Absorber Potential
+CuO,Monoclinic,Porous,3.31,5.8787,296285.41,Transparent Conductor (TCO)
+Ge,Monoclinic,Grainy,2.5,0.8638,16805.99,General Semiconductor
+CuO,Tetragonal,Nanoparticles,1.56,5.3265,959343.16,Solar Absorber Potential
+Si,Cubic,Grainy,2.29,5.9982,383509.38,General Semiconductor
+Si,Orthorhombic,Rough,1.35,9.4445,983895.6,Solar Absorber Potential
+CuMnSnO,Orthorhombic,Rough,3.03,1.1449,938721.75,Transparent Conductor (TCO)
+GaAs,Orthorhombic,Smooth,1.11,6.1824,543636.76,Solar Absorber Potential
+Si,Monoclinic,Nanoparticles,3.08,3.7047,443963.14,Transparent Conductor (TCO)
+CuMnSnO,Orthorhombic,Rough,2.76,0.9601,939890.21,General Semiconductor
+GaAs,Monoclinic,Rough,2.49,4.7436,902134.47,General Semiconductor
+GaAs,Monoclinic,Grainy,2.85,7.1011,47863.29,General Semiconductor
+CuMnSnO,Tetragonal,Rough,2.73,6.8212,747115.27,General Semiconductor
+CuO,Cubic,Grainy,2.39,6.2794,88225.76,General Semiconductor
+Si,Tetragonal,Porous,2.5,8.6511,839843.98,General Semiconductor
+CuO,Monoclinic,Grainy,2.75,8.0379,793917.75,General Semiconductor
+GaAs,Tetragonal,Grainy,1.47,0.6126,633362.78,Solar Absorber Potential
+Ge,Tetragonal,Porous,2.01,9.1775,127737.36,General Semiconductor
+CuMnSnO,Hexagonal,Nanoparticles,2.65,5.9848,148392.64,General Semiconductor
+CuO,Tetragonal,Rough,1.59,6.6293,471850.37,Solar Absorber Potential
+CuMnSnO,Cubic,Smooth,3.24,4.2681,775454.03,Transparent Conductor (TCO)
+ZnO,Monoclinic,Porous,2.5,9.7168,410021.52,General Semiconductor
+CuMnSnO,Cubic,Porous,1.3,8.962,340694.43,Solar Absorber Potential
+Si,Orthorhombic,Nanoparticles,1.64,1.7564,294998.67,Solar Absorber Potential
+GaAs,Hexagonal,Nanoparticles,1.78,1.8217,700128.18,General Semiconductor
+CuO,Cubic,Grainy,2.82,0.6823,106457.92,General Semiconductor
+CuO,Hexagonal,Nanoparticles,2.74,9.7603,247835.33,General Semiconductor
+ZnO,Orthorhombic,Grainy,2.1,6.5558,656198.08,General Semiconductor
+CuO,Tetragonal,Porous,3.26,5.1432,316711.47,Transparent Conductor (TCO)
+Ge,Tetragonal,Grainy,2.39,4.7746,516357.68,General Semiconductor
+Si,Tetragonal,Rough,2.61,3.5734,796377.18,General Semiconductor
+CuMnSnO,Cubic,Grainy,3.13,5.7395,384773.17,Transparent Conductor (TCO)
+CuO,Tetragonal,Porous,2.81,2.3782,344929.13,General Semiconductor
+ZnO,Cubic,Rough,2.38,3.1654,925151.52,General Semiconductor
+Ge,Hexagonal,Grainy,1.83,0.9529,828299.72,General Semiconductor
+GaAs,Tetragonal,Rough,2.71,1.6915,298748.67,General Semiconductor
+Si,Cubic,Porous,3.4,2.7678,687758.5,Transparent Conductor (TCO)
+ZnO,Tetragonal,Rough,3.27,6.7562,747100.02,Transparent Conductor (TCO)
+ZnO,Orthorhombic,Rough,3.27,3.2423,727576.42,Transparent Conductor (TCO)
+Ge,Hexagonal,Grainy,2.71,6.378,199805.21,General Semiconductor
+GaAs,Cubic,Rough,3.38,9.0445,799943.61,Transparent Conductor (TCO)
+CuMnSnO,Monoclinic,Smooth,2.12,6.1123,195952.89,General Semiconductor
+ZnO,Orthorhombic,Nanoparticles,1.75,7.1617,716268.49,General Semiconductor
+Si,Monoclinic,Smooth,1.62,5.457,173317.99,Solar Absorber Potential
+ZnO,Tetragonal,Rough,2.05,7.7678,573659.74,General Semiconductor
+CuMnSnO,Tetragonal,Rough,1.68,6.4405,105082.64,Solar Absorber Potential
+GaAs,Orthorhombic,Rough,1.69,1.6657,349704.21,Solar Absorber Potential
+CuO,Tetragonal,Grainy,3.43,1.3569,211154.15,Transparent Conductor (TCO)
+CuMnSnO,Hexagonal,Porous,3.22,7.7058,444189.17,Transparent Conductor (TCO)
+CuO,Hexagonal,Grainy,2.03,3.5214,450581.14,General Semiconductor
+Ge,Orthorhombic,Nanoparticles,3.46,4.1651,733641.48,Transparent Conductor (TCO)
+ZnO,Tetragonal,Nanoparticles,3.09,6.8199,759963.16,Transparent Conductor (TCO)
+GaAs,Tetragonal,Rough,3.34,2.6821,505327.45,Transparent Conductor (TCO)
+GaAs,Cubic,Grainy,3.42,4.5764,870712.5,Transparent Conductor (TCO)
+ZnO,Orthorhombic,Rough,2.92,6.8223,409632.5,General Semiconductor
+CuO,Orthorhombic,Rough,2.99,4.1368,445375.25,General Semiconductor
+CuO,Cubic,Smooth,1.6,0.1756,576647.05,Solar Absorber Potential
+CuMnSnO,Hexagonal,Porous,2.23,0.8967,54727.77,General Semiconductor
+Si,Orthorhombic,Nanoparticles,1.22,5.842,434933.75,Solar Absorber Potential
+Ge,Hexagonal,Smooth,1.41,8.984,401950.0,Solar Absorber Potential
+GaAs,Monoclinic,Grainy,2.51,3.4703,658741.15,General Semiconductor
+CuMnSnO,Monoclinic,Nanoparticles,3.1,3.1309,306808.55,Transparent Conductor (TCO)
+Si,Tetragonal,Smooth,1.9,2.9425,306638.51,General Semiconductor
+GaAs,Hexagonal,Nanoparticles,3.11,1.9141,179381.64,Transparent Conductor (TCO)
+ZnO,Cubic,Rough,3.35,8.5261,750462.75,Transparent Conductor (TCO)
+CuO,Hexagonal,Smooth,1.14,1.5069,32707.81,General Semiconductor
+GaAs,Cubic,Rough,2.63,5.4434,744363.52,General Semiconductor
+ZnO,Cubic,Grainy,3.43,2.2331,14950.66,Transparent Conductor (TCO)
+CuMnSnO,Monoclinic,Grainy,3.09,8.1818,308724.14,Transparent Conductor (TCO)
+Ge,Cubic,Smooth,2.5,2.9571,784424.85,General Semiconductor
+Ge,Cubic,Porous,1.16,2.1302,258499.43,Solar Absorber Potential
+CuO,Monoclinic,Grainy,2.94,2.5045,769881.59,General Semiconductor
+Si,Hexagonal,Porous,2.38,2.0302,367787.18,General Semiconductor
+CuO,Hexagonal,Porous,3.4,2.1923,981181.15,Transparent Conductor (TCO)
+Ge,Cubic,Rough,1.23,9.4754,81703.93,Solar Absorber Potential
+Ge,Hexagonal,Nanoparticles,2.01,1.6185,96374.98,General Semiconductor
+ZnO,Tetragonal,Porous,2.93,5.3846,133330.7,General Semiconductor
+ZnO,Hexagonal,Smooth,1.85,2.1634,125835.27,General Semiconductor
+CuO,Orthorhombic,Grainy,2.9,2.8701,441136.73,General Semiconductor
+Ge,Orthorhombic,Smooth,1.99,0.197,513311.95,General Semiconductor
+CuMnSnO,Orthorhombic,Grainy,2.08,0.5626,458124.3,General Semiconductor
+CuO,Tetragonal,Grainy,2.3,3.7064,144270.98,General Semiconductor
+CuMnSnO,Monoclinic,Smooth,2.2,2.5616,881379.43,General Semiconductor
+Si,Tetragonal,Grainy,2.28,8.3117,449443.79,General Semiconductor
+GaAs,Hexagonal,Porous,2.43,6.9584,743227.71,General Semiconductor
+Si,Orthorhombic,Grainy,2.53,7.8937,469243.51,General Semiconductor
+Si,Orthorhombic,Porous,2.5,9.4453,112468.04,General Semiconductor
+CuO,Monoclinic,Grainy,1.0,8.0221,507917.56,Solar Absorber Potential
+Si,Orthorhombic,Porous,2.25,8.4467,234106.55,General Semiconductor
+Ge,Cubic,Grainy,1.17,6.569,554507.77,Solar Absorber Potential
+GaAs,Hexagonal,Grainy,1.95,3.6336,945063.9,General Semiconductor
+Si,Orthorhombic,Porous,1.45,1.376,817233.39,Solar Absorber Potential
+CuMnSnO,Orthorhombic,Porous,1.92,1.1625,140001.45,General Semiconductor
+Ge,Tetragonal,Nanoparticles,1.24,8.1674,214572.84,Solar Absorber Potential
+ZnO,Orthorhombic,Porous,2.75,9.0486,940709.81,General Semiconductor
+GaAs,Tetragonal,Nanoparticles,1.94,3.1601,876649.75,General Semiconductor
+Si,Cubic,Rough,1.71,4.9667,642982.0,General Semiconductor
+GaAs,Monoclinic,Rough,1.79,9.8697,916354.32,General Semiconductor
+Ge,Tetragonal,Smooth,2.62,1.6454,95428.11,General Semiconductor
+ZnO,Monoclinic,Smooth,3.45,1.0104,78728.52,Transparent Conductor (TCO)
+GaAs,Hexagonal,Rough,3.49,2.6618,331755.02,Transparent Conductor (TCO)
+CuO,Orthorhombic,Smooth,2.52,2.3771,547658.56,General Semiconductor
+GaAs,Cubic,Rough,2.89,0.9664,712921.92,General Semiconductor
+CuO,Monoclinic,Grainy,1.02,9.6186,238872.07,Solar Absorber Potential
+Ge,Tetragonal,Smooth,1.57,7.4194,468995.0,Solar Absorber Potential
+CuO,Cubic,Porous,1.28,2.4036,339248.96,Solar Absorber Potential
+CuO,Cubic,Grainy,1.39,3.8388,51486.24,Solar Absorber Potential
+CuMnSnO,Monoclinic,Porous,2.37,0.9154,357617.4,General Semiconductor
+Ge,Cubic,Nanoparticles,2.67,2.3192,162740.86,General Semiconductor
+Ge,Hexagonal,Nanoparticles,1.82,2.7541,119046.29,General Semiconductor
+ZnO,Tetragonal,Grainy,2.54,2.8744,492953.22,General Semiconductor
+ZnO,Cubic,Grainy,2.93,9.7825,739137.83,General Semiconductor
+CuO,Monoclinic,Rough,1.19,2.0321,725314.71,Solar Absorber Potential
+ZnO,Cubic,Grainy,1.59,9.9355,359024.49,Solar Absorber Potential
+Si,Hexagonal,Porous,3.36,6.9783,305451.96,Transparent Conductor (TCO)
+ZnO,Monoclinic,Rough,2.88,5.3786,489665.05,General Semiconductor
+Ge,Tetragonal,Rough,2.33,5.1668,767070.6,General Semiconductor
+CuO,Hexagonal,Porous,2.06,4.2395,373156.71,General Semiconductor
+ZnO,Orthorhombic,Smooth,2.29,2.5391,372499.92,General Semiconductor
+CuMnSnO,Orthorhombic,Smooth,3.41,1.2915,459340.96,Transparent Conductor (TCO)
+CuO,Orthorhombic,Porous,2.74,5.6424,398090.7,General Semiconductor
+GaAs,Cubic,Smooth,1.22,9.18,908772.35,Solar Absorber Potential
+CuO,Tetragonal,Porous,1.96,3.9199,196860.19,General Semiconductor
+Ge,Tetragonal,Porous,3.39,1.9158,821064.27,Transparent Conductor (TCO)
+Si,Tetragonal,Smooth,1.82,3.328,425886.53,General Semiconductor
+Ge,Cubic,Smooth,2.23,0.4406,779816.2,General Semiconductor
+Ge,Monoclinic,Nanoparticles,2.63,6.2604,258597.93,General Semiconductor
+CuMnSnO,Cubic,Porous,1.94,6.274,382141.54,General Semiconductor
+CuO,Cubic,Porous,1.29,2.1994,817735.88,Solar Absorber Potential
+CuMnSnO,Cubic,Porous,2.72,8.8542,278253.94,General Semiconductor
+ZnO,Hexagonal,Porous,1.33,4.406,202723.56,Solar Absorber Potential
+GaAs,Cubic,Nanoparticles,2.51,9.705,155721.14,General Semiconductor
+Ge,Monoclinic,Smooth,1.97,6.7254,169575.88,General Semiconductor
+CuO,Cubic,Smooth,2.36,2.4371,19950.02,General Semiconductor
+CuO,Orthorhombic,Rough,2.19,8.9154,772849.48,General Semiconductor
+Si,Tetragonal,Smooth,1.7,4.5942,771402.91,Solar Absorber Potential
+CuO,Monoclinic,Grainy,1.5,1.8051,311741.19,Solar Absorber Potential
+CuO,Monoclinic,Smooth,2.97,2.5504,738823.21,General Semiconductor
+GaAs,Cubic,Nanoparticles,1.7,8.2271,117127.63,Solar Absorber Potential
+Ge,Monoclinic,Grainy,2.18,6.3116,664097.91,General Semiconductor
+GaAs,Orthorhombic,Smooth,2.77,8.9533,172935.9,General Semiconductor
+Si,Monoclinic,Porous,3.4,4.75,100377.0,Transparent Conductor (TCO)
+Ge,Hexagonal,Grainy,2.89,4.8099,869494.39,General Semiconductor
+CuMnSnO,Monoclinic,Porous,1.21,3.1099,341686.01,Solar Absorber Potential
+Ge,Hexagonal,Grainy,1.29,7.8641,688688.33,Solar Absorber Potential
+GaAs,Monoclinic,Grainy,1.11,8.0632,352556.03,Solar Absorber Potential
+Si,Orthorhombic,Grainy,2.24,7.1404,237591.48,General Semiconductor
+CuMnSnO,Hexagonal,Grainy,2.75,4.2176,783947.71,General Semiconductor
+Ge,Cubic,Smooth,1.81,2.4286,380318.61,General Semiconductor
+CuMnSnO,Monoclinic,Rough,1.69,8.6402,244345.09,Solar Absorber Potential
+GaAs,Monoclinic,Smooth,3.4,4.8661,503733.41,Transparent Conductor (TCO)
+CuO,Orthorhombic,Porous,3.04,9.7454,377979.28,Transparent Conductor (TCO)
+CuO,Orthorhombic,Porous,1.84,0.6381,21330.06,General Semiconductor
+CuMnSnO,Hexagonal,Porous,1.99,4.2869,201247.33,General Semiconductor
+CuO,Cubic,Grainy,2.74,3.7301,882887.02,General Semiconductor
+Si,Monoclinic,Rough,1.05,2.1586,784830.22,Solar Absorber Potential
+CuMnSnO,Monoclinic,Porous,1.43,0.3395,96488.83,Solar Absorber Potential
+CuO,Monoclinic,Rough,2.13,7.9222,826050.08,General Semiconductor
+CuO,Hexagonal,Rough,2.44,8.42,278897.21,General Semiconductor
+Si,Orthorhombic,Porous,1.85,7.9693,54302.08,General Semiconductor
+ZnO,Orthorhombic,Porous,2.05,2.2414,349081.98,General Semiconductor
+Ge,Tetragonal,Nanoparticles,2.95,4.8313,194298.3,General Semiconductor
+ZnO,Tetragonal,Rough,1.86,0.8631,496325.42,General Semiconductor
+Ge,Tetragonal,Smooth,2.66,4.4308,163834.25,General Semiconductor
+GaAs,Cubic,Nanoparticles,1.49,3.4382,650727.99,Solar Absorber Potential
+ZnO,Monoclinic,Grainy,2.87,3.0592,272373.97,General Semiconductor
+GaAs,Orthorhombic,Nanoparticles,2.13,5.318,189233.49,General Semiconductor
+CuO,Monoclinic,Rough,1.17,8.8504,524984.05,Solar Absorber Potential
+Ge,Orthorhombic,Rough,1.39,2.6801,777520.39,Solar Absorber Potential
+ZnO,Orthorhombic,Porous,2.35,4.3379,14551.26,General Semiconductor
+Si,Cubic,Porous,1.14,8.4273,57902.01,Solar Absorber Potential
+CuMnSnO,Tetragonal,Nanoparticles,3.49,5.5956,855435.3,Transparent Conductor (TCO)
+GaAs,Orthorhombic,Smooth,2.38,5.0903,803482.51,General Semiconductor
+Ge,Orthorhombic,Rough,2.3,4.4881,481373.52,General Semiconductor
+CuMnSnO,Cubic,Nanoparticles,1.41,2.383,262763.72,Solar Absorber Potential
+CuMnSnO,Orthorhombic,Rough,1.26,4.3126,119673.91,Solar Absorber Potential
+Ge,Tetragonal,Porous,1.61,9.3602,56734.87,Solar Absorber Potential
+Ge,Cubic,Porous,2.02,2.0958,446774.33,General Semiconductor
+CuO,Tetragonal,Porous,3.46,3.9152,277281.27,Transparent Conductor (TCO)
+Si,Cubic,Nanoparticles,3.19,3.9287,790750.96,Transparent Conductor (TCO)
+ZnO,Cubic,Smooth,1.79,3.2209,305418.64,General Semiconductor
+Si,Cubic,Smooth,1.65,6.9167,394137.86,Solar Absorber Potential
+Ge,Tetragonal,Rough,1.7,6.2737,364674.97,Solar Absorber Potential
+CuMnSnO,Tetragonal,Porous,2.75,5.631,730975.86,General Semiconductor
+GaAs,Cubic,Porous,1.28,6.2294,348467.34,Solar Absorber Potential
+ZnO,Tetragonal,Porous,2.71,0.0218,968655.26,General Semiconductor
+CuMnSnO,Monoclinic,Nanoparticles,2.83,1.6399,228661.83,General Semiconductor
+CuMnSnO,Orthorhombic,Nanoparticles,1.45,9.3505,388744.02,Solar Absorber Potential
+CuO,Cubic,Nanoparticles,3.32,9.4527,416394.86,Transparent Conductor (TCO)
+Si,Monoclinic,Grainy,1.24,2.1123,213286.75,Solar Absorber Potential
+CuO,Cubic,Nanoparticles,3.27,8.3332,700788.69,Transparent Conductor (TCO)
+CuO,Monoclinic,Porous,3.12,0.9741,440311.82,UV Application Potential
+Ge,Cubic,Rough,1.74,5.9255,705087.33,General Semiconductor
+Ge,Monoclinic,Porous,3.27,9.8707,492640.49,Transparent Conductor (TCO)
+ZnO,Orthorhombic,Rough,2.59,1.7053,770405.9,General Semiconductor
+GaAs,Orthorhombic,Smooth,2.01,5.2777,600084.93,General Semiconductor
+GaAs,Hexagonal,Nanoparticles,1.65,0.8388,499072.49,Solar Absorber Potential
+Si,Orthorhombic,Grainy,3.08,4.459,436236.67,Transparent Conductor (TCO)
+Si,Orthorhombic,Smooth,2.84,5.606,133043.76,General Semiconductor
+ZnO,Tetragonal,Porous,2.97,2.7909,251779.87,General Semiconductor
+CuMnSnO,Cubic,Grainy,1.48,3.1488,400249.76,Solar Absorber Potential
+CuO,Orthorhombic,Smooth,3.31,4.1247,204284.2,Transparent Conductor (TCO)
+Si,Cubic,Rough,3.47,7.2993,616885.81,Transparent Conductor (TCO)
+GaAs,Cubic,Porous,1.07,1.7049,185501.28,Solar Absorber Potential
+CuMnSnO,Monoclinic,Grainy,2.44,3.0468,227504.96,General Semiconductor
+CuO,Orthorhombic,Smooth,1.99,8.9827,225565.72,General Semiconductor
+CuMnSnO,Monoclinic,Porous,2.35,3.8084,288045.04,General Semiconductor
+GaAs,Orthorhombic,Porous,2.88,8.5588,380855.84,General Semiconductor
+CuO,Hexagonal,Porous,2.05,1.4595,984832.68,General Semiconductor
+ZnO,Orthorhombic,Nanoparticles,2.2,5.3722,672169.35,General Semiconductor
+Si,Cubic,Rough,2.36,7.7006,259775.04,General Semiconductor
+CuO,Hexagonal,Grainy,2.8,3.5998,650122.98,General Semiconductor
+CuMnSnO,Tetragonal,Smooth,1.08,0.2653,186110.65,Solar Absorber Potential
+Ge,Monoclinic,Smooth,1.89,2.1877,952038.71,General Semiconductor
+CuO,Tetragonal,Rough,2.01,9.8363,740073.04,General Semiconductor
+CuMnSnO,Orthorhombic,Porous,1.8,0.5324,351623.05,General Semiconductor
+CuO,Cubic,Porous,1.06,4.2805,295834.59,Solar Absorber Potential
+CuMnSnO,Monoclinic,Rough,1.86,3.1809,844427.34,General Semiconductor
+Ge,Orthorhombic,Grainy,2.24,5.4682,489752.24,General Semiconductor
+CuO,Hexagonal,Smooth,2.03,5.0554,335741.49,General Semiconductor
+CuO,Tetragonal,Smooth,3.42,1.6278,830152.22,Transparent Conductor (TCO)
+GaAs,Hexagonal,Smooth,1.1,0.2026,595762.48,Solar Absorber Potential
+ZnO,Monoclinic,Nanoparticles,1.81,6.553,648758.73,General Semiconductor
+ZnO,Hexagonal,Smooth,1.68,1.258,738949.27,Solar Absorber Potential
+Si,Cubic,Porous,2.11,1.2622,370532.59,General Semiconductor
+GaAs,Orthorhombic,Rough,1.9,6.22,488083.09,General Semiconductor
+CuMnSnO,Orthorhombic,Porous,1.98,6.1213,321014.48,General Semiconductor
+ZnO,Monoclinic,Rough,2.54,4.9246,994425.4,General Semiconductor
+GaAs,Cubic,Nanoparticles,1.4,0.2942,704899.68,Solar Absorber Potential
+ZnO,Tetragonal,Porous,1.25,9.6535,72447.92,Solar Absorber Potential
+ZnO,Orthorhombic,Grainy,2.61,0.3287,213285.14,General Semiconductor
+CuMnSnO,Hexagonal,Grainy,3.39,0.5122,322181.46,UV Application Potential
+CuMnSnO,Tetragonal,Porous,2.97,0.8715,723062.65,General Semiconductor
+Ge,Cubic,Smooth,3.46,2.9716,346984.55,Transparent Conductor (TCO)
+CuMnSnO,Tetragonal,Rough,3.36,7.9835,394452.0,Transparent Conductor (TCO)
+GaAs,Cubic,Nanoparticles,1.07,0.1638,422714.16,Solar Absorber Potential
+Si,Tetragonal,Porous,2.96,2.2737,666411.72,General Semiconductor
+Si,Orthorhombic,Rough,3.14,1.0164,621192.38,Transparent Conductor (TCO)
+GaAs,Cubic,Porous,1.52,7.0555,739640.39,Solar Absorber Potential
+CuMnSnO,Orthorhombic,Smooth,1.28,7.237,683202.79,Solar Absorber Potential
+Ge,Tetragonal,Smooth,1.01,8.3704,525811.32,Solar Absorber Potential
+CuO,Cubic,Porous,2.5,3.8392,116395.94,General Semiconductor
+GaAs,Hexagonal,Grainy,1.57,1.7472,123109.64,Solar Absorber Potential
+CuO,Orthorhombic,Porous,1.2,2.4444,845513.86,Solar Absorber Potential
+Ge,Monoclinic,Porous,2.31,6.514,222961.09,General Semiconductor
+Ge,Tetragonal,Smooth,1.34,8.1395,195584.16,Solar Absorber Potential
+Ge,Monoclinic,Rough,3.39,1.6188,573591.04,Transparent Conductor (TCO)
+CuMnSnO,Hexagonal,Smooth,3.2,6.7338,156163.35,Transparent Conductor (TCO)
+CuO,Monoclinic,Smooth,2.09,9.5592,566884.1,General Semiconductor
+ZnO,Hexagonal,Rough,2.91,6.7028,413779.12,General Semiconductor
+Ge,Orthorhombic,Porous,2.45,5.6184,547437.57,General Semiconductor
+CuO,Monoclinic,Smooth,1.57,1.3362,526338.07,Solar Absorber Potential
+CuMnSnO,Monoclinic,Rough,1.68,1.5096,203974.19,Solar Absorber Potential
+Si,Monoclinic,Grainy,2.8,6.8433,329032.94,General Semiconductor
+Si,Monoclinic,Smooth,2.08,3.7986,52818.76,General Semiconductor
+Si,Hexagonal,Grainy,1.74,0.2845,124691.54,General Semiconductor
+CuMnSnO,Orthorhombic,Rough,2.77,6.3977,712858.71,General Semiconductor
+CuMnSnO,Cubic,Grainy,1.95,7.4414,111455.09,General Semiconductor
+CuO,Orthorhombic,Porous,2.5,2.7829,733839.4,General Semiconductor
+GaAs,Hexagonal,Nanoparticles,2.45,0.4268,958525.47,General Semiconductor
+Si,Hexagonal,Rough,2.86,5.8117,920011.99,General Semiconductor
+CuMnSnO,Tetragonal,Rough,2.19,9.6165,954251.99,General Semiconductor
+CuO,Hexagonal,Nanoparticles,1.42,6.9696,161789.57,Solar Absorber Potential
+GaAs,Cubic,Smooth,3.29,6.2249,834791.76,Transparent Conductor (TCO)
+Ge,Tetragonal,Rough,1.19,0.1428,708135.79,Solar Absorber Potential
+CuO,Tetragonal,Nanoparticles,1.57,4.4764,740296.38,Solar Absorber Potential
+GaAs,Hexagonal,Grainy,1.54,2.9993,99950.8,Solar Absorber Potential
+CuO,Monoclinic,Porous,1.69,5.7043,959867.26,Solar Absorber Potential
+ZnO,Monoclinic,Rough,2.77,5.0021,267159.89,General Semiconductor
+CuO,Tetragonal,Porous,2.52,3.8426,172628.22,General Semiconductor
+ZnO,Tetragonal,Porous,1.67,3.4183,446426.78,Solar Absorber Potential
+CuMnSnO,Cubic,Porous,2.78,9.9227,677709.05,General Semiconductor
+CuMnSnO,Hexagonal,Rough,1.5,1.7445,644325.07,Solar Absorber Potential
+GaAs,Cubic,Smooth,2.28,2.5306,448146.16,General Semiconductor
+GaAs,Hexagonal,Grainy,3.03,4.7755,862524.14,Transparent Conductor (TCO)
+Ge,Tetragonal,Porous,2.23,8.2503,251335.63,General Semiconductor
+GaAs,Cubic,Smooth,2.19,8.9225,638628.47,General Semiconductor
+ZnO,Hexagonal,Rough,3.01,1.6173,735588.08,Transparent Conductor (TCO)
+CuO,Monoclinic,Grainy,2.17,5.4063,74631.83,General Semiconductor
+ZnO,Monoclinic,Nanoparticles,3.45,6.5638,80195.91,Transparent Conductor (TCO)
+GaAs,Cubic,Smooth,1.58,9.0546,948141.77,Solar Absorber Potential
+GaAs,Hexagonal,Rough,2.53,8.2438,844497.21,General Semiconductor
+Si,Tetragonal,Rough,2.33,6.5748,389539.84,General Semiconductor
+CuMnSnO,Cubic,Grainy,1.69,7.1464,624753.58,Solar Absorber Potential
+ZnO,Hexagonal,Porous,1.56,2.7258,258810.9,Solar Absorber Potential
+ZnO,Orthorhombic,Smooth,3.04,8.7384,404846.61,Transparent Conductor (TCO)
+Si,Orthorhombic,Rough,1.06,6.5051,864435.83,Solar Absorber Potential
+CuO,Monoclinic,Rough,3.28,0.5892,819956.93,UV Application Potential
+CuMnSnO,Monoclinic,Porous,2.05,5.651,28682.21,General Semiconductor
+CuMnSnO,Monoclinic,Rough,1.12,0.9619,873676.56,Solar Absorber Potential
+Si,Hexagonal,Grainy,1.34,2.1836,865618.33,Solar Absorber Potential
+CuMnSnO,Orthorhombic,Grainy,2.52,7.089,778980.07,General Semiconductor
+CuMnSnO,Hexagonal,Nanoparticles,2.43,4.004,632823.52,General Semiconductor
+Si,Monoclinic,Nanoparticles,1.09,5.0132,999326.39,Solar Absorber Potential
+CuMnSnO,Hexagonal,Nanoparticles,1.79,1.7297,360622.17,General Semiconductor
+Ge,Monoclinic,Porous,3.21,5.9771,413067.79,Transparent Conductor (TCO)
+GaAs,Monoclinic,Grainy,1.59,4.6643,640362.25,Solar Absorber Potential
+ZnO,Cubic,Rough,1.33,4.3842,451739.54,Solar Absorber Potential
+Ge,Orthorhombic,Nanoparticles,3.17,6.9167,285983.18,Transparent Conductor (TCO)
+CuMnSnO,Cubic,Porous,2.2,0.2152,475064.41,General Semiconductor
+Ge,Orthorhombic,Porous,2.45,3.8359,439751.35,General Semiconductor
+CuMnSnO,Tetragonal,Smooth,2.69,0.6664,342856.05,General Semiconductor
+GaAs,Hexagonal,Grainy,1.97,1.2731,544308.35,General Semiconductor
+Si,Orthorhombic,Rough,1.6,9.4646,599554.84,Solar Absorber Potential
+ZnO,Orthorhombic,Porous,1.82,4.6584,872490.87,General Semiconductor
+CuO,Orthorhombic,Rough,1.91,5.3433,378249.58,General Semiconductor
+Ge,Hexagonal,Smooth,2.72,8.5226,730161.94,General Semiconductor
+CuMnSnO,Orthorhombic,Nanoparticles,1.03,3.6186,223792.77,Solar Absorber Potential
+CuO,Hexagonal,Rough,1.17,4.4806,70143.19,Solar Absorber Potential
+CuO,Cubic,Porous,2.72,2.3857,856481.71,General Semiconductor
+GaAs,Cubic,Grainy,2.58,6.8023,171823.99,General Semiconductor
+Ge,Cubic,Grainy,2.34,3.6681,926037.54,General Semiconductor
+GaAs,Monoclinic,Nanoparticles,1.55,9.8598,357812.52,Solar Absorber Potential
+Si,Orthorhombic,Porous,1.94,1.6327,609823.55,General Semiconductor
+GaAs,Hexagonal,Porous,1.65,2.2812,871178.93,Solar Absorber Potential
+Si,Hexagonal,Smooth,3.07,2.8221,592977.06,Transparent Conductor (TCO)
+Ge,Cubic,Grainy,2.21,5.5242,545443.03,General Semiconductor
+Si,Monoclinic,Smooth,2.84,5.505,494512.71,General Semiconductor
+CuO,Hexagonal,Smooth,2.49,5.5374,921095.71,General Semiconductor
+CuMnSnO,Orthorhombic,Grainy,1.67,4.552,843178.16,Solar Absorber Potential
+CuO,Monoclinic,Nanoparticles,1.04,0.005,271353.69,General Semiconductor
+CuO,Tetragonal,Porous,1.83,1.4945,698485.05,General Semiconductor
+ZnO,Orthorhombic,Grainy,2.94,4.1134,787045.47,General Semiconductor
+Ge,Orthorhombic,Smooth,2.48,7.9507,255707.4,General Semiconductor
+GaAs,Hexagonal,Nanoparticles,3.15,9.3869,478562.57,Transparent Conductor (TCO)
+CuMnSnO,Tetragonal,Smooth,1.03,9.1853,38660.84,General Semiconductor
+CuO,Tetragonal,Porous,1.06,4.8092,885925.69,Solar Absorber Potential
+CuO,Orthorhombic,Nanoparticles,1.05,2.2042,776061.53,Solar Absorber Potential
+ZnO,Hexagonal,Smooth,1.04,4.0083,141784.51,Solar Absorber Potential
+GaAs,Monoclinic,Rough,1.8,0.7249,30644.52,General Semiconductor
+Ge,Orthorhombic,Porous,1.87,7.2045,661312.46,General Semiconductor
+CuMnSnO,Orthorhombic,Grainy,1.35,3.9872,497433.7,Solar Absorber Potential
+CuMnSnO,Orthorhombic,Grainy,1.94,4.0816,351707.78,General Semiconductor
+GaAs,Cubic,Nanoparticles,2.25,1.4762,252274.98,General Semiconductor
+ZnO,Orthorhombic,Rough,3.39,9.461,143424.22,Transparent Conductor (TCO)
+Ge,Tetragonal,Nanoparticles,2.62,2.3489,885055.63,General Semiconductor
+Si,Monoclinic,Porous,1.32,4.0548,307765.55,Solar Absorber Potential
+CuO,Orthorhombic,Grainy,1.73,9.4162,542585.6,General Semiconductor
+GaAs,Orthorhombic,Porous,2.04,7.0533,898383.32,General Semiconductor
+ZnO,Cubic,Nanoparticles,1.33,1.1976,527444.88,Solar Absorber Potential
+Ge,Monoclinic,Porous,2.49,2.68,453661.38,General Semiconductor
+Si,Orthorhombic,Porous,1.55,6.6789,138262.86,Solar Absorber Potential
+CuMnSnO,Cubic,Rough,2.07,6.2055,794813.33,General Semiconductor
+Si,Hexagonal,Porous,1.03,9.57,48924.8,General Semiconductor
+Ge,Monoclinic,Smooth,1.4,5.092,894276.14,Solar Absorber Potential
+CuMnSnO,Cubic,Grainy,1.46,8.3608,489605.15,Solar Absorber Potential
+CuMnSnO,Tetragonal,Porous,3.02,6.1345,588876.55,Transparent Conductor (TCO)
+Si,Hexagonal,Grainy,2.63,4.2136,961941.79,General Semiconductor
+ZnO,Orthorhombic,Smooth,2.15,3.2067,253063.55,General Semiconductor
+GaAs,Orthorhombic,Grainy,1.85,3.3803,520447.33,General Semiconductor
+CuMnSnO,Tetragonal,Nanoparticles,2.84,2.5997,465533.43,General Semiconductor
+GaAs,Orthorhombic,Porous,1.09,5.7856,72677.54,Solar Absorber Potential
+CuMnSnO,Orthorhombic,Porous,2.51,9.6316,811939.95,General Semiconductor
+CuMnSnO,Hexagonal,Smooth,2.25,0.6064,624659.66,General Semiconductor
+GaAs,Orthorhombic,Nanoparticles,2.76,4.9354,239416.22,General Semiconductor
+Ge,Orthorhombic,Nanoparticles,1.79,6.8897,550527.2,General Semiconductor
+Si,Tetragonal,Porous,2.17,3.5754,986226.15,General Semiconductor
+Ge,Tetragonal,Rough,3.07,0.1158,192889.07,UV Application Potential
+ZnO,Cubic,Smooth,2.13,7.514,932077.38,General Semiconductor
+ZnO,Orthorhombic,Smooth,2.06,4.3804,795043.42,General Semiconductor
+CuO,Orthorhombic,Porous,2.31,7.6295,441401.82,General Semiconductor
+CuMnSnO,Monoclinic,Nanoparticles,1.44,8.8289,951115.55,Solar Absorber Potential
+CuMnSnO,Monoclinic,Nanoparticles,2.51,5.1318,783283.83,General Semiconductor
+CuO,Cubic,Grainy,3.3,0.4997,322258.35,UV Application Potential
+Si,Monoclinic,Grainy,2.54,0.028,160505.5,General Semiconductor
+CuMnSnO,Tetragonal,Grainy,1.7,1.6445,510584.54,Solar Absorber Potential
+Si,Monoclinic,Nanoparticles,1.11,4.1811,238317.58,Solar Absorber Potential
+Si,Hexagonal,Nanoparticles,3.03,1.114,171344.4,Transparent Conductor (TCO)
+Ge,Tetragonal,Rough,1.78,9.9699,228926.7,General Semiconductor
+ZnO,Monoclinic,Rough,1.56,8.3135,819965.8,Solar Absorber Potential
+Si,Monoclinic,Nanoparticles,1.44,5.7884,144296.72,Solar Absorber Potential
+CuO,Tetragonal,Grainy,2.11,3.0484,286639.8,General Semiconductor
+GaAs,Hexagonal,Smooth,2.41,0.2421,556180.73,General Semiconductor
+GaAs,Tetragonal,Porous,3.43,8.5613,881901.88,Transparent Conductor (TCO)
+Ge,Monoclinic,Porous,1.38,7.5155,873139.61,Solar Absorber Potential
+CuMnSnO,Tetragonal,Nanoparticles,2.64,8.2066,242557.6,General Semiconductor
+CuMnSnO,Tetragonal,Grainy,1.75,1.2329,468875.69,General Semiconductor
+CuO,Orthorhombic,Rough,3.31,4.9536,898815.63,Transparent Conductor (TCO)
+CuO,Cubic,Grainy,1.28,5.4363,37467.36,General Semiconductor
+ZnO,Hexagonal,Smooth,3.18,0.4726,173133.53,UV Application Potential
+ZnO,Tetragonal,Porous,2.94,1.7838,672918.51,General Semiconductor
+Ge,Monoclinic,Nanoparticles,2.47,9.4189,434948.79,General Semiconductor
+CuO,Hexagonal,Nanoparticles,1.08,2.8884,12468.25,General Semiconductor
+GaAs,Monoclinic,Smooth,2.34,2.4156,653707.05,General Semiconductor
+Si,Monoclinic,Porous,1.24,9.9386,610244.34,Solar Absorber Potential
+CuO,Hexagonal,Rough,3.16,3.2934,995048.73,Transparent Conductor (TCO)
+ZnO,Hexagonal,Smooth,1.93,4.7161,114975.2,General Semiconductor
+Si,Orthorhombic,Porous,2.76,9.3245,656102.86,General Semiconductor
+ZnO,Cubic,Smooth,2.15,3.1406,890332.59,General Semiconductor
+ZnO,Tetragonal,Nanoparticles,1.98,6.4597,864140.58,General Semiconductor
+GaAs,Hexagonal,Grainy,2.04,2.6336,299029.55,General Semiconductor
+Ge,Cubic,Porous,2.32,2.9731,846504.65,General Semiconductor
+Si,Orthorhombic,Grainy,2.49,4.4152,645112.75,General Semiconductor
+CuO,Orthorhombic,Porous,2.66,4.0771,915942.03,General Semiconductor

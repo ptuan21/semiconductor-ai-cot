@@ -1,0 +1,23 @@
+# Core libraries
+numpy==1.26.0
+pandas==1.5.3
+
+# Hugging Face Transformers for LLMs
+transformers==4.33.2
+torch==2.2.0
+
+
+# Google Generative AI (Gemini)
+google-generativeai==0.1.0
+
+# Environment variable management
+python-dotenv==1.0.0
+
+# Retry mechanism
+tenacity==8.2.2
+
+# Progress bar for data processing
+tqdm==4.66.1
+
+# Optional: For GPU support (if applicable)
+accelerate==0.21.0

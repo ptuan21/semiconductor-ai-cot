@@ -1,0 +1,118 @@
+[
+  {
+    "question": "What is the main objective of the study in: This section aims to operationalise the above framework to make inferences regarding the uniden-",
+    "answer": "tifiability of intermediate sub-tasks in a model’s CoT reasoning process. This would subsequently"
+  },
+  {
+    "question": "What are the main findings in: t+1), this indicates that the model does not apply the task λt+1correctly.",
+    "answer": "Math-Shepherd (Wang et al., 2024b) This method quantifies the potential for a given reason-"
+  },
+  {
+    "question": "What is the main objective of the study in: both multiplication and addition tasks. The goal is to assess the model’s performance on individual",
+    "answer": "operations as well as their combination."
+  },
+  {
+    "question": "What is the main objective of the study in: Avila, Igor Babuschkin, Suchir Balaji, Valerie Balcom, Paul Baltescu, Haiming Bao, Moham-",
+    "answer": "mad Bavarian, Jeff Belgum, Irwan Bello, Jake Berdine, Gabriel Bernadett-Shapiro, Christopher"
+  },
+  {
+    "question": "What are the main findings in: investigate the variation of the electrical resistivity for the CuO thinﬁlms, with the results shown in Table 1 . The sheet resistance was",
+    "answer": "230 kΩ /sq. This value was normalized to a resistivity of 1.707 Ωcm for"
+  },
+  {
+    "question": "What are the main findings in: visible spectrometry. We found that the optical bandgap should be direct, and it decreased from 2.69 to 2.38 eV for the range doped.Interestingly, we determined the relaxation time of the Ni-doped CuO /ITO/glass structure from measuring the electrochemical impedance",
+    "answer": "spectroscopy, and it was 0.36 s for the undoped ﬁlm, then gradually decreased to be 0.31, 0.11, 0.1, and 0.04 s with increasing the Ni doping"
+  },
+  {
+    "question": "What are the main findings in: to 1.88 eV with Ni doping. Also, we found that the absorption length decreased from 99.93 nm to 63.80 nm as the",
+    "answer": "Ni doping increased. In addition, the CuO-based film with 4 wt% Ni doping showed a maximal value of a-FOM as"
+  },
+  {
+    "question": "What is the main objective of the study in: glass substrates using a spin-coating method. Our aim was to elucidate the role of Ni as a dopant on how to adjust the bandgap energy and the",
+    "answer": "film resistivity. Interestingly, we proposed originally a new concept of"
+  },
+  {
+    "question": "What are the main findings in: and (111) planes, according to the XRD patterns. We found that the Table 2",
+    "answer": "Bandgap energy, sheet resistance, absorption length and absorption figure of"
+  },
+  {
+    "question": "What is the main objective of the study in: purposes.",
+    "answer": "2.Experimental methods"
+  },
+  {
+    "question": "What is the main objective of the study in: purposes. 2.2. Fabrication of Cu1–2xMnxSnxO thin films",
+    "answer": "Acetone, ethanol, deionized water, and an ultrasonic bath were used"
+  },
+  {
+    "question": "What are the main findings in: structure belonging to the P4332 space group (JCPDS 01-007-0260). This indicates a phase transition from monoclinic to cubic.",
+    "answer": "The Cu1–2xMnxSnxO crystallite sizes (D) were calculated using"
+  },
+  {
+    "question": "What is the main objective of the study in: represented for comparison purposes.",
+    "answer": "Table 2"
+  },
+  {
+    "question": "What is the main objective of the study in: ascribed to two other phenomena. Rao et al. [39] claimed that the in-",
+    "answer": "crease in compressive strain drives the wider forbidden gap in semi-"
+  },
+  {
+    "question": "What is the main objective of the study in: Materials science research is an interdisciplinary field that aims to",
+    "answer": "design novel materials, discover new phenomena, optimize existing"
+  },
+  {
+    "question": "What is the main objective of the study in: mechanisms [3]. These objectives often necessitate the integration of",
+    "answer": "theory and experiment, as well as the mastery of multidisciplinary"
+  },
+  {
+    "question": "What is the main objective of the study in: fine-tuning process aims to adapt the model more effectively to the",
+    "answer": "nuances and requirements of that domain. Analogously, it transforms a"
+  },
+  {
+    "question": "What is the main objective of the study in: and align with specific domain goals. However, this approach typically",
+    "answer": "demands substantial data, computational resources, and time invest -"
+  },
+  {
+    "question": "What is the main objective of the study in: pairs are commonly employed to achieve this objective [16].",
+    "answer": "In the realm of materials science, groundbreaking investigations"
+  },
+  {
+    "question": "What are the main findings in: volume [42]. This indicates that, through judicious structural de-",
+    "answer": "scriptions, LLMs can extract complex spatial structure features. In"
+  },
+  {
+    "question": "What is the main objective of the study in: volves the strategic decision-making process aimed at achieving specific",
+    "answer": "objectives. Action entails executing operations based on environmental"
+  },
+  {
+    "question": "What is the main objective of the study in: objectives. Action entails executing operations based on environmental",
+    "answer": "data and the formulated plan [51]."
+  },
+  {
+    "question": "What is the main objective of the study in: smaller, manageable sub-goals to handle the task efficiently.",
+    "answer": "2. Chain of Thought (CoT): This standardized prompting technique"
+  },
+  {
+    "question": "What is the main objective of the study in: includes task goals, planning details, current progress, and environ -",
+    "answer": "mental feedback, all of which assist the agent in making decisions for"
+  },
+  {
+    "question": "What is the main objective of the study in: technological requirements and commercial objectives.",
+    "answer": "In Section 3, we explore the potential of LLMs in accelerating"
+  },
+  {
+    "question": "What is the main objective of the study in: which aims to translate human language into executable simulation instructions [53]. This framework is particularly focused on materials",
+    "answer": "simulation, which involves complex scenarios requiring precise trans -"
+  },
+  {
+    "question": "What is the main objective of the study in: dangers. Additionally, it is crucial to align the goals and actions of agents",
+    "answer": "with human values and environmental contexts to prevent unintended"
+  },
+  {
+    "question": "What is the main objective of the study in: achieve this goal, LLM’s development in materials science should focus",
+    "answer": "on the following three points: developing powerful fundamental models S. Yu et al.                                                                                                                                                                                                                                       Artiϧcial  Intelligence  Chemistry  2 (2024)  100076"
+  },
+  {
+    "question": "What is the main objective of the study in: science. While existing general-purpose LLMs excel in natural language",
+    "answer": "processing and general knowledge reasoning, further optimization and"
+  }
+]
