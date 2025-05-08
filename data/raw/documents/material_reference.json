@@ -1,0 +1,254 @@
+{
+  "Si": {
+    "name": "Silicon",
+    "formula": "Si",
+    "crystal_structures": [
+      "Cubic (Diamond)",
+      "Amorphous"
+    ],
+    "typical_bandgap": 1.12,
+    "typical_conductivity": 1000,
+    "thermal_stability": "High",
+    "common_applications": [
+      "Solar cells",
+      "Transistors",
+      "Integrated circuits"
+    ]
+  },
+  "Ge": {
+    "name": "Germanium",
+    "formula": "Ge",
+    "crystal_structures": [
+      "Cubic (Diamond)",
+      "Amorphous"
+    ],
+    "typical_bandgap": 0.67,
+    "typical_conductivity": 2000,
+    "thermal_stability": "Medium",
+    "common_applications": [
+      "Transistors",
+      "Infrared optics",
+      "Photovoltaics"
+    ]
+  },
+  "SiC": {
+    "name": "Silicon Carbide",
+    "formula": "SiC",
+    "crystal_structures": [
+      "Hexagonal (4H, 6H)",
+      "Cubic (3C)"
+    ],
+    "typical_bandgap": 3.26,
+    "typical_conductivity": 500,
+    "thermal_stability": "Very High",
+    "common_applications": [
+      "High-power electronics",
+      "High-temperature devices",
+      "LED"
+    ]
+  },
+  "GaAs": {
+    "name": "Gallium Arsenide",
+    "formula": "GaAs",
+    "crystal_structures": [
+      "Zincblende"
+    ],
+    "typical_bandgap": 1.43,
+    "typical_conductivity": 5000,
+    "thermal_stability": "Medium",
+    "common_applications": [
+      "High-speed devices",
+      "Solar cells",
+      "LEDs",
+      "Lasers"
+    ]
+  },
+  "GaN": {
+    "name": "Gallium Nitride",
+    "formula": "GaN",
+    "crystal_structures": [
+      "Wurtzite",
+      "Zincblende"
+    ],
+    "typical_bandgap": 3.4,
+    "typical_conductivity": 1200,
+    "thermal_stability": "High",
+    "common_applications": [
+      "Blue LEDs",
+      "High-power transistors",
+      "RF devices"
+    ]
+  },
+  "InP": {
+    "name": "Indium Phosphide",
+    "formula": "InP",
+    "crystal_structures": [
+      "Zincblende"
+    ],
+    "typical_bandgap": 1.35,
+    "typical_conductivity": 4600,
+    "thermal_stability": "Medium",
+    "common_applications": [
+      "High-frequency applications",
+      "Photonic integrated circuits",
+      "Solar cells"
+    ]
+  },
+  "AlGaAs": {
+    "name": "Aluminium Gallium Arsenide",
+    "formula": "AlGaAs",
+    "crystal_structures": [
+      "Zincblende"
+    ],
+    "typical_bandgap": 1.8,
+    "typical_conductivity": 3000,
+    "thermal_stability": "Medium",
+    "common_applications": [
+      "Laser diodes",
+      "Heterojunction transistors",
+      "Solar cells"
+    ]
+  },
+  "ZnO": {
+    "name": "Zinc Oxide",
+    "formula": "ZnO",
+    "crystal_structures": [
+      "Wurtzite",
+      "Zincblende",
+      "Rocksalt"
+    ],
+    "typical_bandgap": 3.37,
+    "typical_conductivity": 200,
+    "thermal_stability": "High",
+    "common_applications": [
+      "Transparent electronics",
+      "UV sensors",
+      "Varistors"
+    ]
+  },
+  "CdTe": {
+    "name": "Cadmium Telluride",
+    "formula": "CdTe",
+    "crystal_structures": [
+      "Zincblende"
+    ],
+    "typical_bandgap": 1.5,
+    "typical_conductivity": 650,
+    "thermal_stability": "Medium",
+    "common_applications": [
+      "Solar cells",
+      "Radiation detectors",
+      "Medical imaging"
+    ]
+  },
+  "CdS": {
+    "name": "Cadmium Sulfide",
+    "formula": "CdS",
+    "crystal_structures": [
+      "Wurtzite",
+      "Zincblende"
+    ],
+    "typical_bandgap": 2.42,
+    "typical_conductivity": 10,
+    "thermal_stability": "Medium",
+    "common_applications": [
+      "Photoresistors",
+      "Solar cells",
+      "Optical filters"
+    ]
+  },
+  "Cu2O": {
+    "name": "Copper(I) Oxide",
+    "formula": "Cu2O",
+    "crystal_structures": [
+      "Cubic"
+    ],
+    "typical_bandgap": 2.0,
+    "typical_conductivity": 1,
+    "thermal_stability": "Medium",
+    "common_applications": [
+      "Solar cells",
+      "Photocatalysts",
+      "Sensors"
+    ]
+  },
+  "TiO2": {
+    "name": "Titanium Dioxide",
+    "formula": "TiO2",
+    "crystal_structures": [
+      "Rutile",
+      "Anatase",
+      "Brookite"
+    ],
+    "typical_bandgap": 3.2,
+    "typical_conductivity": 0.1,
+    "thermal_stability": "High",
+    "common_applications": [
+      "Photocatalysts",
+      "Solar cells",
+      "Memristors"
+    ]
+  },
+  "SnO2": {
+    "name": "Tin Dioxide",
+    "formula": "SnO2",
+    "crystal_structures": [
+      "Rutile",
+      "Cassiterite"
+    ],
+    "typical_bandgap": 3.6,
+    "typical_conductivity": 5,
+    "thermal_stability": "High",
+    "common_applications": [
+      "Transparent conductors",
+      "Gas sensors",
+      "Touch screens"
+    ]
+  },
+  "MAPbI3": {
+    "name": "Methylammonium Lead Iodide",
+    "formula": "CH3NH3PbI3",
+    "crystal_structures": [
+      "Tetragonal",
+      "Cubic"
+    ],
+    "typical_bandgap": 1.55,
+    "typical_conductivity": 50,
+    "thermal_stability": "Low",
+    "common_applications": [
+      "Solar cells",
+      "Photodetectors",
+      "Light-emitting devices"
+    ]
+  },
+  "Graphene": {
+    "name": "Graphene",
+    "formula": "C",
+    "crystal_structures": [
+      "Hexagonal"
+    ],
+    "typical_bandgap": 0,
+    "typical_conductivity": 10000,
+    "thermal_stability": "Very High",
+    "common_applications": [
+      "Transparent conductors",
+      "Field-effect transistors",
+      "Sensors"
+    ]
+  },
+  "MoS2": {
+    "name": "Molybdenum Disulfide",
+    "formula": "MoS2",
+    "crystal_structures": [
+      "Hexagonal"
+    ],
+    "typical_bandgap": 1.8,
+    "typical_conductivity": 200,
+    "thermal_stability": "High",
+    "common_applications": [
+      "Field-effect transistors",
+      "Photodetectors",
+      "Lubricants"
+    ]
+  }
+}

@@ -1,0 +1,85 @@
+2025-05-07 22:05:29 | INFO     | utils.chunk_processor:__init__:20 - Khởi tạo ChunkProcessor với chunk_size=500, overlap=100
+2025-05-07 22:05:29 | INFO     | test_chunk_processor:test_chunk_processor_initialization:15 - ✅ Test khởi tạo ChunkProcessor thành công
+2025-05-07 22:05:29 | INFO     | utils.chunk_processor:__init__:20 - Khởi tạo ChunkProcessor với chunk_size=500, overlap=100
+2025-05-07 22:05:29 | INFO     | utils.chunk_processor:__init__:20 - Khởi tạo ChunkProcessor với chunk_size=500, overlap=100
+2025-05-07 22:05:29 | INFO     | utils.chunk_processor:process_text:59 - Đã xử lý văn bản thành 1 chunks
+2025-05-07 22:05:29 | INFO     | test_chunk_processor:test_process_text_basic:29 - ✅ Test xử lý text cơ bản thành công với 1 chunks
+2025-05-07 22:05:29 | INFO     | utils.chunk_processor:__init__:20 - Khởi tạo ChunkProcessor với chunk_size=500, overlap=100
+2025-05-07 22:05:29 | INFO     | utils.chunk_processor:process_text:59 - Đã xử lý văn bản thành 1 chunks
+2025-05-07 22:05:29 | INFO     | test_chunk_processor:test_process_text_with_overlap:37 - ✅ Test overlap giữa các chunks thành công
+2025-05-07 22:05:29 | INFO     | utils.chunk_processor:__init__:20 - Khởi tạo ChunkProcessor với chunk_size=500, overlap=100
+2025-05-07 22:05:29 | INFO     | utils.chunk_processor:merge_small_chunks:107 - Đã gộp chunks: 3 -> 2
+2025-05-07 22:05:29 | INFO     | test_chunk_processor:test_merge_small_chunks:48 - ✅ Test gộp chunks nhỏ thành công: 3 -> 2
+2025-05-07 22:05:29 | INFO     | utils.chunk_processor:__init__:20 - Khởi tạo ChunkProcessor với chunk_size=500, overlap=100
+2025-05-07 22:05:29 | INFO     | utils.chunk_processor:process_text:59 - Đã xử lý văn bản thành 0 chunks
+2025-05-07 22:05:29 | INFO     | test_chunk_processor:test_empty_text:53 - ✅ Test xử lý text rỗng thành công
+2025-05-07 22:05:29 | INFO     | utils.chunk_processor:__init__:20 - Khởi tạo ChunkProcessor với chunk_size=500, overlap=100
+2025-05-07 22:05:29 | INFO     | utils.chunk_processor:process_text:59 - Đã xử lý văn bản thành 1 chunks
+2025-05-07 22:05:29 | INFO     | test_chunk_processor:test_text_with_special_characters:63 - ✅ Test xử lý ký tự đặc biệt thành công
+2025-05-07 22:06:55 | INFO     | conftest:setup_test_env:16 - Setting up test environment
+2025-05-07 22:06:55 | INFO     | conftest:setup_test_env:17 - Project root: /Users/phamtuan/semiconductor-ai-cot
+2025-05-07 22:06:55 | INFO     | conftest:setup_test_env:18 - Python path: ['/Users/phamtuan/semiconductor-ai-cot/tests', '/Users/phamtuan/semiconductor-ai-cot', '/Users/phamtuan/semiconductor-ai-cot/tests', '/Users/phamtuan/semiconductor-ai-cot', '/Users/phamtuan/solcore5/.conda/bin', '/Users/phamtuan/solcore5/.conda/lib/python311.zip', '/Users/phamtuan/solcore5/.conda/lib/python3.11', '/Users/phamtuan/solcore5/.conda/lib/python3.11/lib-dynload', '/Users/phamtuan/solcore5/.conda/lib/python3.11/site-packages', '/Users/phamtuan/semiconductor-ai-cot']
+2025-05-07 22:06:55 | INFO     | utils.chunk_processor:__init__:20 - Khởi tạo ChunkProcessor với chunk_size=500, overlap=100
+2025-05-07 22:06:55 | INFO     | test_chunk_processor:test_chunk_processor_initialization:15 - ✅ Test khởi tạo ChunkProcessor thành công
+2025-05-07 22:06:55 | INFO     | utils.chunk_processor:__init__:20 - Khởi tạo ChunkProcessor với chunk_size=500, overlap=100
+2025-05-07 22:06:55 | INFO     | utils.chunk_processor:__init__:20 - Khởi tạo ChunkProcessor với chunk_size=500, overlap=100
+2025-05-07 22:06:55 | INFO     | utils.chunk_processor:process_text:59 - Đã xử lý văn bản thành 1 chunks
+2025-05-07 22:06:55 | INFO     | test_chunk_processor:test_process_text_basic:29 - ✅ Test xử lý text cơ bản thành công với 1 chunks
+2025-05-07 22:06:55 | INFO     | utils.chunk_processor:__init__:20 - Khởi tạo ChunkProcessor với chunk_size=500, overlap=100
+2025-05-07 22:06:55 | INFO     | utils.chunk_processor:process_text:59 - Đã xử lý văn bản thành 1 chunks
+2025-05-07 22:06:55 | INFO     | test_chunk_processor:test_process_text_with_overlap:37 - ✅ Test overlap giữa các chunks thành công
+2025-05-07 22:06:55 | INFO     | utils.chunk_processor:__init__:20 - Khởi tạo ChunkProcessor với chunk_size=500, overlap=100
+2025-05-07 22:06:55 | INFO     | utils.chunk_processor:merge_small_chunks:107 - Đã gộp chunks: 3 -> 2
+2025-05-07 22:06:55 | INFO     | test_chunk_processor:test_merge_small_chunks:48 - ✅ Test gộp chunks nhỏ thành công: 3 -> 2
+2025-05-07 22:06:55 | INFO     | utils.chunk_processor:__init__:20 - Khởi tạo ChunkProcessor với chunk_size=500, overlap=100
+2025-05-07 22:06:55 | INFO     | utils.chunk_processor:process_text:59 - Đã xử lý văn bản thành 0 chunks
+2025-05-07 22:06:55 | INFO     | test_chunk_processor:test_empty_text:53 - ✅ Test xử lý text rỗng thành công
+2025-05-07 22:06:55 | INFO     | utils.chunk_processor:__init__:20 - Khởi tạo ChunkProcessor với chunk_size=500, overlap=100
+2025-05-07 22:06:55 | INFO     | utils.chunk_processor:process_text:59 - Đã xử lý văn bản thành 1 chunks
+2025-05-07 22:06:55 | INFO     | test_chunk_processor:test_text_with_special_characters:63 - ✅ Test xử lý ký tự đặc biệt thành công
+2025-05-07 22:06:55 | INFO     | conftest:setup_test_env:20 - Cleaning up test environment
+2025-05-07 22:07:09 | INFO     | conftest:setup_test_env:16 - Setting up test environment
+2025-05-07 22:07:09 | INFO     | conftest:setup_test_env:17 - Project root: /Users/phamtuan/semiconductor-ai-cot
+2025-05-07 22:07:09 | INFO     | conftest:setup_test_env:18 - Python path: ['/Users/phamtuan/semiconductor-ai-cot/tests', '/Users/phamtuan/semiconductor-ai-cot', '/Users/phamtuan/semiconductor-ai-cot/tests', '/Users/phamtuan/semiconductor-ai-cot', '/Users/phamtuan/solcore5/.conda/bin', '/Users/phamtuan/semiconductor-ai-cot', '/Users/phamtuan/solcore5/.conda/lib/python311.zip', '/Users/phamtuan/solcore5/.conda/lib/python3.11', '/Users/phamtuan/solcore5/.conda/lib/python3.11/lib-dynload', '/Users/phamtuan/solcore5/.conda/lib/python3.11/site-packages']
+2025-05-07 22:07:09 | INFO     | utils.chunk_processor:__init__:20 - Khởi tạo ChunkProcessor với chunk_size=500, overlap=100
+2025-05-07 22:07:09 | INFO     | test_chunk_processor:test_chunk_processor_initialization:15 - ✅ Test khởi tạo ChunkProcessor thành công
+2025-05-07 22:07:09 | INFO     | utils.chunk_processor:__init__:20 - Khởi tạo ChunkProcessor với chunk_size=500, overlap=100
+2025-05-07 22:07:09 | INFO     | utils.chunk_processor:__init__:20 - Khởi tạo ChunkProcessor với chunk_size=500, overlap=100
+2025-05-07 22:07:09 | INFO     | utils.chunk_processor:process_text:59 - Đã xử lý văn bản thành 1 chunks
+2025-05-07 22:07:09 | INFO     | test_chunk_processor:test_process_text_basic:29 - ✅ Test xử lý text cơ bản thành công với 1 chunks
+2025-05-07 22:07:09 | INFO     | utils.chunk_processor:__init__:20 - Khởi tạo ChunkProcessor với chunk_size=500, overlap=100
+2025-05-07 22:07:09 | INFO     | utils.chunk_processor:process_text:59 - Đã xử lý văn bản thành 1 chunks
+2025-05-07 22:07:09 | INFO     | test_chunk_processor:test_process_text_with_overlap:37 - ✅ Test overlap giữa các chunks thành công
+2025-05-07 22:07:09 | INFO     | utils.chunk_processor:__init__:20 - Khởi tạo ChunkProcessor với chunk_size=500, overlap=100
+2025-05-07 22:07:09 | INFO     | utils.chunk_processor:merge_small_chunks:107 - Đã gộp chunks: 3 -> 2
+2025-05-07 22:07:09 | INFO     | test_chunk_processor:test_merge_small_chunks:48 - ✅ Test gộp chunks nhỏ thành công: 3 -> 2
+2025-05-07 22:07:09 | INFO     | utils.chunk_processor:__init__:20 - Khởi tạo ChunkProcessor với chunk_size=500, overlap=100
+2025-05-07 22:07:09 | INFO     | utils.chunk_processor:process_text:59 - Đã xử lý văn bản thành 0 chunks
+2025-05-07 22:07:09 | INFO     | test_chunk_processor:test_empty_text:53 - ✅ Test xử lý text rỗng thành công
+2025-05-07 22:07:09 | INFO     | utils.chunk_processor:__init__:20 - Khởi tạo ChunkProcessor với chunk_size=500, overlap=100
+2025-05-07 22:07:09 | INFO     | utils.chunk_processor:process_text:59 - Đã xử lý văn bản thành 1 chunks
+2025-05-07 22:07:09 | INFO     | test_chunk_processor:test_text_with_special_characters:63 - ✅ Test xử lý ký tự đặc biệt thành công
+2025-05-07 22:07:09 | INFO     | conftest:setup_test_env:20 - Cleaning up test environment
+2025-05-07 22:12:31 | INFO     | conftest:setup_test_env:16 - Setting up test environment
+2025-05-07 22:12:31 | INFO     | conftest:setup_test_env:17 - Project root: /Users/phamtuan/semiconductor-ai-cot
+2025-05-07 22:12:31 | INFO     | conftest:setup_test_env:18 - Python path: ['/Users/phamtuan/semiconductor-ai-cot/tests', '/Users/phamtuan/semiconductor-ai-cot', '/Users/phamtuan/semiconductor-ai-cot/tests', '/Users/phamtuan/semiconductor-ai-cot', '/Users/phamtuan/solcore5/.conda/bin', '/Users/phamtuan/solcore5/.conda/lib/python311.zip', '/Users/phamtuan/solcore5/.conda/lib/python3.11', '/Users/phamtuan/solcore5/.conda/lib/python3.11/lib-dynload', '/Users/phamtuan/solcore5/.conda/lib/python3.11/site-packages', '/Users/phamtuan/semiconductor-ai-cot']
+2025-05-07 22:12:31 | INFO     | utils.chunk_processor:__init__:20 - Khởi tạo ChunkProcessor với chunk_size=500, overlap=100
+2025-05-07 22:12:31 | INFO     | test_chunk_processor:test_chunk_processor_initialization:15 - ✅ Test khởi tạo ChunkProcessor thành công
+2025-05-07 22:12:31 | INFO     | utils.chunk_processor:__init__:20 - Khởi tạo ChunkProcessor với chunk_size=500, overlap=100
+2025-05-07 22:12:31 | INFO     | test_chunk_processor:test_clean_chunk:21 - ✅ Test làm sạch chunk thành công
+2025-05-07 22:12:31 | INFO     | utils.chunk_processor:__init__:20 - Khởi tạo ChunkProcessor với chunk_size=500, overlap=100
+2025-05-07 22:12:31 | INFO     | utils.chunk_processor:process_text:59 - Đã xử lý văn bản thành 1 chunks
+2025-05-07 22:12:31 | INFO     | test_chunk_processor:test_process_text_basic:29 - ✅ Test xử lý text cơ bản thành công với 1 chunks
+2025-05-07 22:12:31 | INFO     | utils.chunk_processor:__init__:20 - Khởi tạo ChunkProcessor với chunk_size=500, overlap=100
+2025-05-07 22:12:31 | INFO     | utils.chunk_processor:process_text:59 - Đã xử lý văn bản thành 1 chunks
+2025-05-07 22:12:31 | INFO     | test_chunk_processor:test_process_text_with_overlap:37 - ✅ Test overlap giữa các chunks thành công
+2025-05-07 22:12:31 | INFO     | utils.chunk_processor:__init__:20 - Khởi tạo ChunkProcessor với chunk_size=500, overlap=100
+2025-05-07 22:12:31 | INFO     | utils.chunk_processor:merge_small_chunks:110 - Đã gộp chunks: 3 -> 2
+2025-05-07 22:12:31 | INFO     | test_chunk_processor:test_merge_small_chunks:48 - ✅ Test gộp chunks nhỏ thành công: 3 -> 2
+2025-05-07 22:12:31 | INFO     | utils.chunk_processor:__init__:20 - Khởi tạo ChunkProcessor với chunk_size=500, overlap=100
+2025-05-07 22:12:31 | INFO     | utils.chunk_processor:process_text:59 - Đã xử lý văn bản thành 0 chunks
+2025-05-07 22:12:31 | INFO     | test_chunk_processor:test_empty_text:53 - ✅ Test xử lý text rỗng thành công
+2025-05-07 22:12:31 | INFO     | utils.chunk_processor:__init__:20 - Khởi tạo ChunkProcessor với chunk_size=500, overlap=100
+2025-05-07 22:12:31 | INFO     | utils.chunk_processor:process_text:59 - Đã xử lý văn bản thành 1 chunks
+2025-05-07 22:12:31 | INFO     | test_chunk_processor:test_text_with_special_characters:63 - ✅ Test xử lý ký tự đặc biệt thành công
+2025-05-07 22:12:31 | INFO     | conftest:setup_test_env:20 - Cleaning up test environment

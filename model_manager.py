@@ -115,7 +115,7 @@ def chat_with_engine(engine_tuple, message, max_retries=2):
                     "Content-Type": "application/json"
                 }
                 payload = {
-                    "model": "llama3-70b-8192",
+                    "model": "deepseek-r1-distill-llama-70b",
                     "messages": [{"role": "user", "content": message}],
                     "max_tokens": 500
                 }
