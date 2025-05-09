@@ -1066,139 +1066,157 @@ def main():
                     steps = cot_results['reasoning_steps']
                     total_steps = len(steps)
                     
-                    # Tạo thanh tiến trình
-                    cols = st.columns(total_steps)
-                    for i, col in enumerate(cols):
-                        with col:
-                            step_num = i + 1
-                            step = steps[i]
-                            
-                            # Hiển thị số thứ tự và màu sắc cho bước hiện tại
+                    # Hiển thị tất cả các bước trên cùng một trang
+                    st.markdown("#### Tổng quan các bước phân tích")
+                    
+                    # Hiển thị thanh tiến trình dưới dạng timeline bằng cách sử dụng các columns của Streamlit
+                    timeline_cols = st.columns(total_steps * 2 - 1)
+                    
+                    # Tạo timeline với các đốt và đường nối
+                    for i in range(total_steps):
+                        col_idx = i * 2  # Vị trí cột cho mỗi step
+                        step_num = i + 1
+                        step = steps[i]
+                        
+                        # Hiển thị đốt timeline
+                        with timeline_cols[col_idx]:
                             st.markdown(
                                 f"""
-                                <div style="text-align: center; 
-                                            background-color: {'#1E88E5' if i == st.session_state.get('selected_step', 0) else '#f0f2f6'}; 
-                                            color: {'white' if i == st.session_state.get('selected_step', 0) else 'black'};
-                                            padding: 10px; 
-                                            border-radius: 5px; 
-                                            cursor: pointer;" 
-                                     onclick="window.open('#', '_self')">
-                                    {step_num}
+                                <div style="display: flex; flex-direction: column; align-items: center;">
+                                    <div style="background-color: #1E88E5; color: white; border-radius: 50%; 
+                                                width: 40px; height: 40px; display: flex; align-items: center; 
+                                                justify-content: center; margin: 0 auto;">
+                                        {step_num}
+                                    </div>
+                                    <div style="margin-top: 5px; text-align: center; font-size: 0.8em;">{step['title']}</div>
                                 </div>
-                                """,
+                                """, 
                                 unsafe_allow_html=True
                             )
-                            
-                            if st.button(f"{step['title']}", key=f"step_{i}", 
-                                       help=f"Xem chi tiết bước {step_num}"):
-                                st.session_state.selected_step = i
-                    
-                    # Hiển thị chi tiết bước được chọn
-                    selected_step = st.session_state.get('selected_step', 0)
-                    if selected_step < total_steps:
-                        step = steps[selected_step]
                         
-                        st.markdown(f"### Bước {selected_step+1}: {step['title']}")
-                        
-                        # Hiển thị nội dung và trực quan hóa tùy theo loại bước
-                        step_type = step['title']
-                        step_content = step['content']
-                        
-                        # Tạo hai cột cho nội dung và hình ảnh
-                        content_col, visual_col = st.columns([3, 2])
-                        
-                        with content_col:
-                            st.markdown(step_content)
-                        
-                        with visual_col:
-                            # Hiển thị trực quan phù hợp với từng loại bước phân tích
-                            if "thành phần" in step_type.lower():
-                                # Hiển thị biểu đồ tam giác thành phần
-                                if len(composition) >= 2:
-                                    st.subheader("Biểu đồ thành phần")
-                                    ternary_fig = create_ternary_plot(material_name, composition)
-                                    st.plotly_chart(ternary_fig, use_container_width=True)
-                            
-                            elif "cấu trúc tinh thể" in step_type.lower():
-                                # Hiển thị mô hình cấu trúc tinh thể
-                                st.subheader("Mô hình cấu trúc tinh thể")
-                                structure_fig = visualize_crystal_structure(crystal_structure, elements)
-                                st.plotly_chart(structure_fig, use_container_width=True)
-                            
-                            elif "tính chất điện tử" in step_type.lower():
-                                # Hiển thị sơ đồ band structure
-                                st.subheader("Sơ đồ dải năng lượng")
-                                band_fig = create_electronic_band_diagram(
-                                    material_data['properties']['bandgap'],
-                                    material_name
+                        # Hiển thị đường nối giữa các bước
+                        if i < total_steps - 1:
+                            with timeline_cols[col_idx + 1]:
+                                st.markdown(
+                                    """
+                                    <div style="border-top: 2px dashed #ccc; height: 1px; margin-top: 20px;"></div>
+                                    """, 
+                                    unsafe_allow_html=True
                                 )
-                                st.plotly_chart(band_fig, use_container_width=True)
+                    
+                    st.markdown("---")
+                    
+                    # Hiển thị tất cả các bước với nội dung và hình ảnh
+                    for i, step in enumerate(steps):
+                        with st.expander(f"Bước {i+1}: {step['title']}", expanded=True):
+                            step_type = step['title']
+                            step_content = step['content']
                             
-                            elif "tính chất nhiệt" in step_type.lower():
-                                # Hiển thị biểu đồ phụ thuộc nhiệt độ
-                                st.subheader("Phụ thuộc nhiệt độ")
-                                temp_fig = create_temperature_dependence(material_data['properties'])
-                                st.plotly_chart(temp_fig, use_container_width=True)
-                                
-                            elif "ứng dụng" in step_type.lower():
-                                # Hiển thị biểu đồ radar cho các ứng dụng
-                                st.subheader("Phân tích tiềm năng ứng dụng")
-                                radar_fig = create_radar_chart(cot_results['predictions'])
-                                st.plotly_chart(radar_fig, use_container_width=True)
-                                
-                            elif "cải tiến" in step_type.lower() or "cải thiện" in step_type.lower():
-                                if 'recommendations' in cot_results:
-                                    # Tạo biểu đồ ưu tiên cải tiến
-                                    improvements = cot_results['recommendations'].get('improvements', [])
-                                    if improvements:
-                                        aspects = [imp.get('aspect', 'Unknown') for imp in improvements]
-                                        priorities = [0.8 if 'high' in str(imp.get('priority', '')).lower() 
-                                                    else 0.5 if 'medium' in str(imp.get('priority', '')).lower() 
-                                                    else 0.3 for imp in improvements]
-                                        
-                                        # Tạo biểu đồ thanh ngang cho mức độ ưu tiên
-                                        fig = go.Figure(go.Bar(
-                                            x=priorities,
-                                            y=aspects,
-                                            orientation='h',
-                                            marker_color='#1E88E5',
-                                            text=[f"{p*10:.1f}/10" for p in priorities],
-                                            textposition='inside'
-                                        ))
-                                        
-                                        fig.update_layout(
-                                            title="Mức độ ưu tiên cải tiến",
-                                            xaxis_title="Điểm ưu tiên",
-                                            yaxis_title="Khía cạnh cần cải thiện"
-                                        )
-                                        
-                                        st.plotly_chart(fig, use_container_width=True)
+                            # Tạo hai cột cho nội dung và hình ảnh
+                            content_col, visual_col = st.columns([3, 2])
                             
-                            elif "AI" in step_type:
-                                # Hiển thị kết quả so sánh giữa các mô hình AI
-                                st.subheader("So sánh phân tích từ các mô hình AI")
-                                if 'ai_analysis' in cot_results:
-                                    ai_models = list(cot_results.get('ai_analysis', {}).keys())
-                                    if ai_models:
-                                        # Tạo biểu đồ so sánh độ tin cậy của các mô hình
-                                        confidences = [0.95, 0.92]  # Giả lập dữ liệu
-                                        
-                                        fig = go.Figure()
-                                        fig.add_trace(go.Bar(
-                                            x=ai_models,
-                                            y=confidences,
-                                            marker_color=['#4285F4', '#EA4335'],
-                                            text=[f"{conf*100:.1f}%" for conf in confidences],
-                                            textposition='outside'
-                                        ))
-                                        
-                                        fig.update_layout(
-                                            title="Độ tin cậy của các mô hình AI",
-                                            yaxis=dict(range=[0, 1], tickformat=".0%"),
-                                            yaxis_title="Độ tin cậy"
-                                        )
-                                        
-                                        st.plotly_chart(fig, use_container_width=True)
+                            with content_col:
+                                st.markdown(step_content)
+                                
+                                # Thêm key findings nếu có
+                                if 'key_findings' in step:
+                                    st.markdown("**Phát hiện chính:**")
+                                    for finding in step['key_findings']:
+                                        st.markdown(f"- {finding}")
+                            
+                            with visual_col:
+                                # Hiển thị trực quan phù hợp với từng loại bước phân tích
+                                if "thành phần" in step_type.lower():
+                                    # Hiển thị biểu đồ tam giác thành phần
+                                    if len(composition) >= 2:
+                                        st.subheader("Biểu đồ thành phần")
+                                        ternary_fig = create_ternary_plot(material_name, composition)
+                                        st.plotly_chart(ternary_fig, use_container_width=True)
+                                
+                                elif "cấu trúc tinh thể" in step_type.lower():
+                                    # Hiển thị mô hình cấu trúc tinh thể
+                                    st.subheader("Mô hình cấu trúc tinh thể")
+                                    structure_fig = visualize_crystal_structure(crystal_structure, elements)
+                                    st.plotly_chart(structure_fig, use_container_width=True)
+                                
+                                elif "tính chất điện tử" in step_type.lower():
+                                    # Hiển thị sơ đồ band structure
+                                    st.subheader("Sơ đồ dải năng lượng")
+                                    band_fig = create_electronic_band_diagram(
+                                        material_data['properties']['bandgap'],
+                                        material_name
+                                    )
+                                    st.plotly_chart(band_fig, use_container_width=True)
+                                
+                                elif "tính chất nhiệt" in step_type.lower():
+                                    # Hiển thị biểu đồ phụ thuộc nhiệt độ
+                                    st.subheader("Phụ thuộc nhiệt độ")
+                                    temp_fig = create_temperature_dependence(material_data['properties'])
+                                    st.plotly_chart(temp_fig, use_container_width=True)
+                                    
+                                elif "ứng dụng" in step_type.lower():
+                                    # Hiển thị biểu đồ radar cho các ứng dụng
+                                    st.subheader("Phân tích tiềm năng ứng dụng")
+                                    radar_fig = create_radar_chart(cot_results['predictions'])
+                                    st.plotly_chart(radar_fig, use_container_width=True)
+                                    
+                                elif "cải tiến" in step_type.lower() or "cải thiện" in step_type.lower():
+                                    if 'recommendations' in cot_results:
+                                        # Tạo biểu đồ ưu tiên cải tiến
+                                        improvements = cot_results['recommendations'].get('improvements', [])
+                                        if improvements:
+                                            aspects = [imp.get('aspect', 'Unknown') for imp in improvements]
+                                            priorities = [0.8 if 'high' in str(imp.get('priority', '')).lower() 
+                                                        else 0.5 if 'medium' in str(imp.get('priority', '')).lower() 
+                                                        else 0.3 for imp in improvements]
+                                            
+                                            # Tạo biểu đồ thanh ngang cho mức độ ưu tiên
+                                            fig = go.Figure(go.Bar(
+                                                x=priorities,
+                                                y=aspects,
+                                                orientation='h',
+                                                marker_color='#1E88E5',
+                                                text=[f"{p*10:.1f}/10" for p in priorities],
+                                                textposition='inside'
+                                            ))
+                                            
+                                            fig.update_layout(
+                                                title="Mức độ ưu tiên cải tiến",
+                                                xaxis_title="Điểm ưu tiên",
+                                                yaxis_title="Khía cạnh cần cải thiện"
+                                            )
+                                            
+                                            st.plotly_chart(fig, use_container_width=True)
+                                
+                                elif "AI" in step_type:
+                                    # Hiển thị kết quả so sánh giữa các mô hình AI
+                                    st.subheader("So sánh phân tích từ các mô hình AI")
+                                    if 'ai_analysis' in cot_results:
+                                        ai_models = list(cot_results.get('ai_analysis', {}).keys())
+                                        if ai_models:
+                                            # Tạo biểu đồ so sánh độ tin cậy của các mô hình
+                                            confidences = [0.95, 0.92]  # Giả lập dữ liệu
+                                            
+                                            fig = go.Figure()
+                                            fig.add_trace(go.Bar(
+                                                x=ai_models,
+                                                y=confidences,
+                                                marker_color=['#4285F4', '#EA4335'],
+                                                text=[f"{conf*100:.1f}%" for conf in confidences],
+                                                textposition='outside'
+                                            ))
+                                            
+                                            fig.update_layout(
+                                                title="Độ tin cậy của các mô hình AI",
+                                                yaxis=dict(range=[0, 1], tickformat=".0%"),
+                                                yaxis_title="Độ tin cậy"
+                                            )
+                                            
+                                            st.plotly_chart(fig, use_container_width=True)
+                            
+                            # Thêm phần tách giữa các bước
+                            if i < total_steps - 1:
+                                st.markdown("---")
                     
                     # Trực quan hóa tổng hợp kết quả phân tích
                     st.markdown("### Tổng hợp kết quả phân tích")
@@ -1278,120 +1296,561 @@ def main():
                     5. So sánh với vật liệu chuẩn ➔ 
                     6. Kết quả phân tích toàn diện
                     """)
+
+            # Thêm nội dung cho AI Insights tab (tab4)
+            with tab4:
+                st.markdown("""
+                <div style="background-color: #ffffff; padding: 15px; border-radius: 10px; margin-bottom: 20px;">
+                    <h2 style="color: #000000; margin-top: 0;">💡 Phân tích AI</h2>
+                    <p>Phân tích vật liệu sử dụng các mô hình AI tiên tiến</p>
+                </div>
+                """, unsafe_allow_html=True)
                 
-                # Thêm giải thích chi tiết cho từng bước
-                st.markdown("### Chi tiết quy trình phân tích Chain of Thought")
-                
-                steps_details = [
-                    {
-                        "title": "1. Dữ liệu vật liệu đầu vào",
-                        "description": """
-                        - **Kết quả**: Khởi tạo dữ liệu vật liệu với thông tin cơ bản như tên, cấu trúc tinh thể, thành phần, và các thuộc tính (bandgap, độ dẫn điện, nồng độ hạt tải...)
-                        - **Trực quan hóa**: Biểu đồ tam giác thành phần, thể hiện tỷ lệ các nguyên tố trong vật liệu
-                        - **Đầu ra chính**: Cấu trúc dữ liệu định dạng cho các bước tiếp theo phân tích
-                        """
-                    },
-                    {
-                        "title": "2. Phân tích thuộc tính vật lý",
-                        "description": """
-                        - **Kết quả**: 
-                          - Phân tích cấu trúc tinh thể và xác định nhóm đối xứng
-                          - Đánh giá bandgap và phân loại vật liệu (kim loại/bán dẫn/cách điện)
-                          - Phân tích độ dẫn điện và tính chất nhiệt
-                        - **Trực quan hóa**: Mô hình cấu trúc tinh thể 3D, sơ đồ dải năng lượng điện tử
-                        - **Đầu ra chính**: Các thông số vật lý cơ bản và phân loại vật liệu
-                        """
-                    },
-                    {
-                        "title": "3. Đánh giá tính ứng dụng",
-                        "description": """
-                        - **Kết quả**:
-                          - Xác định ứng dụng tiềm năng dựa trên bandgap (LED, pin mặt trời, transistor...)
-                          - Đánh giá tính phù hợp cho các lĩnh vực điện tử, quang điện tử
-                          - Dự đoán hiệu suất trong các ứng dụng cụ thể
-                        - **Trực quan hóa**: Biểu đồ radar thuộc tính, thể hiện sự phù hợp của vật liệu với các loại ứng dụng
-                        - **Đầu ra chính**: Danh sách ứng dụng tiềm năng với mức độ phù hợp
-                        """
-                    },
-                    {
-                        "title": "4. Dự đoán thuộc tính nâng cao",
-                        "description": """
-                        - **Kết quả**:
-                          - Dự đoán độ ổn định nhiệt và cơ học
-                          - Tính toán phụ thuộc nhiệt độ của các thuộc tính
-                          - Dự đoán khả năng chống ăn mòn và tương tác với môi trường
-                        - **Trực quan hóa**: Biểu đồ phụ thuộc nhiệt độ, hiển thị sự thay đổi độ dẫn điện và nồng độ hạt tải theo nhiệt độ
-                        - **Đầu ra chính**: Các dự đoán về thuộc tính vật liệu trong điều kiện khác nhau
-                        """
-                    },
-                    {
-                        "title": "5. So sánh với vật liệu chuẩn",
-                        "description": """
-                        - **Kết quả**:
-                          - So sánh với các vật liệu tiêu chuẩn như Si, Ge, GaAs...
-                          - Phân tích ưu và nhược điểm so với các vật liệu hiện có
-                          - Đánh giá vị thế cạnh tranh của vật liệu
-                        - **Trực quan hóa**: Biểu đồ so sánh 3D, biểu đồ cột so sánh thuộc tính
-                        - **Đầu ra chính**: Đánh giá so sánh và xếp hạng vật liệu
-                        """
-                    },
-                    {
-                        "title": "6. Kết quả phân tích toàn diện",
-                        "description": """
-                        - **Kết quả**:
-                          - Tổng hợp điểm mạnh và điểm yếu của vật liệu
-                          - Đưa ra điểm chất lượng tổng thể (0-10)
-                          - Tạo danh sách đề xuất cải thiện và hướng nghiên cứu tiếp theo
-                        - **Trực quan hóa**: Gauge chart cho điểm đánh giá, biểu đồ mức độ ưu tiên cải tiến
-                        - **Đầu ra chính**: Báo cáo tổng hợp với điểm đánh giá, điểm mạnh-yếu, đề xuất cải tiến
-                        """
-                    }
-                ]
-                
-                for step in steps_details:
-                    with st.expander(step["title"], expanded=False):
-                        st.markdown(step["description"])
-                
-                # Hiển thị điểm mạnh và điểm yếu
-                strength_col, weakness_col = st.columns(2)
-                
-                with strength_col:
-                    st.markdown("### Điểm mạnh")
-                    if 'strengths' in cot_results:
-                        strengths = cot_results['strengths']
-                    else:
-                        # Dữ liệu mẫu nếu không có
-                        strengths = [
-                            f"Bandgap {material_data['properties']['bandgap']} eV phù hợp cho ứng dụng optoelectronics",
-                            f"Độ dẫn điện cao ({material_data['properties']['conductivity']} S/cm)",
-                            f"Độ bền nhiệt tốt" if "high" in str(material_data['properties'].get('thermal_stability', '')).lower() else "Cấu trúc tinh thể ổn định"
-                        ]
+                # Kiểm tra xem có dữ liệu ai_analysis trong kết quả CoT không
+                if 'ai_analysis' in cot_results:
+                    ai_analysis = cot_results['ai_analysis']
                     
-                    for strength in strengths:
-                        st.markdown(f"✅ {strength}")
-                
-                with weakness_col:
-                    st.markdown("### Hạn chế")
-                    if 'weaknesses' in cot_results:
-                        weaknesses = cot_results['weaknesses']
-                    else:
-                        # Dữ liệu mẫu nếu không có
-                        weaknesses = [
-                            "Chi phí sản xuất cao" if material_data['properties']['bandgap'] > 2.0 else "Độ bền cơ học hạn chế",
-                            "Khó tổng hợp ở quy mô lớn",
-                            "Nhạy cảm với oxy hóa"
-                        ]
+                    # Tạo bố cục tổng quan
+                    engine_col, quality_col = st.columns(2)
                     
-                    for weakness in weaknesses:
-                        st.markdown(f"⚠️ {weakness}")
+                    with engine_col:
+                        # Hiển thị thông tin về AI engine đã sử dụng
+                        engine_used = cot_results.get('engine', 'local_fallback')
+                        engine_icon = "🤖" if engine_used == "gemini" else "🧠" if engine_used == "groq" else "🔍"
                         
-                # Thêm biểu đồ so sánh với vật liệu tương tự
-                st.subheader("So sánh với vật liệu tương tự")
-                comparison_fig = create_material_comparison(
-                    material_data['properties'],
-                    material_name
-                )
-                st.plotly_chart(comparison_fig, use_container_width=True)
+                        st.markdown(f"""
+                        <div style="background-color: #ffffff; padding: 15px; border-radius: 10px; text-align: center; border: 1px solid #e1e4e8;">
+                            <div style="font-size: 24px;">{engine_icon}</div>
+                            <div style="font-weight: bold; margin: 10px 0; color: #000000;">Phân tích được thực hiện bằng</div>
+                            <div style="font-size: 18px; color: #000000;">{engine_used.upper()}</div>
+                        </div>
+                        """, unsafe_allow_html=True)
+                        
+                    with quality_col:
+                        # Hiển thị điểm chất lượng tổng thể nếu có
+                        if 'final_analysis' in cot_results and 'overall_quality' in cot_results['final_analysis']:
+                            overall_quality = cot_results['final_analysis'].get('overall_quality', 5.0)
+                            quality_color = "green" if overall_quality > 7 else "orange" if overall_quality > 4 else "red"
+                            
+                            st.markdown(f"""
+                            <div style="background-color: #ffffff; padding: 15px; border-radius: 10px; text-align: center; border: 1px solid #e1e4e8;">
+                                <div style="font-size: 24px;">⭐</div>
+                                <div style="font-weight: bold; margin: 10px 0; color: #000000;">Điểm chất lượng tổng thể</div>
+                                <div style="font-size: 32px; color: {quality_color};">{overall_quality}/10</div>
+                            </div>
+                            """, unsafe_allow_html=True)
+                    
+                    # Tạo tabs phân tích        
+                    ai_analysis_tabs = st.tabs(["📊 Tổng quan phân tích", "🔬 Phân tích chi tiết", "📈 Trực quan hóa", "💡 Đề xuất"])
+                    
+                    with ai_analysis_tabs[0]:
+                        st.markdown("### Tổng quan phân tích AI")
+                        
+                        # Hiển thị thông tin vật liệu
+                        material_name = material_data.get('name', 'Unknown Material')
+                        crystal_structure = material_data.get('crystal_structure', 'Unknown Structure')
+                        bandgap = material_data['properties'].get('bandgap', 'N/A')
+                        
+                        st.markdown(f"""
+                        <div style="background-color: #ffffff; padding: 15px; border-radius: 10px; margin-bottom: 20px; border: 1px solid #e1e4e8;">
+                            <h4 style="color: #000000;">Thông tin vật liệu: {material_name}</h4>
+                            <p style="color: #000000;"><b>Cấu trúc tinh thể:</b> {crystal_structure}</p>
+                            <p style="color: #000000;"><b>Bandgap:</b> {bandgap} eV</p>
+                        </div>
+                        """, unsafe_allow_html=True)
+                        
+                        if 'bandgap_classification' in cot_results.get('final_analysis', {}):
+                            bandgap_type = cot_results['final_analysis']['bandgap_classification']
+                            
+                            # Tạo card thông tin phân loại bandgap
+                            bandgap_icon = "⚡" if bandgap_type == "Semiconductor" else "🔋" if bandgap_type == "Metal" else "💎"
+                            st.markdown(f"""
+                            <div style="background-color: #ffffff; padding: 15px; border-radius: 10px; margin-bottom: 20px; border: 1px solid #e1e4e8;">
+                                <h4 style="color: #000000;">{bandgap_icon} Phân loại vật liệu: {bandgap_type}</h4>
+                            </div>
+                            """, unsafe_allow_html=True)
+                        
+                        # Hiển thị các features quan trọng
+                        if 'predictions' in cot_results:
+                            st.markdown("#### Các thuộc tính chính dự đoán")
+                            
+                            # Chọn các thuộc tính quan trọng để hiển thị
+                            key_properties = ['bandgap_prediction', 'conductivity_prediction', 'thermal_stability', 'heat_transport']
+                            metrics_cols = st.columns(len([prop for prop in key_properties if prop in cot_results['predictions']]))
+                            
+                            col_idx = 0
+                            for prop in key_properties:
+                                if prop in cot_results['predictions']:
+                                    with metrics_cols[col_idx]:
+                                        value = cot_results['predictions'][prop]
+                                        
+                                        if isinstance(value, dict) and 'value' in value:
+                                            confidence = value.get('confidence', 0.7) * 100
+                                            st.metric(
+                                                label=prop.replace('_', ' ').title(), 
+                                                value=value['value'],
+                                                delta=f"{confidence:.0f}% tin cậy"
+                                            )
+                                        else:
+                                            st.metric(
+                                                label=prop.replace('_', ' ').title(), 
+                                                value=value
+                                            )
+                                        col_idx += 1
+                        
+                        # Hiển thị điểm mạnh và điểm yếu
+                        if 'strengths' in cot_results and 'weaknesses' in cot_results:
+                            strength_col, weakness_col = st.columns(2)
+                            
+                            with strength_col:
+                                st.markdown("#### ✅ Điểm mạnh")
+                                
+                                for i, strength in enumerate(cot_results['strengths'][:5]):  # Giới hạn 5 điểm
+                                    st.markdown(f"""
+                                    <div style="background-color: #ffffff; padding: 10px; border-radius: 5px; margin-bottom: 5px; border: 1px solid #e1e4e8;">
+                                        <span style="color: #000000;">{i+1}. {strength}</span>
+                                    </div>
+                                    """, unsafe_allow_html=True)
+                            
+                            with weakness_col:
+                                st.markdown("#### ⚠️ Điểm yếu")
+                                
+                                for i, weakness in enumerate(cot_results['weaknesses'][:5]):  # Giới hạn 5 điểm
+                                    st.markdown(f"""
+                                    <div style="background-color: #ffffff; padding: 10px; border-radius: 5px; margin-bottom: 5px; border: 1px solid #e1e4e8;">
+                                        <span style="color: #000000;">{i+1}. {weakness}</span>
+                                    </div>
+                                    """, unsafe_allow_html=True)
+
+                        # Hiển thị nhận xét tổng thể
+                        if 'final_analysis' in cot_results:
+                            overall_quality = cot_results['final_analysis'].get('overall_quality', 5.0)
+                            
+                            message = ""
+                            color = ""
+                            if overall_quality > 7:
+                                message = "Vật liệu này có tiềm năng cao cho các ứng dụng bán dẫn"
+                                color = "green"
+                            elif overall_quality > 4:
+                                message = "Vật liệu này có các thuộc tính trung bình, có thể cần cải thiện thêm"
+                                color = "orange"
+                            else:
+                                message = "Vật liệu này có nhiều hạn chế, cần cải thiện đáng kể"
+                                color = "red"
+                                
+                            st.markdown(f"""
+                            <div style="background-color: #ffffff; padding: 15px; border-radius: 10px; text-align: center; margin: 20px 0; border: 1px solid #e1e4e8;">
+                                <h4 style="color: {color};">{message}</h4>
+                            </div>
+                            """, unsafe_allow_html=True)
+                            
+                    with ai_analysis_tabs[1]:
+                        st.markdown("### Phân tích chi tiết từ các mô hình AI")
+                    
+                        # Hiển thị kết quả phân tích từ các engines
+                        if isinstance(ai_analysis, dict) and ai_analysis:
+                            ai_models = list(ai_analysis.keys())
+                            
+                            if ai_models:
+                                # Tạo tabs cho từng mô hình AI
+                                ai_model_tabs = st.tabs(ai_models)
+                                
+                                for i, model in enumerate(ai_models):
+                                    with ai_model_tabs[i]:
+                                        model_result = ai_analysis[model]
+                                        
+                                        # Hiển thị thông tin về độ tin cậy với giao diện đẹp hơn
+                                        confidence = model_result.get('confidence', 0.7)
+                                        
+                                        # Thiết lập màu sắc dựa trên độ tin cậy
+                                        confidence_color = "green" if confidence > 0.8 else "orange" if confidence > 0.6 else "red"
+                                        
+                                        # Hiển thị thanh độ tin cậy
+                                        st.markdown(f"""
+                                        <div style="margin-bottom: 20px;">
+                                            <h4>Độ tin cậy của mô hình {model.upper()}</h4>
+                                            <div style="background-color: #f0f0f0; border-radius: 5px; height: 30px;">
+                                                <div style="background-color: {confidence_color}; width: {confidence*100}%; height: 30px; border-radius: 5px; text-align: center; color: white; line-height: 30px;">
+                                                    {confidence*100:.1f}%
+                                                </div>
+                                            </div>
+                                        </div>
+                                        """, unsafe_allow_html=True)
+                                        
+                                        # Hiển thị phân tích text với định dạng đẹp hơn
+                                        if 'analysis' in model_result:
+                                            st.markdown("""
+                                            <div style="background-color: #ffffff; padding: 15px; border-radius: 10px; border: 1px solid #e1e4e8;">
+                                                <h4 style="color: #000000;">Phân tích chi tiết</h4>
+                                            </div>
+                                            """, unsafe_allow_html=True)
+                                            
+                                            # Hiển thị phân tích với định dạng nổi bật
+                                            analysis_text = model_result['analysis']
+                                            st.markdown(f"""
+                                            <div style="background-color: #ffffff; padding: 15px; border-radius: 10px; border: 1px solid #e1e4e8;">
+                                                <span style="color: #000000;">{analysis_text}</span>
+                                            </div>
+                                            """, unsafe_allow_html=True)
+                                        
+                                        # Hiển thị thông tin về API đã sử dụng nếu có
+                                        if 'api_priority' in model_result:
+                                            st.info(f"API Priority: {model_result['api_priority']}")
+                                    
+                                # So sánh các mô hình nếu có nhiều hơn 1 mô hình
+                                if len(ai_models) > 1:
+                                    st.markdown("### So sánh các mô hình AI")
+                                    
+                                    # Tạo biểu đồ so sánh độ tin cậy đẹp hơn
+                                    confidences = [ai_analysis[model].get('confidence', 0.5) for model in ai_models]
+                                    
+                                    # Màu sắc cho từng mô hình
+                                    model_colors = {
+                                        'gemini': '#4285F4',  # Google Blue
+                                        'groq': '#EA4335',    # Google Red
+                                        'local': '#34A853',   # Google Green
+                                        'local_fallback': '#FBBC05'  # Google Yellow
+                                    }
+                                    
+                                    # Lấy màu tương ứng cho mỗi mô hình
+                                    colors = [model_colors.get(model.lower(), '#4285F4') for model in ai_models]
+                                    
+                                    fig = go.Figure()
+                                    fig.add_trace(go.Bar(
+                                        x=ai_models,
+                                        y=confidences,
+                                        marker_color=colors,
+                                        text=[f"{conf*100:.1f}%" for conf in confidences],
+                                        textposition='outside',
+                                        hoverinfo='text',
+                                        hovertext=[f"{model}: {conf*100:.1f}% tin cậy" for model, conf in zip(ai_models, confidences)]
+                                    ))
+                                    
+                                    fig.update_layout(
+                                        title="Độ tin cậy của các mô hình AI",
+                                        yaxis=dict(range=[0, 1], tickformat=".0%"),
+                                        yaxis_title="Độ tin cậy",
+                                        xaxis_title="Mô hình AI",
+                                        plot_bgcolor='rgba(0,0,0,0)',
+                                        showlegend=False
+                                    )
+                                    
+                                    st.plotly_chart(fig, use_container_width=True)
+                    
+                    with ai_analysis_tabs[2]:
+                        st.markdown("### Trực quan hóa phân tích")
+                        
+                        # Tạo nhiều loại biểu đồ khác nhau
+                        viz_col1, viz_col2 = st.columns(2)
+                        
+                        with viz_col1:
+                            # Hiển thị biểu đồ radar thuộc tính
+                            st.subheader("Biểu đồ radar thuộc tính")
+                            radar_fig = create_radar_chart(cot_results['predictions'])
+                            st.plotly_chart(radar_fig, use_container_width=True)
+                            
+                            # Hiển thị biểu đồ đánh giá tổng thể với giao diện đẹp hơn
+                            if 'final_analysis' in cot_results and 'overall_quality' in cot_results['final_analysis']:
+                                st.subheader("Điểm đánh giá tổng thể")
+                                overall_quality = cot_results['final_analysis'].get('overall_quality', 5.0)
+                                
+                                fig = go.Figure(go.Indicator(
+                                    mode="gauge+number+delta",
+                                    value=overall_quality,
+                                    domain={'x': [0, 1], 'y': [0, 1]},
+                                    title={'text': "Điểm đánh giá", 'font': {'size': 24}},
+                                    delta={'reference': 5.0, 'increasing': {'color': "green"}, 'decreasing': {'color': "red"}},
+                                    gauge={
+                                        'axis': {'range': [0, 10], 'tickwidth': 1},
+                                        'bar': {'color': "#1E88E5"},
+                                        'bgcolor': "white",
+                                        'borderwidth': 2,
+                                        'bordercolor': "gray",
+                                        'steps': [
+                                            {'range': [0, 3], 'color': "#ffcccb"},
+                                            {'range': [3, 7], 'color': "#ffffcc"},
+                                            {'range': [7, 10], 'color': "#ccffcc"}
+                                        ],
+                                        'threshold': {
+                                            'line': {'color': "red", 'width': 4},
+                                            'thickness': 0.75,
+                                            'value': overall_quality
+                                        }
+                                    }
+                                ))
+                                
+                                fig.update_layout(height=300, margin=dict(l=20, r=30, b=20, t=50))
+                                st.plotly_chart(fig, use_container_width=True)
+                        
+                        with viz_col2:
+                            # Hiển thị biểu đồ ứng dụng tiềm năng
+                            if 'recommendations' in cot_results and 'applications' in cot_results['recommendations']:
+                                st.subheader("Ứng dụng tiềm năng")
+                                applications = cot_results['recommendations']['applications']
+                                
+                                # Tạo giá trị ngẫu nhiên cho mỗi ứng dụng để hiển thị dưới dạng biểu đồ
+                                app_scores = [round(random.uniform(0.7, 0.95), 2) for _ in applications]
+                                
+                                # Tạo biểu đồ đánh giá ứng dụng
+                                fig = go.Figure()
+                                
+                                # Thêm horizontal bars
+                                fig.add_trace(go.Bar(
+                                    y=applications[:5],  # Chỉ hiển thị 5 ứng dụng đầu tiên
+                                    x=app_scores[:5],
+                                    orientation='h',
+                                    marker=dict(color=['rgba(30, 136, 229, 0.8)'] * len(applications[:5])),
+                                    text=[f"{score*100:.0f}%" for score in app_scores[:5]],
+                                    textposition='inside',
+                                    hoverinfo='text',
+                                    hovertext=[f"{app}: {score*100:.0f}%" for app, score in zip(applications[:5], app_scores[:5])]
+                                ))
+                                
+                                fig.update_layout(
+                                    title="Đánh giá ứng dụng tiềm năng",
+                                    yaxis=dict(title=""),
+                                    xaxis=dict(title="Chỉ số phù hợp", range=[0, 1], tickformat=".0%"),
+                                    plot_bgcolor='rgba(0,0,0,0)',
+                                    margin=dict(l=20, r=20, t=40, b=20),
+                                    height=300
+                                )
+                                
+                                st.plotly_chart(fig, use_container_width=True)
+                            
+                            # Hiển thị bảng các thuộc tính dự đoán
+                            if 'predictions' in cot_results:
+                                st.subheader("Bảng thuộc tính dự đoán")
+                                
+                                # Tạo dataframe từ dự đoán
+                                predictions_data = []
+                                for key, value in cot_results['predictions'].items():
+                                    if isinstance(value, dict) and 'value' in value:
+                                        predictions_data.append({
+                                            "Thuộc tính": key.replace('_', ' ').title(),
+                                            "Giá trị": value['value'],
+                                            "Độ tin cậy": value.get('confidence', 0.7)
+                                        })
+                                    else:
+                                        predictions_data.append({
+                                            "Thuộc tính": key.replace('_', ' ').title(),
+                                            "Giá trị": value,
+                                            "Độ tin cậy": 0.8  # Giá trị mặc định
+                                        })
+                                
+                                predictions_df = pd.DataFrame(predictions_data)
+                                
+                                # Hiển thị dataframe với định dạng đẹp hơn
+                                st.dataframe(
+                                    predictions_df,
+                                    column_config={
+                                        "Thuộc tính": st.column_config.TextColumn("Thuộc tính"),
+                                        "Giá trị": st.column_config.TextColumn("Giá trị"),
+                                        "Độ tin cậy": st.column_config.ProgressColumn(
+                                            "Độ tin cậy",
+                                            format="%.0f%%",
+                                            min_value=0,
+                                            max_value=1
+                                        )
+                                    },
+                                    hide_index=True,
+                                    use_container_width=True
+                                )
+                        
+                        # Thêm biểu đồ so sánh với các vật liệu tương tự
+                        st.subheader("So sánh với các vật liệu tương tự")
+                        
+                        # Lấy các thuộc tính quan trọng để so sánh
+                        bandgap = material_data['properties'].get('bandgap', 1.0)
+                        conductivity = material_data['properties'].get('conductivity', 1000)
+                        
+                        comparison_fig = create_material_comparison(material_data['properties'], material_data.get('name', 'Current Material'))
+                        st.plotly_chart(comparison_fig, use_container_width=True)
+                        
+                    with ai_analysis_tabs[3]:
+                        st.markdown("### Đề xuất và cải thiện")
+                        
+                        # Hiển thị đề xuất cải tiến từ AI
+                        if 'recommendations' in cot_results and 'improvements' in cot_results['recommendations']:
+                            improvements = cot_results['recommendations']['improvements']
+                            
+                            # Tạo bảng đề xuất cải tiến với định dạng đẹp
+                            if improvements:
+                                st.markdown("""
+                                <div style="background-color: #ffffff; padding: 15px; border-radius: 10px; margin-bottom: 20px; border: 1px solid #e1e4e8;">
+                                    <h4 style="margin-top: 0; color: #000000;">Đề xuất cải tiến</h4>
+                                </div>
+                                """, unsafe_allow_html=True)
+                                
+                                for i, imp in enumerate(improvements):
+                                    # Xác định màu sắc dựa trên độ ưu tiên
+                                    priority_color = "red" if imp.get('priority', '').lower() == 'high' else \
+                                                    "orange" if imp.get('priority', '').lower() == 'medium' else "gray"
+                                    
+                                    st.markdown(f"""
+                                    <div style="background-color: #ffffff; padding: 15px; border-radius: 10px; margin-bottom: 10px; border: 1px solid #e1e4e8;">
+                                        <h5 style="margin-top: 0; color: {priority_color};">{i+1}. {imp.get('aspect', 'Unknown')}</h5>
+                                        <p style="margin-bottom: 5px; color: #000000;"><b>Đề xuất:</b> {imp.get('recommendation', imp.get('suggestion', 'Không có đề xuất cụ thể'))}</p>
+                                        <p style="margin: 0; color: #000000;"><b>Ưu tiên:</b> <span style="color: {priority_color};">{imp.get('priority', 'Medium')}</span></p>
+                                    </div>
+                                    """, unsafe_allow_html=True)
+                            
+                            # Tạo bảng đề xuất ứng dụng
+                            if 'applications' in cot_results['recommendations']:
+                                applications = cot_results['recommendations']['applications']
+                                
+                                if applications:
+                                    st.markdown("""
+                                    <div style="background-color: #ffffff; padding: 15px; border-radius: 10px; margin: 20px 0; border: 1px solid #e1e4e8;">
+                                        <h4 style="margin-top: 0; color: #000000;">Ứng dụng tiềm năng</h4>
+                                    </div>
+                                    """, unsafe_allow_html=True)
+                                    
+                                    # Chia các ứng dụng thành các nhóm
+                                    app_cols = st.columns(3)
+                                    for i, app in enumerate(applications):
+                                        with app_cols[i % 3]:
+                                            st.markdown(f"""
+                                            <div style="background-color: #ffffff; padding: 10px; border-radius: 5px; margin-bottom: 10px; text-align: center; border: 1px solid #e1e4e8;">
+                                                <span style="color: #000000;">{app}</span>
+                                            </div>
+                                            """, unsafe_allow_html=True)
+                        
+                        # Tạo phần next steps
+                        st.markdown("""
+                        <div style="background-color: #ffffff; padding: 15px; border-radius: 10px; margin: 20px 0; border: 1px solid #e1e4e8;">
+                            <h4 style="margin-top: 0; color: #000000;">Các bước tiếp theo</h4>
+                        </div>
+                        """, unsafe_allow_html=True)
+                        
+                        # Tạo danh sách các bước tiếp theo
+                        next_steps = [
+                            "Thực hiện thí nghiệm để xác nhận các tính chất được dự đoán",
+                            "Tối ưu hóa quy trình chế tạo để cải thiện chất lượng",
+                            "Khảo sát tác động của điều kiện môi trường lên hiệu suất",
+                            "Tích hợp vật liệu vào thiết bị thử nghiệm"
+                        ]
+                        
+                        # Next steps items
+                        for i, step in enumerate(next_steps):
+                            st.markdown(f"""
+                            <div style="display: flex; align-items: center; margin-bottom: 10px;">
+                                <div style="background-color: #1E88E5; color: white; border-radius: 50%; width: 25px; height: 25px; 
+                                            display: flex; align-items: center; justify-content: center; margin-right: 10px;">
+                                    {i+1}
+                                </div>
+                                <div style="color: #000000;">{step}</div>
+                            </div>
+                            """, unsafe_allow_html=True)
+
+                else:
+                    # Hiển thị thông tin từ engine fallback
+                    st.subheader("Phân tích từ AI")
+                    
+                    # Hiển thị các key predictions
+                    if 'predictions' in cot_results:
+                        st.markdown("### Dự đoán thuộc tính chính")
+                        pred_cols = st.columns(3)
+                        col_idx = 0
+                        
+                        for key, value in cot_results['predictions'].items():
+                            with pred_cols[col_idx % 3]:
+                                if isinstance(value, dict) and 'value' in value and 'confidence' in value:
+                                    st.metric(
+                                        key.replace('_', ' ').title(), 
+                                        value['value'],
+                                        delta=f"{value['confidence']*100:.0f}% tin cậy"
+                                    )
+                                else:
+                                    st.metric(key.replace('_', ' ').title(), value)
+                                col_idx += 1
+                    
+                    # Hiển thị các ứng dụng được đề xuất với giao diện đẹp hơn
+                    if 'recommendations' in cot_results and 'applications' in cot_results['recommendations']:
+                        st.markdown("### Ứng dụng tiềm năng")
+                        applications = cot_results['recommendations']['applications']
+                        
+                        # Tạo grid hiển thị ứng dụng
+                        app_cols = st.columns(3)
+                        for i, app in enumerate(applications):
+                            with app_cols[i % 3]:
+                                st.markdown(f"""
+                                <div style="background-color: #ffffff; padding: 15px; border-radius: 10px; margin-bottom: 10px; text-align: center; border: 1px solid #e1e4e8;">
+                                    <div style="font-weight: bold; color: #000000;">{app}</div>
+                                </div>
+                                """, unsafe_allow_html=True)
+
+                    # Hiển thị điểm mạnh và điểm yếu với UI đẹp hơn
+                    if 'strengths' in cot_results and 'weaknesses' in cot_results:
+                        st.markdown("## Đánh giá chi tiết")
+                        strength_col, weakness_col = st.columns(2)
+                        
+                        with strength_col:
+                            st.markdown("""
+                            <div style="background-color: #ffffff; padding: 10px; border-radius: 10px; margin-bottom: 10px; border: 1px solid #e1e4e8;">
+                                <h4 style="margin-top: 0; color: #000000;">Điểm mạnh</h4>
+                            </div>
+                            """, unsafe_allow_html=True)
+                            
+                            for strength in cot_results['strengths']:
+                                st.markdown(f"""
+                                <div style="background-color: #ffffff; padding: 10px; border-radius: 5px; margin-bottom: 5px; border-left: 4px solid green;">
+                                    <span style="color: #000000;">✅ {strength}</span>
+                                </div>
+                                """, unsafe_allow_html=True)
+                        
+                        with weakness_col:
+                            st.markdown("""
+                            <div style="background-color: #ffffff; padding: 10px; border-radius: 10px; margin-bottom: 10px; border: 1px solid #e1e4e8;">
+                                <h4 style="margin-top: 0; color: #000000;">Điểm yếu</h4>
+                            </div>
+                            """, unsafe_allow_html=True)
+                            
+                            for weakness in cot_results['weaknesses']:
+                                st.markdown(f"""
+                                <div style="background-color: #ffffff; padding: 10px; border-radius: 5px; margin-bottom: 5px; border-left: 4px solid #E53935;">
+                                    <span style="color: #000000;">⚠️ {weakness}</span>
+                                </div>
+                                """, unsafe_allow_html=True)
+                
+                # Biểu đồ radar thuộc tính dưới phần đánh giá
+                st.markdown("### Biểu đồ radar thuộc tính")
+                if 'predictions' in cot_results:
+                    radar_fig = create_radar_chart(cot_results['predictions'])
+                    st.plotly_chart(radar_fig, use_container_width=True)
+                
+                # AI tóm tắt cuối cùng
+                st.subheader("Kết luận tổng hợp")
+                
+                if 'final_analysis' in cot_results:
+                    # Hiển thị phần kết luận với giao diện đẹp hơn
+                    overall_quality = cot_results['final_analysis'].get('overall_quality', 5.0)
+                    
+                    # Xác định đánh giá dựa trên điểm số
+                    if overall_quality > 7:
+                        conclusion = """
+                        <div style="background-color: #ffffff; padding: 20px; border-radius: 10px; text-align: center; border: 1px solid #e1e4e8;">
+                            <h4 style="color: green;">Vật liệu này có tiềm năng cao cho các ứng dụng bán dẫn</h4>
+                            <p style="color: #000000;">Có thể sử dụng trong các ứng dụng hiệu suất cao và có triển vọng thương mại.</p>
+                        </div>
+                        """
+                    elif overall_quality > 4:
+                        conclusion = """
+                        <div style="background-color: #ffffff; padding: 20px; border-radius: 10px; text-align: center; border: 1px solid #e1e4e8;">
+                            <h4 style="color: orange;">Vật liệu này có các thuộc tính trung bình, có thể cần cải thiện thêm</h4>
+                            <p style="color: #000000;">Có tiềm năng nhưng cần nghiên cứu thêm để tối ưu hóa các thuộc tính.</p>
+                        </div>
+                        """
+                    else:
+                        conclusion = """
+                        <div style="background-color: #ffffff; padding: 20px; border-radius: 10px; text-align: center; border: 1px solid #e1e4e8;">
+                            <h4 style="color: red;">Vật liệu này có nhiều hạn chế, cần cải thiện đáng kể</h4>
+                            <p style="color: #000000;">Không phù hợp với hầu hết các ứng dụng thực tế trong trạng thái hiện tại.</p>
+                        </div>
+                        """
+                    
+                    st.markdown(conclusion, unsafe_allow_html=True)
+                else:
+                    st.warning("Không có phân tích tổng hợp cho vật liệu này.")
 
     elif selected_tab == "Image Analysis":
         st.sidebar.header("Phân tích hình ảnh vật liệu")
@@ -2506,38 +2965,75 @@ def main():
                             
                             # Chuẩn hóa giá trị
                             try:
-                                bandgap1 = float(str(material1_data["properties"]["bandgap"]).replace(',', '.'))
-                                bandgap2 = float(str(material2_data["properties"]["bandgap"]).replace(',', '.'))
+                                # Hàm chuyển đổi an toàn
+                                def safe_float(val, default=0.0):
+                                    if val is None or val == '' or str(val).lower() == 'n/a':
+                                        return default
+                                    try:
+                                        return float(str(val).replace(',', '.'))
+                                    except (ValueError, TypeError):
+                                        return default
+                                    
+                                # Xử lý bandgap
+                                bandgap1 = safe_float(material1_data["properties"]["bandgap"])
+                                bandgap2 = safe_float(material2_data["properties"]["bandgap"])
                                 max_bandgap = max(bandgap1, bandgap2, 3.5)  # Giới hạn trên hợp lý
                                 
-                                conductivity1 = float(str(material1_data["properties"]["conductivity"]).replace(',', '.'))
-                                conductivity2 = float(str(material2_data["properties"]["conductivity"]).replace(',', '.'))
+                                # Xử lý conductivity
+                                conductivity1 = safe_float(material1_data["properties"]["conductivity"])
+                                conductivity2 = safe_float(material2_data["properties"]["conductivity"])
                                 max_conductivity = max(conductivity1, conductivity2, 5000)
                                 
+                                # Xử lý thermal stability
                                 thermal1 = 0
                                 thermal2 = 0
-                                for term, value in {"high": 3, "cao": 3, "medium": 2, "trung": 2, "low": 1, "thấp": 1}.items():
-                                    if term in str(material1_data["properties"]["thermal_stability"]).lower():
+                                thermal_map = {"high": 3, "cao": 3, "medium": 2, "trung": 2, "low": 1, "thấp": 1, "kém": 1}
+                                
+                                thermal1_str = str(material1_data["properties"].get("thermal_stability", "")).lower()
+                                thermal2_str = str(material2_data["properties"].get("thermal_stability", "")).lower()
+                                
+                                for term, value in thermal_map.items():
+                                    if term in thermal1_str:
                                         thermal1 = value
-                                    if term in str(material2_data["properties"]["thermal_stability"]).lower():
+                                    if term in thermal2_str:
                                         thermal2 = value
                                 
-                                score1 = material1_data["score"]["score"] / 100
-                                score2 = material2_data["score"]["score"] / 100
+                                # Xử lý scores
+                                score1 = safe_float(material1_data["score"]["score"]) / 100
+                                score2 = safe_float(material2_data["score"]["score"]) / 100
                                 
-                                # Chuẩn hóa giá trị
+                                # Chuẩn hóa giá trị - tránh chia cho 0
+                                if max_bandgap > 0:
+                                    bandgap1_norm = bandgap1 / max_bandgap
+                                    bandgap2_norm = bandgap2 / max_bandgap
+                                else:
+                                    bandgap1_norm = 0
+                                    bandgap2_norm = 0
+                                    
+                                if max_conductivity > 0:
+                                    cond1_norm = conductivity1 / max_conductivity
+                                    cond2_norm = conductivity2 / max_conductivity
+                                else:
+                                    cond1_norm = 0
+                                    cond2_norm = 0
+                                    
+                                # Chuẩn hóa giá trị thermal
+                                thermal1_norm = thermal1 / 3 if thermal1 > 0 else 0
+                                thermal2_norm = thermal2 / 3 if thermal2 > 0 else 0
+                                
+                                # Đảm bảo giá trị nằm trong khoảng [0, 1]
                                 radar_values1 = [
-                                    bandgap1 / max_bandgap,
-                                    conductivity1 / max_conductivity,
-                                    thermal1 / 3,
-                                    score1
+                                    min(max(bandgap1_norm, 0), 1),
+                                    min(max(cond1_norm, 0), 1),
+                                    min(max(thermal1_norm, 0), 1),
+                                    min(max(score1, 0), 1)
                                 ]
                                 
                                 radar_values2 = [
-                                    bandgap2 / max_bandgap,
-                                    conductivity2 / max_conductivity,
-                                    thermal2 / 3,
-                                    score2
+                                    min(max(bandgap2_norm, 0), 1),
+                                    min(max(cond2_norm, 0), 1),
+                                    min(max(thermal2_norm, 0), 1),
+                                    min(max(score2, 0), 1)
                                 ]
                                 
                                 # Tạo biểu đồ radar

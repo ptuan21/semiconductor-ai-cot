@@ -259,9 +259,9 @@ class APIRateManager:
     def __init__(self):
         self.api_states = {
             "gemini": {
-                "apis": ["gemini-1.5-flash"],
+                "apis": ["gemini-1.5-flash-latest"],
                 "limits": {
-                    "gemini-1.5-flash": {"requests": 60, "window": 60}  # 60 requests/minute
+                    "gemini-1.5-flash-latest": {"requests": 60, "window": 60}  # 60 requests/minute
                 },
                 "usage": {}
             },
@@ -1533,7 +1533,7 @@ def list_available_gemini_models():
         except Exception as e:
             print(f"⚠️ Không thể lấy danh sách Gemini models: {e}")
             # Thử các model cơ bản
-            test_models = ["gemini-1.5-flash", "gemini-1.5-pro", "gemini-pro", "gemini-pro-vision"]
+            test_models = ["gemini-1.5-flash-latest", "gemini-1.5-pro", "gemini-pro", "gemini-pro-vision"]
             for model_name in test_models:
                 try:
                     model = genai.GenerativeModel(model_name)
@@ -1560,7 +1560,7 @@ def test_api_health(api_name, api_key, test_prompt="Hello, this is a test."):
         if api_name == "gemini":
             # Cấu hình Gemini
             genai.configure(api_key=api_key)
-            model = genai.GenerativeModel('gemini-1.5-flash')
+            model = genai.GenerativeModel('gemini-1.5-flash-latest')
             
             # Gửi yêu cầu đơn giản
             start_time = time.time()
@@ -1680,7 +1680,7 @@ def scan_available_apis(api_rate_manager=None, verbose=True):
         
         if gemini_models and health_check["status"] == "healthy":
             api_scan_results["apis"]["gemini"]["status"] = "available"
-            api_scan_results["apis"]["gemini"]["recommended_model"] = "gemini-1.5-flash"
+            api_scan_results["apis"]["gemini"]["recommended_model"] = "gemini-1.5-flash-latest"
             api_scan_results["summary"]["total_healthy_apis"] += 1
             api_scan_results["summary"]["recommended_apis"].append("gemini")
             
