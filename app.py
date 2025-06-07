@@ -608,7 +608,7 @@ def create_heatmap_correlation(properties):
     ))
     
     fig.update_layout(
-        title="Tương quan giữa các thuộc tính vật liệu",
+        title="Correlation between material properties",
         height=500,
         width=700
     )
@@ -663,7 +663,7 @@ def create_ternary_plot(material_name, composition):
     }))
     
     fig.update_layout(
-        title=f"Thành phần vật liệu {material_name}",
+        title=f"Material composition {material_name}",
         ternary={
             'aaxis':{'title': list(composition.keys())[0], 'min': 0, 'linewidth':2, 'ticks':'outside'},
             'baxis':{'title': list(composition.keys())[1], 'min': 0, 'linewidth':2, 'ticks':'outside'},
@@ -713,7 +713,7 @@ def create_3d_scatter_plot(properties):
     
     # Cập nhật layout
     fig.update_layout(
-        title="So sánh vật liệu trong không gian 3D",
+        title="Compare materials in 3D space",
         scene = {
             'xaxis': {'title': 'Bandgap (eV)'},
             'yaxis': {'title': 'Conductivity (S/cm)'},
@@ -770,7 +770,7 @@ def create_electronic_band_diagram(bandgap, material_name):
     
     # Cập nhật layout
     fig.update_layout(
-        title=f'Sơ đồ dải năng lượng điện tử cho {material_name}',
+        title=f'Electron energy band diagram for {material_name}',
         xaxis_title='Vector sóng k',
         yaxis_title='Năng lượng (eV)',
         height=500,
@@ -887,13 +887,13 @@ def main():
             
             with tab1:
                 # Cải thiện layout
-                st.subheader("Thông tin tổng quan về vật liệu")
+                st.subheader("Material Overview")
                 
                 material_card = f"""
                 <div style="padding: 20px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); margin-bottom: 20px; background-color: #f8f9fa;">
                     <h3 style="color: #1E88E5;">{material_name}</h3>
-                    <p><b>Cấu trúc tinh thể:</b> {crystal_structure}</p>
-                    <p><b>Thành phần:</b> {', '.join([f"{elem} ({ratio*100:.1f}%)" for elem, ratio in zip(elements, ratios) if elem])}</p>
+                    <p><b>Crystal structure:</b> {crystal_structure}</p>
+                    <p><b>Ingredient:</b> {', '.join([f"{elem} ({ratio*100:.1f}%)" for elem, ratio in zip(elements, ratios) if elem])}</p>
                 </div>
                 """
                 st.markdown(material_card, unsafe_allow_html=True)
@@ -901,46 +901,46 @@ def main():
                 col1, col2 = st.columns(2)
                 
                 with col1:
-                    st.subheader("Thuộc tính cơ bản")
+                    st.subheader("Basic properties")
                     properties_df = create_material_properties_table(cot_results['basic_properties'])
                     st.dataframe(properties_df, use_container_width=True, hide_index=True)
                     
-                    st.subheader("Dự đoán thuộc tính")
+                    st.subheader("Attribute prediction")
                     prediction_df = pd.DataFrame([{
-                        "Thuộc tính": key.replace('_', ' ').title(),
-                        "Dự đoán": value.get('value', 'N/A') if isinstance(value, dict) else value
+                        "Attribute": key.replace('_', ' ').title(),
+                        "Prediction": value.get('value', 'N/A') if isinstance(value, dict) else value
                     } for key, value in cot_results['predictions'].items()])
                     st.dataframe(prediction_df, use_container_width=True, hide_index=True)
                     
                     # Thêm điểm chất lượng tổng thể
                     st.metric(
-                        "Điểm chất lượng tổng thể", 
+                        "Overall Quality Score", 
                         f"{cot_results['final_analysis']['overall_quality']:.1f}/10.0",
                         delta=None if cot_results['final_analysis']['overall_quality'] < 5 else "Tốt"
                     )
                 
                 with col2:
-                    st.subheader("Biểu đồ radar thuộc tính")
+                    st.subheader("Attribute radar chart")
                     radar_fig = create_radar_chart(cot_results['predictions'])
                     st.plotly_chart(radar_fig, use_container_width=True)
                 
                 # Thêm biểu đồ tam giác thành phần
                 if len(composition) >= 2:
-                    st.subheader("Biểu đồ thành phần vật liệu")
+                    st.subheader("Material composition chart")
                     ternary_fig = create_ternary_plot(material_name, composition)
                     st.plotly_chart(ternary_fig, use_container_width=True)
             
             with tab2:
-                st.subheader("Trực quan hóa nâng cao")
+                st.subheader("Advanced visualization")
                 
                 tabs_advanced = st.tabs([
-                    "Cấu trúc tinh thể", "Sơ đồ dải năng lượng", 
-                    "So sánh 3D", "Tương quan thuộc tính", 
-                    "Phụ thuộc nhiệt độ"
+                    "Crystal Structure", "Energy Band Diagram",
+                    "3D Comparison", "Property Correlation",
+                    "Temperature Dependence"   
                 ])
                 
                 with tabs_advanced[0]:
-                    st.subheader("Trực quan hóa cấu trúc tinh thể")
+                    st.subheader("Crystal structure visualization")
                     structure_fig = visualize_crystal_structure(
                         crystal_structure,
                         elements
@@ -995,19 +995,19 @@ def main():
                     
                     col1, col2, col3 = st.columns(3)
                     with col1:
-                        st.button("Xoay 90° trái", key="rotate_left_btn", on_click=rotate_left)
+                        st.button("Rotate 90° left", key="rotate_left_btn", on_click=rotate_left)
                     with col2:
-                        st.button("Xoay 90° phải", key="rotate_right_btn", on_click=rotate_right)
+                        st.button("Rotate 90° right", key="rotate_right_btn", on_click=rotate_right)
                     with col3:
-                        st.button("Đặt lại góc nhìn", key="reset_view_btn", on_click=reset_view)
-                    
+                        st.button("Reset perspective", key="reset_view_btn", on_click=reset_view)
+               
                     # Hiển thị thông tin góc quay hiện tại
                     if hasattr(st.session_state, 'rotation_changed') and st.session_state.rotation_changed:
-                        st.success(f"Đã thay đổi góc nhìn - Góc quay hiện tại: X={st.session_state.rotation_x}°, Y={st.session_state.rotation_y}°, Z={st.session_state.rotation_z}°")
+                        st.success(f"Changed perspective - Current camera angle: X={st.session_state.rotation_x}°, Y={st.session_state.rotation_y}°, Z={st.session_state.rotation_z}°")
                         st.session_state.rotation_changed = False
                 
                 with tabs_advanced[1]:
-                    st.subheader("Sơ đồ dải năng lượng điện tử")
+                    st.subheader("Electron energy band diagram")
                     band_diagram = create_electronic_band_diagram(
                         material_data['properties']['bandgap'],
                         material_name
@@ -1015,35 +1015,34 @@ def main():
                     st.plotly_chart(band_diagram, use_container_width=True)
                     
                     # Thêm giải thích
-                    with st.expander("Giải thích sơ đồ dải năng lượng"):
+                    with st.expander("Energy band diagram explained"):
                         st.markdown("""
-                        - **Dải dẫn (màu đỏ)**: Các mức năng lượng trống mà điện tử có thể chuyển lên khi được kích thích
-                        - **Dải hóa trị (màu xanh)**: Các mức năng lượng đã có điện tử chiếm giữ
-                        - **Vùng cấm (khoảng giữa)**: Khoảng cách năng lượng giữa đỉnh dải hóa trị và đáy dải dẫn
-                        - **Mức Fermi (đường đứt nét màu xanh lá)**: Mức năng lượng tham chiếu
+                        - **Conduction band (red)**: Empty energy levels to which electrons can move when excited
+                        - **Valence band (blue)**: Energy levels occupied by electrons
+                        - **Bandgap (green)**: Energy difference between the valence and conduction bands
+                        - **Fermi level (dashed blue)**: Energy level at which the probability of finding an electron is 50%
                         """)
                 
                 with tabs_advanced[2]:
-                    st.subheader("So sánh vật liệu trong không gian 3D")
+                    st.subheader("Compare materials in 3D space")
                     scatter_3d = create_3d_scatter_plot(material_data['properties'])
                     st.plotly_chart(scatter_3d, use_container_width=True)
                     
-                    st.info("Biểu đồ này thể hiện vị trí của vật liệu hiện tại (màu đỏ) so với các vật liệu bán dẫn phổ biến trong không gian 3 chiều: bandgap, độ dẫn điện và mật độ.")
+                    st.info("This diagram shows the position of the current material (red) relative to common semiconductor materials in 3-dimensional space: bandgap, conductivity, and density.")
                 
                 with tabs_advanced[3]:
-                    st.subheader("Tương quan giữa các thuộc tính vật liệu")
+                    st.subheader("Correlation between material properties")
                     heatmap_fig = create_heatmap_correlation(material_data['properties'])
                     st.plotly_chart(heatmap_fig, use_container_width=True)
-                    
-                    st.info("Biểu đồ nhiệt này thể hiện mức độ tương quan giữa các thuộc tính vật lý của vật liệu. Giá trị gần 1 thể hiện tương quan thuận mạnh, giá trị gần -1 thể hiện tương quan nghịch mạnh.")
+                    st.info("This heatmap shows the correlation between the physical properties of the material. A value close to 1 indicates a strong positive correlation, while a value close to -1 indicates a strong negative correlation.")
                 
                 with tabs_advanced[4]:
-                    st.subheader("Phụ thuộc vào nhiệt độ")
+                    st.subheader("Temperature dependence")
                     temp_fig = create_temperature_dependence(material_data['properties'])
                     st.plotly_chart(temp_fig, use_container_width=True)
                     
                     # Thêm slider để điều chỉnh nhiệt độ
-                    temperature = st.slider("Nhiệt độ (K)", 100, 1000, 300)
+                    temperature = st.slider("Temperature (K)", 100, 1000, 300)
                     
                     # Hiển thị thuộc tính tại nhiệt độ đã chọn
                     conductivity_at_temp = material_data['properties']['conductivity'] * np.exp(-0.1 * (temperature - 300) / 300)
@@ -1051,23 +1050,23 @@ def main():
                     
                     col1, col2 = st.columns(2)
                     with col1:
-                        st.metric("Độ dẫn điện tại nhiệt độ đã chọn", f"{conductivity_at_temp:.2f} S/cm")
+                        st.metric("Conductivity at selected temperature", f"{conductivity_at_temp:.2f} S/cm")
                     with col2:
-                        st.metric("Nồng độ hạt tải tại nhiệt độ đã chọn", f"{carrier_conc_at_temp:.2e} cm⁻³")
+                        st.metric("Carrier concentration at selected temperature", f"{carrier_conc_at_temp:.2e} cm⁻³")
 
             # Thêm nội dung cho Chain of Thought tab (tab3)
             with tab3:
-                st.subheader("Chain of Thought (Quá trình suy luận)")
+                st.subheader("Chain of Thought (Reasoning process)")
                 
                 # Thêm tiến trình phân tích theo bước
                 if 'reasoning_steps' in cot_results:
                     # Hiển thị tiến trình phân tích
-                    st.markdown("### Tiến trình phân tích")
+                    st.markdown("### Analysis process")
                     steps = cot_results['reasoning_steps']
                     total_steps = len(steps)
                     
                     # Hiển thị tất cả các bước trên cùng một trang
-                    st.markdown("#### Tổng quan các bước phân tích")
+                    st.markdown("#### Overview of analysis steps")
                     
                     # Hiển thị thanh tiến trình dưới dạng timeline bằng cách sử dụng các columns của Streamlit
                     timeline_cols = st.columns(total_steps * 2 - 1)
@@ -1120,28 +1119,28 @@ def main():
                                 
                                 # Thêm key findings nếu có
                                 if 'key_findings' in step:
-                                    st.markdown("**Phát hiện chính:**")
+                                    st.markdown("**Key findings:**")
                                     for finding in step['key_findings']:
                                         st.markdown(f"- {finding}")
                             
                             with visual_col:
                                 # Hiển thị trực quan phù hợp với từng loại bước phân tích
-                                if "thành phần" in step_type.lower():
+                                if "component" in step_type.lower():
                                     # Hiển thị biểu đồ tam giác thành phần
                                     if len(composition) >= 2:
-                                        st.subheader("Biểu đồ thành phần")
+                                        st.subheader("Component chart")
                                         ternary_fig = create_ternary_plot(material_name, composition)
                                         st.plotly_chart(ternary_fig, use_container_width=True)
                                 
-                                elif "cấu trúc tinh thể" in step_type.lower():
+                                elif "crystal structure" in step_type.lower():
                                     # Hiển thị mô hình cấu trúc tinh thể
-                                    st.subheader("Mô hình cấu trúc tinh thể")
+                                    st.subheader("Crystal structure model")
                                     structure_fig = visualize_crystal_structure(crystal_structure, elements)
                                     st.plotly_chart(structure_fig, use_container_width=True)
                                 
-                                elif "tính chất điện tử" in step_type.lower():
+                                elif "electronic property" in step_type.lower():
                                     # Hiển thị sơ đồ band structure
-                                    st.subheader("Sơ đồ dải năng lượng")
+                                    st.subheader("Band structure diagram")
                                     band_fig = create_electronic_band_diagram(
                                         material_data['properties']['bandgap'],
                                         material_name
@@ -1150,17 +1149,17 @@ def main():
                                 
                                 elif "tính chất nhiệt" in step_type.lower():
                                     # Hiển thị biểu đồ phụ thuộc nhiệt độ
-                                    st.subheader("Phụ thuộc nhiệt độ")
+                                    st.subheader("Temperature dependent")
                                     temp_fig = create_temperature_dependence(material_data['properties'])
                                     st.plotly_chart(temp_fig, use_container_width=True)
                                     
-                                elif "ứng dụng" in step_type.lower():
+                                elif "application" in step_type.lower():
                                     # Hiển thị biểu đồ radar cho các ứng dụng
-                                    st.subheader("Phân tích tiềm năng ứng dụng")
+                                    st.subheader("Potential application analysis")
                                     radar_fig = create_radar_chart(cot_results['predictions'])
                                     st.plotly_chart(radar_fig, use_container_width=True)
                                     
-                                elif "cải tiến" in step_type.lower() or "cải thiện" in step_type.lower():
+                                elif "improve" in step_type.lower() or "enhance" in step_type.lower():
                                     if 'recommendations' in cot_results:
                                         # Tạo biểu đồ ưu tiên cải tiến
                                         improvements = cot_results['recommendations'].get('improvements', [])
@@ -1181,16 +1180,16 @@ def main():
                                             ))
                                             
                                             fig.update_layout(
-                                                title="Mức độ ưu tiên cải tiến",
-                                                xaxis_title="Điểm ưu tiên",
-                                                yaxis_title="Khía cạnh cần cải thiện"
+                                                title="Priority level of improvements",
+                                                xaxis_title="Priority level",
+                                                yaxis_title="Aspects to improve"
                                             )
                                             
                                             st.plotly_chart(fig, use_container_width=True)
                                 
                                 elif "AI" in step_type:
                                     # Hiển thị kết quả so sánh giữa các mô hình AI
-                                    st.subheader("So sánh phân tích từ các mô hình AI")
+                                    st.subheader("Comparison of analysis results from AI models")
                                     if 'ai_analysis' in cot_results:
                                         ai_models = list(cot_results.get('ai_analysis', {}).keys())
                                         if ai_models:
@@ -1207,9 +1206,9 @@ def main():
                                             ))
                                             
                                             fig.update_layout(
-                                                title="Độ tin cậy của các mô hình AI",
+                                                title="Confidence level of AI models",
                                                 yaxis=dict(range=[0, 1], tickformat=".0%"),
-                                                yaxis_title="Độ tin cậy"
+                                                yaxis_title="Confidence level"
                                             )
                                             
                                             st.plotly_chart(fig, use_container_width=True)
@@ -1219,45 +1218,45 @@ def main():
                                 st.markdown("---")
                     
                     # Trực quan hóa tổng hợp kết quả phân tích
-                    st.markdown("### Tổng hợp kết quả phân tích")
+                    st.markdown("### Summary of analysis results")
                     metric_col1, metric_col2, metric_col3 = st.columns(3)
                     
                     with metric_col1:
                         quality_score = cot_results['final_analysis'].get('overall_quality', 7.5)
-                        st.metric("Điểm chất lượng tổng thể", f"{quality_score:.1f}/10")
+                        st.metric("Overall quality score", f"{quality_score:.1f}/10")
                     
                     with metric_col2:
                         bandgap_type = cot_results['final_analysis'].get('bandgap_classification', 'Semiconductor')
-                        st.metric("Phân loại bandgap", bandgap_type)
+                        st.metric("Bandgap classification", bandgap_type)
                     
                     with metric_col3:
                         applications_count = len(cot_results['recommendations'].get('applications', []))
-                        st.metric("Số ứng dụng tiềm năng", applications_count)
+                        st.metric("Potential applications", applications_count)
                         
                     # Hiển thị biểu đồ kết quả tổng hợp
-                    st.subheader("Biểu đồ radar thuộc tính")
+                    st.subheader("Radar chart of material properties")
                     summary_radar = create_radar_chart(cot_results['predictions'])
                     st.plotly_chart(summary_radar, use_container_width=True)
                 
                 else:
-                    st.warning("Đang khởi tạo phân tích Chain of Thought. Vui lòng đợi trong giây lát hoặc làm mới trang nếu không thấy kết quả.")
+                    st.warning("Initializing Chain of Thought analysis. Please wait a moment or refresh the page if no results are shown.")
                 
                 # Thêm nút Refresh cho Chain of Thought
-                if st.button("Làm mới phân tích Chain of Thought", key="refresh_cot"):
+                if st.button("Refresh Chain of Thought analysis", key="refresh_cot"):
                     st.session_state['cot_refreshed'] = True
-                    with st.spinner('Đang tái phân tích vật liệu...'):
+                    with st.spinner('Analyzing material...'):
                         # Phân tích lại với Chain-of-Thought
                         cot_results = analyzer.analyze_with_cot(material_data)
                         st.experimental_rerun()
                 
                 # Hiển thị trạng thái
                 if st.session_state.get('cot_refreshed', False):
-                    st.success("Đã cập nhật phân tích Chain of Thought!")
+                    st.success("Chain of Thought analysis has been updated!")
                     # Đặt lại trạng thái sau khi hiển thị
                     st.session_state['cot_refreshed'] = False
                 
                 # Hiển thị sơ đồ quá trình suy luận
-                st.subheader("Sơ đồ phân tích")
+                st.subheader("Analysis flowchart")
                 
                 # Tạo flowchart với Graphviz
                 cot_chart = """
@@ -1266,12 +1265,12 @@ def main():
                     node [shape=box, style=filled, fillcolor=lightblue, fontname="Arial", margin=0.3];
                     edge [fontname="Arial"];
                     
-                    input [label="Dữ liệu vật liệu\nđầu vào"];
-                    step1 [label="1. Phân tích\nthuộc tính vật lý"];
-                    step2 [label="2. Đánh giá\ntính ứng dụng"];
-                    step3 [label="3. Dự đoán\nthuộc tính nâng cao"];
-                    step4 [label="4. So sánh với\nvật liệu chuẩn"];
-                    output [label="Kết quả phân tích\ntoàn diện", fillcolor=lightgreen];
+                    input [label="Material data\ninput"];
+                    step1 [label="1. Analyze\nphysical properties"];
+                    step2 [label="2. Evaluate\napplication potential"];
+                    step3 [label="3. Predict\nadvanced properties"];
+                    step4 [label="4. Compare with\nstandard materials"];
+                    output [label="Comprehensive analysis results", fillcolor=lightgreen];
                     
                     input -> step1;
                     step1 -> step2;
@@ -1287,14 +1286,14 @@ def main():
                     graphviz_chart(cot_chart)
                 except ImportError:
                     # Phương án dự phòng - chỉ hiển thị text
-                    st.markdown("*Sơ đồ quá trình suy luận theo các bước:*")
+                    st.markdown("*Analysis flowchart:*")
                     st.markdown("""
-                    1. Dữ liệu vật liệu đầu vào ➔ 
-                    2. Phân tích thuộc tính vật lý ➔ 
-                    3. Đánh giá tính ứng dụng ➔ 
-                    4. Dự đoán thuộc tính nâng cao ➔ 
-                    5. So sánh với vật liệu chuẩn ➔ 
-                    6. Kết quả phân tích toàn diện
+                    1. Material data input ➔ 
+                    2. Analyze physical properties ➔ 
+                    3. Evaluate application potential ➔ 
+                    4. Predict advanced properties ➔ 
+                    5. Compare with standard materials ➔ 
+                    6. Comprehensive analysis results
                     """)
 
             # Thêm nội dung cho AI Insights tab (tab4)
@@ -1302,7 +1301,7 @@ def main():
                 st.markdown("""
                 <div style="background-color: #ffffff; padding: 15px; border-radius: 10px; margin-bottom: 20px;">
                     <h2 style="color: #000000; margin-top: 0;">💡 Phân tích AI</h2>
-                    <p>Phân tích vật liệu sử dụng các mô hình AI tiên tiến</p>
+                    <p>Analyze materials using advanced AI models</p>
                 </div>
                 """, unsafe_allow_html=True)
                 
@@ -1321,7 +1320,7 @@ def main():
                         st.markdown(f"""
                         <div style="background-color: #ffffff; padding: 15px; border-radius: 10px; text-align: center; border: 1px solid #e1e4e8;">
                             <div style="font-size: 24px;">{engine_icon}</div>
-                            <div style="font-weight: bold; margin: 10px 0; color: #000000;">Phân tích được thực hiện bằng</div>
+                            <div style="font-weight: bold; margin: 10px 0; color: #000000;">Analysis performed by</div>
                             <div style="font-size: 18px; color: #000000;">{engine_used.upper()}</div>
                         </div>
                         """, unsafe_allow_html=True)
@@ -1341,10 +1340,10 @@ def main():
                             """, unsafe_allow_html=True)
                     
                     # Tạo tabs phân tích        
-                    ai_analysis_tabs = st.tabs(["📊 Tổng quan phân tích", "🔬 Phân tích chi tiết", "📈 Trực quan hóa", "💡 Đề xuất"])
+                    ai_analysis_tabs = st.tabs(["📊 Summary of analysis", "🔬 Detailed analysis", "📈 Visualization", "💡 Suggestions"])
                     
                     with ai_analysis_tabs[0]:
-                        st.markdown("### Tổng quan phân tích AI")
+                        st.markdown("### Summary of AI analysis")
                         
                         # Hiển thị thông tin vật liệu
                         material_name = material_data.get('name', 'Unknown Material')
@@ -1353,8 +1352,8 @@ def main():
                         
                         st.markdown(f"""
                         <div style="background-color: #ffffff; padding: 15px; border-radius: 10px; margin-bottom: 20px; border: 1px solid #e1e4e8;">
-                            <h4 style="color: #000000;">Thông tin vật liệu: {material_name}</h4>
-                            <p style="color: #000000;"><b>Cấu trúc tinh thể:</b> {crystal_structure}</p>
+                            <h4 style="color: #000000;">Material information: {material_name}</h4>
+                            <p style="color: #000000;"><b>Crystal structure:</b> {crystal_structure}</p>
                             <p style="color: #000000;"><b>Bandgap:</b> {bandgap} eV</p>
                         </div>
                         """, unsafe_allow_html=True)
@@ -1366,13 +1365,13 @@ def main():
                             bandgap_icon = "⚡" if bandgap_type == "Semiconductor" else "🔋" if bandgap_type == "Metal" else "💎"
                             st.markdown(f"""
                             <div style="background-color: #ffffff; padding: 15px; border-radius: 10px; margin-bottom: 20px; border: 1px solid #e1e4e8;">
-                                <h4 style="color: #000000;">{bandgap_icon} Phân loại vật liệu: {bandgap_type}</h4>
+                                <h4 style="color: #000000;">{bandgap_icon} Material classification: {bandgap_type}</h4>
                             </div>
                             """, unsafe_allow_html=True)
                         
                         # Hiển thị các features quan trọng
                         if 'predictions' in cot_results:
-                            st.markdown("#### Các thuộc tính chính dự đoán")
+                            st.markdown("#### Main predicted properties")
                             
                             # Chọn các thuộc tính quan trọng để hiển thị
                             key_properties = ['bandgap_prediction', 'conductivity_prediction', 'thermal_stability', 'heat_transport']
@@ -1403,7 +1402,7 @@ def main():
                             strength_col, weakness_col = st.columns(2)
                             
                             with strength_col:
-                                st.markdown("#### ✅ Điểm mạnh")
+                                st.markdown("#### ✅ Strengths")
                                 
                                 for i, strength in enumerate(cot_results['strengths'][:5]):  # Giới hạn 5 điểm
                                     st.markdown(f"""
@@ -1413,7 +1412,7 @@ def main():
                                     """, unsafe_allow_html=True)
                             
                             with weakness_col:
-                                st.markdown("#### ⚠️ Điểm yếu")
+                                st.markdown("#### ⚠️ Weaknesses")
                                 
                                 for i, weakness in enumerate(cot_results['weaknesses'][:5]):  # Giới hạn 5 điểm
                                     st.markdown(f"""
@@ -1429,13 +1428,13 @@ def main():
                             message = ""
                             color = ""
                             if overall_quality > 7:
-                                message = "Vật liệu này có tiềm năng cao cho các ứng dụng bán dẫn"
+                                message = "This material has high potential for semiconductor applications"
                                 color = "green"
                             elif overall_quality > 4:
-                                message = "Vật liệu này có các thuộc tính trung bình, có thể cần cải thiện thêm"
+                                message = "This material has average properties, which may need improvement"
                                 color = "orange"
                             else:
-                                message = "Vật liệu này có nhiều hạn chế, cần cải thiện đáng kể"
+                                message = "This material has many limitations, which need to be significantly improved"
                                 color = "red"
                                 
                             st.markdown(f"""
@@ -1445,7 +1444,7 @@ def main():
                             """, unsafe_allow_html=True)
                             
                     with ai_analysis_tabs[1]:
-                        st.markdown("### Phân tích chi tiết từ các mô hình AI")
+                        st.markdown("### Detailed analysis from AI models")
                     
                         # Hiển thị kết quả phân tích từ các engines
                         if isinstance(ai_analysis, dict) and ai_analysis:
@@ -1468,7 +1467,7 @@ def main():
                                         # Hiển thị thanh độ tin cậy
                                         st.markdown(f"""
                                         <div style="margin-bottom: 20px;">
-                                            <h4>Độ tin cậy của mô hình {model.upper()}</h4>
+                                            <h4>Confidence level of {model.upper()}</h4>
                                             <div style="background-color: #f0f0f0; border-radius: 5px; height: 30px;">
                                                 <div style="background-color: {confidence_color}; width: {confidence*100}%; height: 30px; border-radius: 5px; text-align: center; color: white; line-height: 30px;">
                                                     {confidence*100:.1f}%
@@ -1481,7 +1480,7 @@ def main():
                                         if 'analysis' in model_result:
                                             st.markdown("""
                                             <div style="background-color: #ffffff; padding: 15px; border-radius: 10px; border: 1px solid #e1e4e8;">
-                                                <h4 style="color: #000000;">Phân tích chi tiết</h4>
+                                                <h4 style="color: #000000;">Detailed analysis</h4>
                                             </div>
                                             """, unsafe_allow_html=True)
                                             
@@ -1527,10 +1526,10 @@ def main():
                                     ))
                                     
                                     fig.update_layout(
-                                        title="Độ tin cậy của các mô hình AI",
+                                        title="Confidence level of AI models",
                                         yaxis=dict(range=[0, 1], tickformat=".0%"),
-                                        yaxis_title="Độ tin cậy",
-                                        xaxis_title="Mô hình AI",
+                                        yaxis_title="Confidence",
+                                        xaxis_title="AI model",
                                         plot_bgcolor='rgba(0,0,0,0)',
                                         showlegend=False
                                     )
@@ -1538,27 +1537,27 @@ def main():
                                     st.plotly_chart(fig, use_container_width=True)
                     
                     with ai_analysis_tabs[2]:
-                        st.markdown("### Trực quan hóa phân tích")
+                        st.markdown("### Visualization of analysis")
                         
                         # Tạo nhiều loại biểu đồ khác nhau
                         viz_col1, viz_col2 = st.columns(2)
                         
                         with viz_col1:
                             # Hiển thị biểu đồ radar thuộc tính
-                            st.subheader("Biểu đồ radar thuộc tính")
+                            st.subheader("Radar chart of material properties")
                             radar_fig = create_radar_chart(cot_results['predictions'])
                             st.plotly_chart(radar_fig, use_container_width=True)
                             
                             # Hiển thị biểu đồ đánh giá tổng thể với giao diện đẹp hơn
                             if 'final_analysis' in cot_results and 'overall_quality' in cot_results['final_analysis']:
-                                st.subheader("Điểm đánh giá tổng thể")
+                                st.subheader("Overall evaluation score")
                                 overall_quality = cot_results['final_analysis'].get('overall_quality', 5.0)
                                 
                                 fig = go.Figure(go.Indicator(
                                     mode="gauge+number+delta",
                                     value=overall_quality,
                                     domain={'x': [0, 1], 'y': [0, 1]},
-                                    title={'text': "Điểm đánh giá", 'font': {'size': 24}},
+                                    title={'text': "Overall evaluation score", 'font': {'size': 24}},
                                     delta={'reference': 5.0, 'increasing': {'color': "green"}, 'decreasing': {'color': "red"}},
                                     gauge={
                                         'axis': {'range': [0, 10], 'tickwidth': 1},
@@ -1585,7 +1584,7 @@ def main():
                         with viz_col2:
                             # Hiển thị biểu đồ ứng dụng tiềm năng
                             if 'recommendations' in cot_results and 'applications' in cot_results['recommendations']:
-                                st.subheader("Ứng dụng tiềm năng")
+                                st.subheader("Potential applications")
                                 applications = cot_results['recommendations']['applications']
                                 
                                 # Tạo giá trị ngẫu nhiên cho mỗi ứng dụng để hiển thị dưới dạng biểu đồ
@@ -1607,9 +1606,9 @@ def main():
                                 ))
                                 
                                 fig.update_layout(
-                                    title="Đánh giá ứng dụng tiềm năng",
+                                    title="Potential applications evaluation",
                                     yaxis=dict(title=""),
-                                    xaxis=dict(title="Chỉ số phù hợp", range=[0, 1], tickformat=".0%"),
+                                    xaxis=dict(title="Suitable index", range=[0, 1], tickformat=".0%"),
                                     plot_bgcolor='rgba(0,0,0,0)',
                                     margin=dict(l=20, r=20, t=40, b=20),
                                     height=300
@@ -1619,22 +1618,22 @@ def main():
                             
                             # Hiển thị bảng các thuộc tính dự đoán
                             if 'predictions' in cot_results:
-                                st.subheader("Bảng thuộc tính dự đoán")
+                                st.subheader("Predicted properties table")
                                 
                                 # Tạo dataframe từ dự đoán
                                 predictions_data = []
                                 for key, value in cot_results['predictions'].items():
                                     if isinstance(value, dict) and 'value' in value:
                                         predictions_data.append({
-                                            "Thuộc tính": key.replace('_', ' ').title(),
-                                            "Giá trị": value['value'],
-                                            "Độ tin cậy": value.get('confidence', 0.7)
+                                            "Property": key.replace('_', ' ').title(),
+                                            "Value": value['value'],
+                                            "Confidence": value.get('confidence', 0.7)
                                         })
                                     else:
                                         predictions_data.append({
-                                            "Thuộc tính": key.replace('_', ' ').title(),
-                                            "Giá trị": value,
-                                            "Độ tin cậy": 0.8  # Giá trị mặc định
+                                            "Property": key.replace('_', ' ').title(),
+                                            "Value": value,
+                                            "Confidence": 0.8  # Default value
                                         })
                                 
                                 predictions_df = pd.DataFrame(predictions_data)
@@ -1643,10 +1642,10 @@ def main():
                                 st.dataframe(
                                     predictions_df,
                                     column_config={
-                                        "Thuộc tính": st.column_config.TextColumn("Thuộc tính"),
-                                        "Giá trị": st.column_config.TextColumn("Giá trị"),
-                                        "Độ tin cậy": st.column_config.ProgressColumn(
-                                            "Độ tin cậy",
+                                        "Property": st.column_config.TextColumn("Property"),
+                                        "Value": st.column_config.TextColumn("Value"),
+                                        "Confidence": st.column_config.ProgressColumn(
+                                            "Confidence",
                                             format="%.0f%%",
                                             min_value=0,
                                             max_value=1
@@ -1657,7 +1656,7 @@ def main():
                                 )
                         
                         # Thêm biểu đồ so sánh với các vật liệu tương tự
-                        st.subheader("So sánh với các vật liệu tương tự")
+                        st.subheader("Comparison with similar materials")
                         
                         # Lấy các thuộc tính quan trọng để so sánh
                         bandgap = material_data['properties'].get('bandgap', 1.0)
@@ -1667,7 +1666,7 @@ def main():
                         st.plotly_chart(comparison_fig, use_container_width=True)
                         
                     with ai_analysis_tabs[3]:
-                        st.markdown("### Đề xuất và cải thiện")
+                        st.markdown("### Suggestions and improvements")
                         
                         # Hiển thị đề xuất cải tiến từ AI
                         if 'recommendations' in cot_results and 'improvements' in cot_results['recommendations']:
@@ -1689,8 +1688,8 @@ def main():
                                     st.markdown(f"""
                                     <div style="background-color: #ffffff; padding: 15px; border-radius: 10px; margin-bottom: 10px; border: 1px solid #e1e4e8;">
                                         <h5 style="margin-top: 0; color: {priority_color};">{i+1}. {imp.get('aspect', 'Unknown')}</h5>
-                                        <p style="margin-bottom: 5px; color: #000000;"><b>Đề xuất:</b> {imp.get('recommendation', imp.get('suggestion', 'Không có đề xuất cụ thể'))}</p>
-                                        <p style="margin: 0; color: #000000;"><b>Ưu tiên:</b> <span style="color: {priority_color};">{imp.get('priority', 'Medium')}</span></p>
+                                        <p style="margin-bottom: 5px; color: #000000;"><b>Suggestion:</b> {imp.get('recommendation', imp.get('suggestion', 'No specific suggestion'))}</p>
+                                        <p style="margin: 0; color: #000000;"><b>Priority:</b> <span style="color: {priority_color};">{imp.get('priority', 'Medium')}</span></p>
                                     </div>
                                     """, unsafe_allow_html=True)
                             
@@ -1701,7 +1700,7 @@ def main():
                                 if applications:
                                     st.markdown("""
                                     <div style="background-color: #ffffff; padding: 15px; border-radius: 10px; margin: 20px 0; border: 1px solid #e1e4e8;">
-                                        <h4 style="margin-top: 0; color: #000000;">Ứng dụng tiềm năng</h4>
+                                        <h4 style="margin-top: 0; color: #000000;">Potential applications</h4>
                                     </div>
                                     """, unsafe_allow_html=True)
                                     
@@ -1718,16 +1717,16 @@ def main():
                         # Tạo phần next steps
                         st.markdown("""
                         <div style="background-color: #ffffff; padding: 15px; border-radius: 10px; margin: 20px 0; border: 1px solid #e1e4e8;">
-                            <h4 style="margin-top: 0; color: #000000;">Các bước tiếp theo</h4>
+                            <h4 style="margin-top: 0; color: #000000;">Next steps</h4>
                         </div>
                         """, unsafe_allow_html=True)
                         
                         # Tạo danh sách các bước tiếp theo
                         next_steps = [
-                            "Thực hiện thí nghiệm để xác nhận các tính chất được dự đoán",
-                            "Tối ưu hóa quy trình chế tạo để cải thiện chất lượng",
-                            "Khảo sát tác động của điều kiện môi trường lên hiệu suất",
-                            "Tích hợp vật liệu vào thiết bị thử nghiệm"
+                            "Perform experiments to verify the predicted properties",
+                            "Optimize the manufacturing process to improve quality",
+                            "Study the impact of environmental conditions on performance",
+                            "Integrate material into test devices"
                         ]
                         
                         # Next steps items
@@ -1748,7 +1747,7 @@ def main():
                     
                     # Hiển thị các key predictions
                     if 'predictions' in cot_results:
-                        st.markdown("### Dự đoán thuộc tính chính")
+                        st.markdown("### Main property predictions")
                         pred_cols = st.columns(3)
                         col_idx = 0
                         
@@ -1766,7 +1765,7 @@ def main():
                     
                     # Hiển thị các ứng dụng được đề xuất với giao diện đẹp hơn
                     if 'recommendations' in cot_results and 'applications' in cot_results['recommendations']:
-                        st.markdown("### Ứng dụng tiềm năng")
+                        st.markdown("### Potential applications")
                         applications = cot_results['recommendations']['applications']
                         
                         # Tạo grid hiển thị ứng dụng
@@ -1781,7 +1780,7 @@ def main():
 
                     # Hiển thị điểm mạnh và điểm yếu với UI đẹp hơn
                     if 'strengths' in cot_results and 'weaknesses' in cot_results:
-                        st.markdown("## Đánh giá chi tiết")
+                        st.markdown("## Detailed evaluation")
                         strength_col, weakness_col = st.columns(2)
                         
                         with strength_col:
@@ -1819,7 +1818,7 @@ def main():
                     st.plotly_chart(radar_fig, use_container_width=True)
                 
                 # AI tóm tắt cuối cùng
-                st.subheader("Kết luận tổng hợp")
+                st.subheader("Final summary")
                 
                 if 'final_analysis' in cot_results:
                     # Hiển thị phần kết luận với giao diện đẹp hơn
@@ -1829,46 +1828,46 @@ def main():
                     if overall_quality > 7:
                         conclusion = """
                         <div style="background-color: #ffffff; padding: 20px; border-radius: 10px; text-align: center; border: 1px solid #e1e4e8;">
-                            <h4 style="color: green;">Vật liệu này có tiềm năng cao cho các ứng dụng bán dẫn</h4>
-                            <p style="color: #000000;">Có thể sử dụng trong các ứng dụng hiệu suất cao và có triển vọng thương mại.</p>
+                            <h4 style="color: green;">This material has high potential for semiconductor applications</h4>
+                            <p style="color: #000000;">It can be used in high-performance and commercially viable applications.</p>
                         </div>
                         """
                     elif overall_quality > 4:
                         conclusion = """
                         <div style="background-color: #ffffff; padding: 20px; border-radius: 10px; text-align: center; border: 1px solid #e1e4e8;">
-                            <h4 style="color: orange;">Vật liệu này có các thuộc tính trung bình, có thể cần cải thiện thêm</h4>
-                            <p style="color: #000000;">Có tiềm năng nhưng cần nghiên cứu thêm để tối ưu hóa các thuộc tính.</p>
+                            <h4 style="color: orange;">This material has average properties, and may need further research to optimize its properties.</h4>
+                            <p style="color: #000000;">It has potential but needs more research to optimize its properties.</p>
                         </div>
                         """
                     else:
                         conclusion = """
                         <div style="background-color: #ffffff; padding: 20px; border-radius: 10px; text-align: center; border: 1px solid #e1e4e8;">
-                            <h4 style="color: red;">Vật liệu này có nhiều hạn chế, cần cải thiện đáng kể</h4>
-                            <p style="color: #000000;">Không phù hợp với hầu hết các ứng dụng thực tế trong trạng thái hiện tại.</p>
+                            <h4 style="color: red;">This material has many limitations, and needs significant improvement.</h4>
+                            <p style="color: #000000;">It is not suitable for most practical applications in its current state.</p>
                         </div>
                         """
                     
                     st.markdown(conclusion, unsafe_allow_html=True)
                 else:
-                    st.warning("Không có phân tích tổng hợp cho vật liệu này.")
+                    st.warning("No comprehensive analysis available for this material.")
 
     elif selected_tab == "Image Analysis":
-        st.sidebar.header("Phân tích hình ảnh vật liệu")
+        st.sidebar.header("Image analysis of materials")
         
         # Cải thiện giao diện
         image_analysis_method = st.sidebar.radio(
-            "Phương pháp phân tích",
-            ["Tải lên hình ảnh", "Chụp từ camera", "Từ URL"]
+            "Analysis method",
+            ["Upload image", "Take photo", "From URL"]
         )
         
         # Hộp thông tin
-        st.sidebar.info("Hệ thống hỗ trợ phân tích hình ảnh hiển vi từ các loại vật liệu bán dẫn (SEM, TEM, AFM, optical microscopy).")
+        st.sidebar.info("The system supports analyzing microscopic images from semiconductor materials (SEM, TEM, AFM, optical microscopy).")
         
         # Tạo placeholder cho hình ảnh nguồn
         source_image = None
         
-        if image_analysis_method == "Tải lên hình ảnh":
-            uploaded_file = st.sidebar.file_uploader("Tải lên hình ảnh vật liệu", type=['png', 'jpg', 'jpeg', 'tif', 'tiff'])
+        if image_analysis_method == "Upload image":
+            uploaded_file = st.sidebar.file_uploader("Upload material image", type=['png', 'jpg', 'jpeg', 'tif', 'tiff'])
             if uploaded_file is not None:
                 # Lưu file tạm thời
                 with open("temp_image.jpg", "wb") as f:
@@ -1877,52 +1876,52 @@ def main():
                 
                 # Hiển thị thông tin file
                 file_details = {
-                    "Tên file": uploaded_file.name,
-                    "Kích thước": f"{uploaded_file.size / 1024:.1f} KB",
-                    "Loại file": uploaded_file.type
+                    "File name": uploaded_file.name,
+                    "Size": f"{uploaded_file.size / 1024:.1f} KB",
+                    "File type": uploaded_file.type
                 }
-                st.sidebar.write("Thông tin file:")
+                st.sidebar.write("File details:")
                 for k, v in file_details.items():
                     st.sidebar.text(f"{k}: {v}")
 
-        elif image_analysis_method == "Chụp từ camera":
-            st.sidebar.warning("Tính năng này yêu cầu quyền truy cập camera.")
-            camera_image = st.sidebar.camera_input("Chụp ảnh vật liệu")
+        elif image_analysis_method == "Take photo":
+            st.sidebar.warning("This feature requires camera access.")
+            camera_image = st.sidebar.camera_input("Take material image")
             if camera_image is not None:
                 # Lưu file tạm thời
                 with open("temp_camera.jpg", "wb") as f:
                     f.write(camera_image.getbuffer())
                 source_image = "temp_camera.jpg"
                 
-        elif image_analysis_method == "Từ URL":
-            image_url = st.sidebar.text_input("Nhập URL hình ảnh:")
+        elif image_analysis_method == "From URL":
+            image_url = st.sidebar.text_input("Enter image URL:")
             if image_url:
                 try:
                     import urllib.request
                     urllib.request.urlretrieve(image_url, "temp_url_image.jpg")
                     source_image = "temp_url_image.jpg"
-                    st.sidebar.success("Đã tải hình ảnh thành công!")
+                    st.sidebar.success("Successfully loaded image!")
                 except Exception as e:
-                    st.sidebar.error(f"Lỗi khi tải hình ảnh: {e}")
+                    st.sidebar.error(f"Error loading image: {e}")
         
         # Tùy chọn phân tích nâng cao
         if source_image:
-            st.sidebar.subheader("Tùy chọn phân tích")
+            st.sidebar.subheader("Analysis options")
             analysis_type = st.sidebar.multiselect(
-                "Loại phân tích",
-                ["Phân tích lỗi và khuyết tật", "Đo kích thước tinh thể", "Phân tích thành phần", 
-                 "Phân tích cấu trúc bề mặt", "Báo cáo chất lượng"],
-                ["Phân tích lỗi và khuyết tật", "Báo cáo chất lượng"]
+                "Analysis type",
+                ["Analyze defects and defects", "Measure crystal size", "Analyze composition", 
+                 "Analyze surface structure", "Quality report"],
+                ["Analyze defects and defects", "Quality report"]
             )
             
             # Tùy chọn xử lý hình ảnh
-            st.sidebar.subheader("Xử lý hình ảnh")
-            apply_noise_reduction = st.sidebar.checkbox("Giảm nhiễu", value=True)
-            apply_contrast_enhancement = st.sidebar.checkbox("Tăng cường độ tương phản", value=True)
-            scale_factor = st.sidebar.slider("Hệ số tỷ lệ phân tích", 0.5, 2.0, 1.0, 0.1)
+            st.sidebar.subheader("Image processing")
+            apply_noise_reduction = st.sidebar.checkbox("Noise reduction", value=True)
+            apply_contrast_enhancement = st.sidebar.checkbox("Contrast enhancement", value=True)
+            scale_factor = st.sidebar.slider("Analysis scale factor", 0.5, 2.0, 1.0, 0.1)
             
             # Chạy phân tích khi người dùng nhấn nút
-            run_analysis = st.sidebar.button("Phân tích hình ảnh", use_container_width=True, type="primary")
+            run_analysis = st.sidebar.button("Analyze image", use_container_width=True, type="primary")
             
             if run_analysis:
                 # Giả lập gọi class MaterialImageAnalyzer
@@ -1944,7 +1943,7 @@ def main():
                                 try:
                                     image = Image.open(image_path)
                                 except Exception as e:
-                                    return {"error": f"Không thể mở hình ảnh: {str(e)}"}
+                                    return {"error": f"Cannot open image: {str(e)}"}
                                 
                                 # Giả lập xử lý hình ảnh
                                 time.sleep(1)  # Giả lập thời gian xử lý
@@ -2008,40 +2007,41 @@ def main():
                                 # Tạo phân tích giả lập từ AI
                                 ai_analysis = {
                                     "gemini": """
-                                    # Phân tích vật liệu từ hình ảnh hiển vi
                                     
-                                    Hình ảnh hiển thị cấu trúc bề mặt của vật liệu bán dẫn với một số đặc trưng:
+                                    # Material analysis from microscopic image
                                     
-                                    1. **Cấu trúc tinh thể**: Vật liệu có cấu trúc đa tinh thể với kích thước hạt trung bình khoảng 20-50 µm.
+                                    The image shows the surface structure of a semiconductor material with some features:
                                     
-                                    2. **Khuyết tật và lỗi**:
-                                       - Phát hiện một số khuyết tật bề mặt, có thể do quá trình chế tạo hoặc oxy hóa
+                                    1. **Crystal structure**: The material has a polycrystalline structure with an average grain size of 20-50 µm.
+                                    
+                                    2. **Defects and errors**:
+                                       - Detection of some surface defects, possibly due to manufacturing or oxidation processes
                                        - Có dấu hiệu của một số lỗi mạng tinh thể, đặc biệt ở vùng biên giới hạt
                                     
-                                    3. **Đề xuất cải thiện**:
-                                       - Tối ưu hóa nhiệt độ và thời gian ủ để giảm thiểu lỗi mạng
-                                       - Cải thiện quy trình làm sạch bề mặt để giảm nhiễm bẩn
+                                    3. **Improvement suggestions**:
+                                       - Optimize temperature and time for better crystal growth
+                                       - Improve surface cleaning process to reduce contamination
                                     """,
                                     
                                     "groq": """
-                                    ## Kết quả phân tích hình ảnh vật liệu
+                                    ## Image analysis results
                                     
-                                    Hình ảnh cho thấy vật liệu bán dẫn với các đặc điểm sau:
+                                    The image shows a semiconductor material with the following features:
                                     
-                                    - **Đặc tính bề mặt**: Bề mặt không đồng nhất với nhiều vùng có cấu trúc khác nhau
-                                    - **Tinh thể học**: Có cấu trúc đa tinh thể với ranh giới hạt rõ ràng
-                                    - **Khuyết tật**: Phát hiện khoảng 5-8 khuyết tật bao gồm lỗi mạng, khuyết tật bề mặt và ranh giới pha
+                                    - **Surface characteristics**: The surface is uneven with various structural features
+                                    - **Crystal structure**: The material has a polycrystalline structure with distinct grain boundaries
+                                    - **Defects**: Detection of 5-8 defects including network defects, surface defects, and phase boundaries
                                     
-                                    Điều này cho thấy vật liệu có thể đã trải qua quá trình xử lý nhiệt hoặc cơ học không tối ưu.
+                                    This indicates that the material may have undergone non-optimal thermal or mechanical processing.
                                     
-                                    Đề xuất: Điều chỉnh điều kiện chế tạo để giảm mật độ khuyết tật và tăng kích thước hạt tinh thể.
+                                    Suggestions: Adjust manufacturing conditions to reduce defect density and increase crystal grain size.
                                     """,
                                     
                                     "combined_insights": [
-                                        "Vật liệu có cấu trúc đa tinh thể với kích thước hạt trung bình 20-50 µm",
-                                        "Phát hiện nhiều loại khuyết tật, bao gồm lỗi bề mặt và lỗi mạng tinh thể",
-                                        "Cần cải thiện điều kiện chế tạo để giảm thiểu lỗi và tăng độ đồng nhất",
-                                        "Ranh giới hạt rõ ràng, cho thấy quá trình kết tinh không hoàn toàn tối ưu"
+                                        "The material has a polycrystalline structure with an average grain size of 20-50 µm",
+                                        "Detection of multiple types of defects, including surface defects and crystal network defects",
+                                        "Improve manufacturing conditions to reduce defect density and increase crystal grain size",
+                                        "Distinct grain boundaries indicate non-optimal crystallization"
                                     ]
                                 }
                                 
@@ -2079,7 +2079,7 @@ def main():
                         
                         analyzer = MaterialImageAnalyzer()
                     
-                    with st.spinner('Đang phân tích hình ảnh...'):
+                    with st.spinner('Analyzing image...'):
                         # Chuẩn bị tùy chọn phân tích
                         analysis_options = {
                             "noise_reduction": apply_noise_reduction,
@@ -2092,33 +2092,33 @@ def main():
                         results = analyzer.analyze_image(source_image, analysis_options)
                         
                         if "error" in results:
-                            st.error(f"Lỗi phân tích hình ảnh: {results['error']}")
+                            st.error(f"Image analysis error: {results['error']}")
                         else:
                             # Hiển thị kết quả trong các tab
                             img_tab1, img_tab2, img_tab3, img_tab4 = st.tabs([
-                                "Phân tích khuyết tật", 
-                                "Đo kích thước",
-                                "Chất lượng hình ảnh",
-                                "Phân tích AI"
+                                "Defect analysis", 
+                                "Size measurement",
+                                "Image quality",
+                                "AI analysis"
                             ])
                             
                             with img_tab1:
                                 col1, col2 = st.columns(2)
                                 
                                 with col1:
-                                    st.subheader("Hình ảnh gốc")
+                                    st.subheader("Original image")
                                     st.image(results["original_image_path"])
                                 
                                 with col2:
-                                    st.subheader("Hình ảnh đã phân tích")
+                                    st.subheader("Analyzed image")
                                     st.image(results["marked_image_path"])
                                 
                                 # Tạo bảng tổng hợp lỗi
-                                st.subheader("Tổng hợp khuyết tật")
+                                st.subheader("Defect summary")
                                 
                                 defect_summary = {
-                                    "Loại khuyết tật": ["Lỗi bề mặt", "Lỗi tinh thể", "Lỗi cấu trúc", "Tổng cộng"],
-                                    "Số lượng": [
+                                    "Defect type": ["Surface defect", "Crystal defect", "Structural defect", "Total"],
+                                    "Number": [
                                         len(results["surface_defects"]), 
                                         len(results["crystal_defects"]), 
                                         len(results["structural_defects"]),
@@ -2131,10 +2131,10 @@ def main():
                                 # Tạo biểu đồ lỗi
                                 fig = px.bar(
                                     defect_df.iloc[:3], 
-                                    x="Loại khuyết tật", 
-                                    y="Số lượng",
-                                    color="Loại khuyết tật",
-                                    title="Phân bố khuyết tật theo loại"
+                                    x="Defect type", 
+                                    y="Number",
+                                    color="Defect type",
+                                    title="Defect distribution by type"
                                 )
                                 st.plotly_chart(fig, use_container_width=True)
                                 
@@ -2142,15 +2142,15 @@ def main():
                                 all_defects = []
                                 
                                 for defect in results["surface_defects"]:
-                                    defect["category"] = "Bề mặt"
+                                    defect["category"] = "Surface"
                                     all_defects.append(defect)
                                 
                                 for defect in results["crystal_defects"]:
-                                    defect["category"] = "Tinh thể"
+                                    defect["category"] = "Crystal"
                                     all_defects.append(defect)
                                 
                                 for defect in results["structural_defects"]:
-                                    defect["category"] = "Cấu trúc"
+                                    defect["category"] = "Structural"
                                     all_defects.append(defect)
                                 
                                 if all_defects:
@@ -2167,39 +2167,39 @@ def main():
                                     st.dataframe(defects_df, use_container_width=True, hide_index=True)
                                     
                                     # Hiển thị đề xuất xử lý
-                                    with st.expander("Đề xuất xử lý"):
+                                    with st.expander("Processing suggestions"):
                                         if len(results["surface_defects"]) > len(results["crystal_defects"]):
-                                            st.info("Phần lớn khuyết tật nằm ở bề mặt. Đề xuất cải thiện quy trình làm sạch và xử lý bề mặt.")
+                                            st.info("Most defects are on the surface. Suggest improving the cleaning and surface processing process.")
                                         elif len(results["crystal_defects"]) > len(results["structural_defects"]):
-                                            st.info("Phần lớn khuyết tật nằm trong cấu trúc tinh thể. Đề xuất tối ưu hóa điều kiện nhiệt độ và thời gian trong quá trình chế tạo.")
+                                            st.info("Most defects are in the crystal structure. Suggest optimizing temperature and time in the manufacturing process.")
                                         else:
-                                            st.info("Phát hiện nhiều loại khuyết tật cấu trúc. Đề xuất xem xét lại quy trình tổng hợp vật liệu.")
+                                            st.info("Multiple types of structural defects detected. Suggest reviewing the material synthesis process.")
                             
                             with img_tab2:
-                                st.subheader("Phân tích kích thước")
+                                st.subheader("Size analysis")
                                 
                                 # Hiển thị thông tin kích thước
                                 size_data = results["size_analysis"]
                                 
                                 col1, col2, col3 = st.columns(3)
                                 with col1:
-                                    st.metric("Kích thước trung bình", f"{size_data['average_size']} µm")
+                                    st.metric("Average size", f"{size_data['average_size']} µm")
                                 with col2:
-                                    st.metric("Kích thước nhỏ nhất", f"{size_data['min_size']} µm")
+                                    st.metric("Minimum size", f"{size_data['min_size']} µm")
                                 with col3:
-                                    st.metric("Kích thước lớn nhất", f"{size_data['max_size']} µm")
+                                    st.metric("Maximum size", f"{size_data['max_size']} µm")
                                 
                                 # Biểu đồ phân bố kích thước
                                 size_dist = pd.DataFrame({
-                                    "Kích thước (µm)": size_data["size_distribution"],
-                                    "Tinh thể": [f"Crystal {i+1}" for i in range(len(size_data["size_distribution"]))]
+                                    "Size (µm)": size_data["size_distribution"],
+                                    "Crystal": [f"Crystal {i+1}" for i in range(len(size_data["size_distribution"]))]
                                 })
                                 
                                 fig = px.histogram(
                                     size_dist, 
-                                    x="Kích thước (µm)",
+                                    x="Size (µm)",
                                     nbins=10,
-                                    title="Phân bố kích thước tinh thể"
+                                    title="Size distribution of crystals"
                                 )
                                 st.plotly_chart(fig, use_container_width=True)
                                 
@@ -2207,18 +2207,18 @@ def main():
                                 size_std = np.std(size_data["size_distribution"])
                                 size_cv = size_std / size_data["average_size"] * 100  # Coefficient of variation
                                 
-                                st.subheader("Độ đồng nhất kích thước")
+                                st.subheader("Homogeneity of size")
                                 st.progress(max(0, min(100, 100 - size_cv)) / 100)
                                 
                                 if size_cv < 15:
-                                    st.success(f"Kích thước tinh thể đồng nhất tốt (CV: {size_cv:.1f}%)")
+                                    st.success(f"Good uniformity of crystal size (CV: {size_cv:.1f}%)")
                                 elif size_cv < 30:
-                                    st.warning(f"Kích thước tinh thể tương đối đồng nhất (CV: {size_cv:.1f}%)")
+                                    st.warning(f"Relatively uniform crystal size (CV: {size_cv:.1f}%)")
                                 else:
-                                    st.error(f"Kích thước tinh thể không đồng nhất (CV: {size_cv:.1f}%)")
+                                    st.error(f"Inhomogeneous crystal size (CV: {size_cv:.1f}%)")
                             
                             with img_tab3:
-                                st.subheader("Chất lượng hình ảnh")
+                                st.subheader("Image quality")
                                 
                                 quality_data = results["image_quality"]
                                 
@@ -2226,7 +2226,7 @@ def main():
                                 fig = go.Figure(go.Indicator(
                                     mode = "gauge+number",
                                     value = quality_data["quality_score"],
-                                    title = {'text': "Điểm chất lượng"},
+                                    title = {'text': "Quality score"},
                                     domain = {'x': [0, 1], 'y': [0, 1]},
                                     gauge = {
                                         'axis': {'range': [0, 10]},
@@ -2249,33 +2249,33 @@ def main():
                                 
                                 # Hiển thị các thông số chi tiết
                                 quality_details = pd.DataFrame([
-                                    {"Thông số": "Độ phân giải", "Giá trị": quality_data["resolution"]},
-                                    {"Thông số": "Độ tương phản", "Giá trị": quality_data["contrast"]},
-                                    {"Thông số": "Mức độ nhiễu", "Giá trị": quality_data["noise_level"]},
-                                    {"Thông số": "Độ sáng", "Giá trị": quality_data["brightness"]}
+                                    {"Parameter": "Resolution", "Value": quality_data["resolution"]},
+                                    {"Parameter": "Contrast", "Value": quality_data["contrast"]},
+                                    {"Parameter": "Noise level", "Value": quality_data["noise_level"]},
+                                    {"Parameter": "Brightness", "Value": quality_data["brightness"]}
                                 ])
                                 
                                 st.dataframe(quality_details, use_container_width=True, hide_index=True)
                                 
                                 # Đề xuất cải thiện
-                                st.subheader("Đề xuất cải thiện chất lượng hình ảnh")
+                                st.subheader("Suggestions to improve image quality")
                                 
                                 if quality_data["noise_level"] > 0.2:
-                                    st.warning("Hình ảnh có nhiễu cao. Đề xuất sử dụng kỹ thuật giảm nhiễu hoặc cải thiện điều kiện chụp.")
+                                    st.warning("The image has high noise. Suggest using noise reduction techniques or improving the imaging conditions.")
                                 if quality_data["contrast"] < 0.7:
-                                    st.warning("Độ tương phản thấp. Đề xuất điều chỉnh độ tương phản trước khi phân tích.")
+                                    st.warning("Low contrast. Suggest adjusting the contrast before analysis.")
                                 if quality_data["brightness"] < 0.5 or quality_data["brightness"] > 0.8:
-                                    st.warning("Độ sáng không tối ưu. Đề xuất điều chỉnh độ sáng để có kết quả phân tích tốt hơn.")
+                                    st.warning("The brightness is not optimal. Suggest adjusting the brightness for better analysis results.")
                                 if quality_data["quality_score"] > 8.0:
-                                    st.success("Chất lượng hình ảnh tốt cho phân tích!")
+                                    st.success("The image quality is good for analysis!")
                             
                             with img_tab4:
-                                st.subheader("Phân tích từ AI")
+                                st.subheader("AI analysis")
                                 
                                 ai_results = results["ai_analysis"]
                                 
                                 # Tạo tabs cho các mô hình khác nhau
-                                ai_tab1, ai_tab2, ai_tab3 = st.tabs(["Gemini", "Groq", "Kết luận chung"])
+                                ai_tab1, ai_tab2, ai_tab3 = st.tabs(["Gemini", "Groq", "General conclusion"])
                                 
                                 with ai_tab1:
                                     st.markdown(ai_results["gemini"])
@@ -2284,7 +2284,7 @@ def main():
                                     st.markdown(ai_results["groq"])
                                 
                                 with ai_tab3:
-                                    st.subheader("Các điểm chính")
+                                    st.subheader("Main points")
                                     for idx, insight in enumerate(ai_results["combined_insights"], 1):
                                         st.markdown(f"{idx}. {insight}")
                                     
@@ -2293,29 +2293,29 @@ def main():
                                     total_defects = len(results["surface_defects"]) + len(results["crystal_defects"]) + len(results["structural_defects"])
                                     
                                     if total_defects > 6:
-                                        st.error("Vật liệu có nhiều khuyết tật, cần xem xét lại quy trình sản xuất.")
+                                        st.error("The material has many defects, need to review the production process.")
                                     elif total_defects > 3:
-                                        st.warning("Vật liệu có một số khuyết tật, cần cải thiện nhưng vẫn có thể sử dụng.")
+                                        st.warning("The material has some defects, need to improve but still can be used.")
                                     else:
-                                        st.success("Vật liệu có chất lượng tốt với ít khuyết tật.")
+                                        st.success("The material has good quality with few defects.")
                                     
                                     # Khuyến nghị
-                                    with st.expander("Khuyến nghị kỹ thuật"):
+                                    with st.expander("Technical recommendations"):
                                         st.markdown("""
-                                        1. **Quy trình sản xuất**:
-                                            - Tối ưu hóa nhiệt độ và thời gian ủ
-                                            - Kiểm soát tốt hơn môi trường sản xuất để tránh nhiễm bẩn
+                                        1. **Production process**:
+                                            - Optimize temperature and time for better crystal growth
+                                            - Control the production environment better to avoid contamination
                                         
-                                        2. **Xử lý sau sản xuất**:
-                                            - Quy trình làm sạch bề mặt kỹ lưỡng
-                                            - Xử lý nhiệt độ thấp để giảm ứng suất
+                                        2. **Post-production processing**:
+                                            - Thorough surface cleaning process
+                                            - Low temperature processing to reduce stress
                                         
-                                        3. **Đánh giá bổ sung**:
-                                            - Phân tích XRD để đánh giá cấu trúc tinh thể
-                                            - Đo đạc điện tử để xác định ảnh hưởng của khuyết tật
+                                        3. **Additional evaluation**:
+                                            - XRD analysis to evaluate the crystal structure
+                                            - Electron microscopy to determine the impact of defects
                                         """)
                 except Exception as e:
-                    st.error(f"Lỗi trong quá trình phân tích: {str(e)}")
+                    st.error(f"Error in analysis: {str(e)}")
                 
                 # Xóa file tạm sau khi phân tích
                 if source_image and source_image.startswith("temp_"):
@@ -2327,74 +2327,74 @@ def main():
             
             # Hiển thị hướng dẫn khi chưa tải lên hình ảnh
             else:
-                st.info("👈 Vui lòng tải lên hình ảnh vật liệu từ panel bên trái hoặc chọn một phương pháp khác để bắt đầu phân tích.")
+                st.info("👈 Please upload a material image from the left panel or select another method to start analysis.")
                 
                 # Hiển thị hình ảnh mẫu
-                st.subheader("Các loại hình ảnh được hỗ trợ")
+                st.subheader("Supported image types")
                 
                 col1, col2, col3 = st.columns(3)
                 with col1:
-                    st.markdown("**Hình ảnh SEM**")
-                    st.caption("Phân giải cao, hiển thị chi tiết bề mặt và cấu trúc tinh thể")
+                    st.markdown("**SEM image**")
+                    st.caption("High resolution, display surface and crystal structure details")
                 with col2:
-                    st.markdown("**Hình ảnh TEM**")
-                    st.caption("Hiển thị cấu trúc trong của vật liệu, phân tích khuyết tật mạng tinh thể")
+                    st.markdown("**TEM image**")
+                    st.caption("Display the structure inside the material, analyze crystal defects")
                 with col3:
-                    st.markdown("**Hình ảnh AFM**")
-                    st.caption("Bản đồ bề mặt 3D, đo độ nhám và đặc điểm bề mặt")
+                    st.markdown("**AFM image**")
+                    st.caption("3D surface map, measure roughness and surface features")
 
     elif selected_tab == "Batch Analysis":
         # Nâng cấp tính năng phân tích batch với giao diện thân thiện hơn
-        st.sidebar.header("Cài đặt phân tích hàng loạt")
+        st.sidebar.header("Batch analysis settings")
         
         # Tạo một giao diện thân thiện hơn
         data_source = st.sidebar.radio(
-            "Nguồn dữ liệu",
-            ["Bộ dữ liệu mặc định", "Tải lên CSV", "Tạo dữ liệu mới"],
+            "Data source",
+            ["Default dataset", "Upload CSV", "Create new data"],
             index=0
         )
         
         csv_file = None
         
-        if data_source == "Bộ dữ liệu mặc định":
+        if data_source == "Default dataset":
             default_path = "data/raw/documents/fake_materials_dataset.csv"
             if os.path.exists(default_path):
                 csv_file = default_path
-                st.sidebar.success(f"Đang sử dụng bộ dữ liệu mặc định")
+                st.sidebar.success(f"Using default dataset")
             else:
-                st.sidebar.error(f"Không tìm thấy bộ dữ liệu mặc định: {default_path}")
-                st.sidebar.info("Vui lòng tải lên file CSV hoặc tạo dữ liệu mới")
+                st.sidebar.error(f"Default dataset not found: {default_path}")
+                st.sidebar.info("Please upload a CSV file or create new data")
         
-        elif data_source == "Tải lên CSV":
-            uploaded_file = st.sidebar.file_uploader("Tải lên CSV", type="csv")
+        elif data_source == "Upload CSV":
+            uploaded_file = st.sidebar.file_uploader("Upload CSV", type="csv")
             if uploaded_file is not None:
                 # Lưu file tạm thời
                 with open("temp_upload.csv", "wb") as f:
                     f.write(uploaded_file.getbuffer())
                 csv_file = "temp_upload.csv"
-                st.sidebar.success(f"Đã tải lên: {uploaded_file.name}")
+                st.sidebar.success(f"Uploaded: {uploaded_file.name}")
         
         elif data_source == "Tạo dữ liệu mới":
             # Cài đặt cho việc tạo dữ liệu
-            num_materials = st.sidebar.slider("Số lượng vật liệu", 10, 100, 40)
-            include_variations = st.sidebar.checkbox("Tạo biến thể", value=True)
+            num_materials = st.sidebar.slider("Number of materials", 10, 100, 40)
+            include_variations = st.sidebar.checkbox("Create variations", value=True)
             
-            if st.sidebar.button("Tạo dữ liệu mới", type="primary"):
-                with st.spinner("Đang tạo dữ liệu..."):
+            if st.sidebar.button("Create new data", type="primary"):
+                with st.spinner("Creating data..."):
                     from evaluate_models import create_fake_material_csv
                     new_csv_path = "data/raw/documents/new_materials_dataset.csv"
                     success = create_fake_material_csv(new_csv_path, num_materials=num_materials)
                     
                     if success:
                         csv_file = new_csv_path
-                        st.sidebar.success(f"Đã tạo bộ dữ liệu mới với {num_materials} vật liệu")
+                        st.sidebar.success(f"Created new dataset with {num_materials} materials")
                     else:
-                        st.sidebar.error("Lỗi khi tạo dữ liệu mới")
+                        st.sidebar.error("Error creating new data")
         
         # Tùy chọn phân tích nâng cao
-        st.sidebar.subheader("Cài đặt phân tích")
-        max_records = st.sidebar.number_input("Số lượng vật liệu tối đa", min_value=1, max_value=2000, value=50)
-        batch_size = st.sidebar.number_input("Kích thước batch", min_value=1, max_value=20, value=5)
+        st.sidebar.subheader("Analysis settings")
+        max_records = st.sidebar.number_input("Maximum number of materials", min_value=1, max_value=2000, value=50)
+        batch_size = st.sidebar.number_input("Batch size", min_value=1, max_value=20, value=5)
         
         # Tùy chọn các engine AI
         ai_engines = st.sidebar.multiselect(
@@ -2404,30 +2404,30 @@ def main():
         )
         
         # Thêm các tùy chọn nâng cao
-        with st.sidebar.expander("Tùy chọn nâng cao"):
-            apply_semantic_search = st.checkbox("Sử dụng tìm kiếm ngữ nghĩa", value=True)
-            use_cache = st.checkbox("Sử dụng cache kết quả", value=True)
-            save_results = st.checkbox("Lưu kết quả", value=True)
+        with st.sidebar.expander("Advanced options"):
+            apply_semantic_search = st.checkbox("Use semantic search", value=True)
+            use_cache = st.checkbox("Use cache results", value=True)
+            save_results = st.checkbox("Save results", value=True)
             
             # Tùy chọn trực quan hóa
-            st.subheader("Trực quan hóa")
-            show_radar_charts = st.checkbox("Hiển thị biểu đồ radar", value=True)
-            show_correlation_matrix = st.checkbox("Hiển thị ma trận tương quan", value=True)
-            show_3d_scatter = st.checkbox("Hiển thị biểu đồ scatter 3D", value=True)
+            st.subheader("Visualization")
+            show_radar_charts = st.checkbox("Show radar charts", value=True)
+            show_correlation_matrix = st.checkbox("Show correlation matrix", value=True)
+            show_3d_scatter = st.checkbox("Show 3D scatter plot", value=True)
         
         # Nút phân tích
         start_batch_analysis = st.sidebar.button(
-            "Bắt đầu phân tích", 
+            "Start analysis", 
             type="primary",
             use_container_width=True
         )
         
         # Hiển thị cấu trúc tab cho batch analysis
         batch_tab1, batch_tab2, batch_tab3, batch_tab4 = st.tabs([
-            "Dữ liệu đầu vào", 
-            "Kết quả phân tích", 
-            "Trực quan hóa",
-            "So sánh & Đánh giá"
+            "Input data", 
+            "Analysis results", 
+            "Visualization",
+            "Comparison & Evaluation"
         ])
         
         with batch_tab1:
@@ -2439,9 +2439,9 @@ def main():
                     # Tiêu đề và thông tin tổng quan
                     st.markdown(f"""
                     <div style="padding: 15px; border-radius: 8px; background-color: #f8f9fa; margin-bottom: 15px;">
-                        <h3 style="margin-top: 0;">Thông tin dữ liệu</h3>
-                        <p><b>Tổng số vật liệu:</b> {len(df)} bản ghi</p>
-                        <p><b>Số cột:</b> {len(df.columns)} thuộc tính</p>
+                        <h3 style="margin-top: 0;">Data information</h3>
+                        <p><b>Total materials:</b> {len(df)} records</p>
+                        <p><b>Number of columns:</b> {len(df.columns)} attributes</p>
                     </div>
                     """, unsafe_allow_html=True)
                     
@@ -2452,22 +2452,22 @@ def main():
                         use_container_width=True,
                         height=400,
                         column_config={
-                            "material_id": st.column_config.TextColumn("ID vật liệu"),
-                            "material_name": st.column_config.TextColumn("Tên vật liệu"),
+                            "material_id": st.column_config.TextColumn("Material ID"),
+                            "material_name": st.column_config.TextColumn("Material name"),
                             "bandgap": st.column_config.NumberColumn("Bandgap (eV)", format="%.2f"),
-                            "conductivity": st.column_config.NumberColumn("Độ dẫn điện (S/cm)"),
-                            "crystal_structure": st.column_config.TextColumn("Cấu trúc tinh thể")
+                            "conductivity": st.column_config.NumberColumn("Conductivity (S/cm)"),
+                            "crystal_structure": st.column_config.TextColumn("Crystal structure")
                         }
                     )
                     
                     # Thống kê cơ bản
-                    st.subheader("Thống kê cơ bản")
+                    st.subheader("Basic statistics")
                     col1, col2 = st.columns(2)
                     
                     with col1:
                         if "material_name" in df.columns:
                             material_counts = df['material_name'].value_counts().head(10)
-                            st.write("Tần suất vật liệu:")
+                            st.write("Material frequency:")
                             st.bar_chart(material_counts)
                     
                     with col2:
@@ -2478,27 +2478,27 @@ def main():
                             fig = px.pie(
                                 names=structure_counts.index,
                                 values=structure_counts.values,
-                                title="Phân bố cấu trúc tinh thể"
+                                title="Crystal structure distribution"
                             )
                             st.plotly_chart(fig, use_container_width=True)
                     
                     # Bộ lọc và tìm kiếm
-                    st.subheader("Bộ lọc và tìm kiếm")
+                    st.subheader("Filter and search")
                     
                     col3, col4, col5 = st.columns(3)
                     
                     with col3:
-                        search_term = st.text_input("Tìm kiếm vật liệu:", placeholder="Ví dụ: Silicon, GaAs...")
+                        search_term = st.text_input("Search material:", placeholder="Example: Silicon, GaAs...")
                     
                     with col4:
                         if "crystal_structure" in df.columns:
-                            structures = ["Tất cả"] + list(df['crystal_structure'].unique())
-                            selected_structure = st.selectbox("Lọc theo cấu trúc:", structures)
+                            structures = ["All"] + list(df['crystal_structure'].unique())
+                            selected_structure = st.selectbox("Filter by crystal structure:", structures)
                     
                     with col5:
                         if "bandgap" in df.columns:
                             min_bandgap, max_bandgap = st.slider(
-                                "Lọc theo bandgap (eV):",
+                                "Filter by bandgap (eV):",
                                 min_value=0.0,
                                 max_value=float(df['bandgap'].max()) + 0.5,
                                 value=(0.0, float(df['bandgap'].max()))
@@ -2510,34 +2510,34 @@ def main():
                     if search_term:
                         filtered_df = filtered_df[filtered_df['material_name'].str.contains(search_term, case=False, na=False)]
                     
-                    if "crystal_structure" in df.columns and selected_structure != "Tất cả":
+                    if "crystal_structure" in df.columns and selected_structure != "All":
                         filtered_df = filtered_df[filtered_df['crystal_structure'] == selected_structure]
                     
                     if "bandgap" in df.columns:
                         filtered_df = filtered_df[(filtered_df['bandgap'] >= min_bandgap) & (filtered_df['bandgap'] <= max_bandgap)]
                     
                     if len(filtered_df) != len(df):
-                        st.write(f"Đã lọc: {len(filtered_df)} / {len(df)} vật liệu")
+                        st.write(f"Filtered: {len(filtered_df)} / {len(df)} materials")
                         st.dataframe(filtered_df, use_container_width=True)
                     
                     # Phần tài liệu PDF
-                    st.subheader("Tài liệu tham khảo")
+                    st.subheader("Reference documents")
                     pdf_dir = "data/raw/documents"
                     
                     # Kiểm tra thư mục PDF
                     if os.path.exists(pdf_dir):
                         pdf_files = [f for f in os.listdir(pdf_dir) if f.lower().endswith(".pdf")]
                         if pdf_files:
-                            st.write(f"Đã tìm thấy {len(pdf_files)} tài liệu PDF:")
+                            st.write(f"Found {len(pdf_files)} PDF documents:")
                             for pdf in pdf_files:
                                 st.markdown(f"- {pdf}")
                         else:
-                            st.info("Không tìm thấy tài liệu PDF nào. Tải lên tài liệu để cải thiện phân tích.")
+                            st.info("No PDF documents found. Upload documents to improve analysis.")
                     else:
-                        st.info(f"Thư mục {pdf_dir} không tồn tại.")
+                        st.info(f"Directory {pdf_dir} does not exist.")
                     
                     # Tải lên PDF mới
-                    uploaded_pdf = st.file_uploader("Tải lên tài liệu PDF mới", type="pdf")
+                    uploaded_pdf = st.file_uploader("Upload new PDF document", type="pdf")
                     if uploaded_pdf is not None:
                         # Đảm bảo thư mục tồn tại
                         os.makedirs(pdf_dir, exist_ok=True)
@@ -2545,16 +2545,16 @@ def main():
                         pdf_path = os.path.join(pdf_dir, uploaded_pdf.name)
                         with open(pdf_path, "wb") as f:
                             f.write(uploaded_pdf.getbuffer())
-                        st.success(f"Đã tải lên: {uploaded_pdf.name}")
+                        st.success(f"Uploaded: {uploaded_pdf.name}")
                 
                 except Exception as e:
-                    st.error(f"Lỗi khi đọc dữ liệu: {str(e)}")
+                    st.error(f"Error reading data: {str(e)}")
             else:
-                st.info("Vui lòng chọn nguồn dữ liệu từ sidebar để bắt đầu.")
+                st.info("Please select a data source from the sidebar to start.")
         
         if start_batch_analysis and csv_file and os.path.exists(csv_file):
             with batch_tab2:
-                st.subheader("Tiến trình phân tích")
+                st.subheader("Analysis progress")
                 progress_bar = st.progress(0)
                 status_text = st.empty()
                 results_container = st.empty()
@@ -2563,7 +2563,7 @@ def main():
                 def update_progress(current, total):
                     progress = min(1.0, (current + 1) / total)
                     progress_bar.progress(progress)
-                    status_text.text(f"Đang xử lý batch {current+1}/{total} ({int(progress*100)}%)")
+                    status_text.text(f"Processing batch {current+1}/{total} ({int(progress*100)}%)")
                 
                 try:
                     # Đọc dữ liệu vật liệu
@@ -2572,7 +2572,7 @@ def main():
                         materials = materials[:max_records]
                     
                     total_materials = len(materials)
-                    status_text.text(f"Đang xử lý {total_materials} vật liệu...")
+                    status_text.text(f"Processing {total_materials} materials...")
                     
                     # Thực hiện phân tích
                     all_results, material_scores = batch_analyze_materials(
@@ -2583,10 +2583,10 @@ def main():
                     )
                     
                     progress_bar.progress(1.0)
-                    status_text.text(f"✅ Hoàn tất phân tích {total_materials} vật liệu!")
+                    status_text.text(f"✅ Completed analysis of {total_materials} materials!")
                     
                     # Hiển thị bảng xếp hạng vật liệu
-                    st.subheader("Xếp hạng vật liệu")
+                    st.subheader("Material ranking")
                     
                     sorted_materials = sorted(material_scores.items(), key=lambda x: x[1]['score']['score'], reverse=True)
                     
@@ -2595,12 +2595,12 @@ def main():
                     for material_id, data in sorted_materials:
                         scores_data.append({
                             "ID": material_id,
-                            "Tên vật liệu": data["material_name"],
-                            "Điểm": data["score"]["score"],
-                            "Xếp loại": data["score"]["rating"],
+                            "Material name": data["material_name"],
+                            "Score": data["score"]["score"],
+                            "Rating": data["score"]["rating"],
                             "Bandgap (eV)": data["properties"]["bandgap"],
-                            "Độ dẫn điện": data["properties"]["conductivity"],
-                            "Độ bền nhiệt": data["properties"]["thermal_stability"]
+                            "Conductivity": data["properties"]["conductivity"],
+                            "Thermal stability": data["properties"]["thermal_stability"]
                         })
                     
                     scores_df = pd.DataFrame(scores_data)
@@ -2611,50 +2611,50 @@ def main():
                         use_container_width=True,
                         hide_index=True,
                         column_config={
-                            "Điểm": st.column_config.ProgressColumn(
-                                "Điểm đánh giá",
+                            "Score": st.column_config.ProgressColumn(
+                                "Evaluation score",
                                 format="%d",
                                 min_value=0,
                                 max_value=100
                             ),
-                            "Xếp loại": st.column_config.TextColumn(
-                                "Xếp loại"
+                            "Rating": st.column_config.TextColumn(
+                                "Rating"
                             )
                         }
                     )
                     
                     # Danh sách kết quả chi tiết
-                    st.subheader("Kết quả AI phân tích chi tiết")
+                    st.subheader("Detailed AI analysis results")
                     
                     # Tạo tìm kiếm vật liệu
-                    search_material = st.text_input("Tìm kiếm vật liệu:", key="search_results")
+                    search_material = st.text_input("Search material:", key="search_results")
                     
                     # Lọc kết quả theo tìm kiếm
                     filtered_results = scores_df
                     if search_material:
-                        filtered_results = scores_df[scores_df["Tên vật liệu"].str.contains(search_material, case=False)]
+                        filtered_results = scores_df[scores_df["Material name"].str.contains(search_material, case=False)]
                     
                     # Hiển thị kết quả phân tích cho từng vật liệu
                     for i, row in filtered_results.iterrows():
                         material_id = row["ID"]
-                        material_name = row["Tên vật liệu"]
+                        material_name = row["Material name"]
                         
-                        with st.expander(f"{material_name} (ID: {material_id}) - Điểm: {row['Điểm']}/100"):
+                        with st.expander(f"{material_name} (ID: {material_id}) - Score: {row['Score']}/100"):
                             # Chi tiết điểm
                             if material_id in material_scores:
                                 score_details = material_scores[material_id]["score"]
                                 
-                                st.markdown(f"**Xếp loại:** {score_details['rating']}")
-                                st.markdown(f"**Tỷ lệ điểm:** {score_details['percentage']}")
+                                st.markdown(f"**Rating:** {score_details['rating']}")
+                                st.markdown(f"**Percentage:** {score_details['percentage']}")
                                 
-                                st.subheader("Chi tiết điểm đánh giá")
+                                st.subheader("Evaluation score details")
                                 for aspect, details in score_details["breakdown"].items():
                                     st.markdown(f"- **{aspect}:** {details}")
                             
                             # Kết quả phân tích từ các engine
                             relevant_results = [r for r in all_results if r.get("material_id") == material_id]
                             if relevant_results:
-                                st.subheader("Kết quả phân tích từ AI")
+                                st.subheader("Analysis results from AI")
                                 
                                 # Hiển thị các kết quả từ AI mà không sử dụng expander lồng nhau
                                 for result in relevant_results:
@@ -2678,18 +2678,18 @@ def main():
                                 "material_scores": material_scores
                             }, f, indent=2)
                         
-                        st.success(f"Đã lưu kết quả vào {result_file}")
+                        st.success(f"Saved results to {result_file}")
                 
                 except Exception as e:
-                    st.error(f"Lỗi trong quá trình phân tích: {str(e)}")
+                    st.error(f"Error in analysis: {str(e)}")
                     import traceback
                     st.code(traceback.format_exc())
             
             with batch_tab3:
                 if 'material_scores' in locals():
-                    st.subheader("Trực quan hóa kết quả phân tích")
+                    st.subheader("Visualize analysis results")
                     
-                    viz_tabs = st.tabs(["Biểu đồ cột", "Biểu đồ tương quan", "Biểu đồ phân phối", "Biểu đồ 3D"])
+                    viz_tabs = st.tabs(["Column chart", "Correlation chart", "Distribution chart", "3D chart"])
                     
                     with viz_tabs[0]:
                         # Biểu đồ cột điểm số
@@ -2699,15 +2699,15 @@ def main():
                         chart_data = []
                         for material_id, data in top_materials:
                             chart_data.append({
-                                "Vật liệu": data["material_name"],
-                                "Điểm": data["score"]["score"]
+                                "Material": data["material_name"],
+                                "Score": data["score"]["score"]
                             })
                         
                         chart_df = pd.DataFrame(chart_data)
-                        st.write("Top 20 vật liệu theo điểm đánh giá")
-                        fig = px.bar(chart_df, x="Vật liệu", y="Điểm",
-                                    title="Điểm đánh giá vật liệu",
-                                    color="Điểm", height=500)
+                        st.write("Top 20 materials by evaluation score")
+                        fig = px.bar(chart_df, x="Material", y="Score",
+                                    title="Evaluation score of materials",
+                                    color="Score", height=500)
                         fig.update_layout(xaxis={'categoryorder':'total descending'})
                         st.plotly_chart(fig, use_container_width=True)
                     
@@ -2730,10 +2730,10 @@ def main():
                                 conductivity = float(conductivity_str) if conductivity_str else 0.0
                                 
                                 scatter_data.append({
-                                    "Vật liệu": data["material_name"],
+                                    "Material name": data["material_name"],
                                     "Bandgap (eV)": bandgap,
-                                    "Độ dẫn điện (S/cm)": conductivity,
-                                    "Điểm": data["score"]["score"]
+                                    "Conductivity (S/cm)": conductivity,
+                                    "Score": data["score"]["score"]
                                 })
                             except (ValueError, TypeError) as e:
                                 continue
@@ -2742,22 +2742,22 @@ def main():
                             scatter_df = pd.DataFrame(scatter_data)
                             
                             # Tạo biểu đồ tương quan
-                            st.subheader("Tương quan giữa Bandgap và Độ dẫn điện")
-                            fig = px.scatter(scatter_df, x="Bandgap (eV)", y="Độ dẫn điện (S/cm)",
-                                        color="Điểm", hover_name="Vật liệu",
-                                        title="Bandgap vs Độ dẫn điện",
+                            st.subheader("Correlation between Bandgap and Conductivity")
+                            fig = px.scatter(scatter_df, x="Bandgap (eV)", y="Conductivity (S/cm)",
+                                        color="Score", hover_name="Material name",
+                                        title="Bandgap vs Conductivity",
                                         height=500)
                             st.plotly_chart(fig, use_container_width=True)
                             
                             # Thêm biểu đồ tương quan mới
-                            st.subheader("Ma trận tương quan thuộc tính")
+                            st.subheader("Correlation matrix of material properties")
                             
                             # Mở rộng dữ liệu để tạo ma trận tương quan
                             if "thermal_stability" in data["properties"]:
                                 thermal_scores = {
-                                    "high": 3, "cao": 3, 
-                                    "medium": 2, "trung bình": 2, 
-                                    "low": 1, "thấp": 1
+                                    "high": 3, "high": 3, 
+                                    "medium": 2, "medium": 2, 
+                                    "low": 1, "low": 1
                                 }
                                 for item in scatter_data:
                                     thermal_text = material_scores[material_id]["properties"]["thermal_stability"].lower()
@@ -2768,7 +2768,7 @@ def main():
                                             thermal_score = value
                                             break
                                     
-                                    item["Độ bền nhiệt"] = thermal_score
+                                    item["Thermal stability"] = thermal_score
                             
                             # Tính toán ma trận tương quan
                             numeric_df = scatter_df.select_dtypes(include=[np.number])
@@ -2780,18 +2780,18 @@ def main():
                                 text_auto=True,
                                 color_continuous_scale="RdBu_r",
                                 aspect="auto",
-                                title="Tương quan giữa các thuộc tính vật liệu"
+                                title="Correlation between material properties"
                             )
                             st.plotly_chart(fig, use_container_width=True)
                             
                             # Cung cấp giải thích
-                            with st.expander("Giải thích ma trận tương quan"):
+                            with st.expander("Explanation of correlation matrix"):
                                 st.markdown("""
-                                - **Giá trị gần 1**: Tương quan thuận mạnh - khi thuộc tính này tăng, thuộc tính kia cũng tăng
-                                - **Giá trị gần -1**: Tương quan nghịch mạnh - khi thuộc tính này tăng, thuộc tính kia giảm
-                                - **Giá trị gần 0**: Ít hoặc không có tương quan
+                                - **Value near 1**: Strong positive correlation - when this attribute increases, the other attribute also increases
+                                - **Value near -1**: Strong negative correlation - when this attribute increases, the other attribute decreases
+                                - **Value near 0**: Little or no correlation
                                 
-                                Ví dụ: Bandgap và độ dẫn điện thường có tương quan nghịch (giá trị âm) vì vật liệu có bandgap cao thường có độ dẫn điện thấp hơn.
+                                Example: Bandgap and conductivity usually have a negative correlation (negative value) because materials with high bandgap tend to have lower conductivity.
                                 """)
                                 
                     with viz_tabs[2]:
@@ -2803,19 +2803,19 @@ def main():
                             col1, col2 = st.columns(2)
                             
                             with col1:
-                                st.subheader("Phân phối điểm đánh giá")
+                                st.subheader("Distribution of evaluation scores")
                                 fig = px.histogram(score_distribution, nbins=20,
-                                                title="Phân bố điểm đánh giá vật liệu")
+                                                title="Distribution of material evaluation scores")
                                 st.plotly_chart(fig, use_container_width=True)
                             
                             with col2:
-                                st.subheader("Phân bố theo xếp loại")
+                                st.subheader("Distribution by rating")
                                 fig = px.pie(names=rating_counts.index, values=rating_counts.values,
-                                        title="Phân bố xếp loại vật liệu")
+                                        title="Distribution of material ratings")
                                 st.plotly_chart(fig, use_container_width=True)
                             
                             # Thêm biểu đồ violin
-                            st.subheader("Phân bố điểm theo loại cấu trúc")
+                            st.subheader("Distribution of scores by material type")
                             
                             if scatter_data:
                                 scatter_df = pd.DataFrame(scatter_data)
@@ -2824,10 +2824,10 @@ def main():
                                 if len(scatter_df) > 5:  # Cần đủ dữ liệu
                                     fig = px.violin(
                                         scatter_df, 
-                                        y="Điểm", 
+                                        y="Score", 
                                         box=True, 
                                         points="all",
-                                        title="Phân bố điểm đánh giá"
+                                        title="Distribution of evaluation scores"
                                     )
                                     st.plotly_chart(fig, use_container_width=True)
                     
@@ -2836,21 +2836,21 @@ def main():
                         if scatter_data and len(scatter_data) > 3:
                             scatter_df = pd.DataFrame(scatter_data)
                             
-                            st.subheader("Biểu đồ 3D của các vật liệu")
+                            st.subheader("3D chart of materials")
                             
                             # Tạo biểu đồ scatter 3D
                             fig = go.Figure(data=[go.Scatter3d(
                                 x=scatter_df["Bandgap (eV)"],
-                                y=scatter_df["Độ dẫn điện (S/cm)"],
-                                z=scatter_df["Điểm"],
-                                text=scatter_df["Vật liệu"],
+                                y=scatter_df["Conductivity (S/cm)"],
+                                z=scatter_df["Score"],
+                                text=scatter_df["Material name"],
                                 mode='markers',
                                 marker=dict(
                                     size=8,
-                                    color=scatter_df["Điểm"],
+                                    color=scatter_df["Score"],
                                     colorscale='Viridis',
                                     opacity=0.8,
-                                    colorbar=dict(title="Điểm")
+                                    colorbar=dict(title="Score")
                                 )
                             )])
                             
@@ -2858,10 +2858,10 @@ def main():
                             fig.update_layout(
                                 scene=dict(
                                     xaxis_title='Bandgap (eV)',
-                                    yaxis_title='Độ dẫn điện (S/cm)',
-                                    zaxis_title='Điểm đánh giá',
+                                    yaxis_title='Conductivity (S/cm)',
+                                    zaxis_title='Score',
                                 ),
-                                title="So sánh vật liệu trong không gian 3D",
+                                title="Comparison of materials in 3D space",
                                 height=700
                             )
                             
@@ -2869,29 +2869,29 @@ def main():
                             
                             # Hướng dẫn tương tác
                             st.info("""
-                            **Hướng dẫn tương tác với biểu đồ 3D:**
-                            - Click và kéo để xoay góc nhìn
-                            - Scroll để phóng to/thu nhỏ
-                            - Double-click để reset góc nhìn
-                            - Hover lên điểm bất kỳ để xem thông tin chi tiết
+                            **Instructions for interacting with the 3D chart:**
+                            - Click and drag to rotate the view
+                            - Scroll to zoom in/out
+                            - Double-click to reset the view
+                            - Hover over any point to view detailed information
                             """)
                     
                 else:
-                    st.info("Vui lòng chạy phân tích trước để xem trực quan hóa")
+                    st.info("Please run the analysis before viewing the visualization")
             
             with batch_tab4:
                 if 'material_scores' in locals():
-                    st.subheader("So sánh và đánh giá vật liệu")
+                    st.subheader("Compare and evaluate materials")
                     
                     # Tạo công cụ so sánh trực tiếp
-                    st.markdown("### So sánh các vật liệu")
+                    st.markdown("### Compare materials")
                     material_names = [data["material_name"] for _, data in material_scores.items()]
                     
                     col1, col2 = st.columns(2)
                     with col1:
-                        material1 = st.selectbox("Vật liệu 1:", material_names)
+                        material1 = st.selectbox("Material 1:", material_names)
                     with col2:
-                        material2 = st.selectbox("Vật liệu 2:", material_names, index=min(1, len(material_names)-1))
+                        material2 = st.selectbox("Material 2:", material_names, index=min(1, len(material_names)-1))
                     
                     if material1 and material2:
                         # Tìm thông tin vật liệu
@@ -2910,18 +2910,18 @@ def main():
                             
                             # Điểm tổng hợp
                             compare_data.append({
-                                "Thuộc tính": "Điểm đánh giá",
+                                "Attribute": "Evaluation score",
                                 material1: material1_data["score"]["score"],
                                 material2: material2_data["score"]["score"],
-                                "Chênh lệch": material1_data["score"]["score"] - material2_data["score"]["score"]
+                                "Difference": material1_data["score"]["score"] - material2_data["score"]["score"]
                             })
                             
                             # Xếp loại
                             compare_data.append({
-                                "Thuộc tính": "Xếp loại",
+                                "Attribute": "Rating",
                                 material1: material1_data["score"]["rating"],
                                 material2: material2_data["score"]["rating"],
-                                "Chênh lệch": "N/A"
+                                "Difference": "N/A"
                             })
                             
                             # Các thuộc tính vật lý
@@ -2942,15 +2942,15 @@ def main():
                                     if prop == "bandgap":
                                         prop_name = "Bandgap (eV)"
                                     elif prop == "conductivity":
-                                        prop_name = "Độ dẫn điện (S/cm)"
+                                        prop_name = "Conductivity (S/cm)"
                                     elif prop == "thermal_stability":
-                                        prop_name = "Độ bền nhiệt"
+                                        prop_name = "Thermal stability"
                                     
                                     compare_data.append({
-                                        "Thuộc tính": prop_name,
+                                        "Attribute": prop_name,
                                         material1: val1,
                                         material2: val2,
-                                        "Chênh lệch": diff
+                                        "Difference": diff
                                     })
                             
                             # Hiển thị bảng so sánh
@@ -2958,7 +2958,7 @@ def main():
                             st.dataframe(compare_df, use_container_width=True, hide_index=True)
                             
                             # Tạo biểu đồ radar so sánh
-                            st.subheader("Biểu đồ so sánh radar")
+                            st.subheader("Radar chart of material comparison")
                             
                             # Chuẩn bị dữ liệu
                             radar_props = ["Bandgap", "Conductivity", "Thermal Stability", "Score"]
@@ -3066,9 +3066,9 @@ def main():
                                 st.plotly_chart(fig, use_container_width=True)
                                 
                             except Exception as e:
-                                st.error(f"Lỗi khi tạo biểu đồ radar: {e}")
+                                st.error(f"Error creating radar chart: {e}")
                 else:
-                    st.info("Vui lòng chạy phân tích trước để xem so sánh và đánh giá")
+                    st.info("Please run the analysis before viewing the comparison and evaluation")
 
 if __name__ == "__main__":
     main() 
