@@ -12,6 +12,7 @@ An advanced AI-powered system for analyzing semiconductor material properties us
 - **Material Scoring**: Comprehensive evaluation metrics for semiconductor properties
 - **Intelligent Context Management**: Automatic context truncation for token limit handling
 - **API Management System**: Rate limiting and quota tracking for multiple API providers
+- **Auto Engine Detection**: Optional automatic selection of available API engines
 
 ## Requirements
 
@@ -23,6 +24,7 @@ An advanced AI-powered system for analyzing semiconductor material properties us
   - numpy
   - requests
   - PyPDF2
+  - python-dotenv
 
 ## Installation
 
@@ -34,23 +36,39 @@ An advanced AI-powered system for analyzing semiconductor material properties us
 
 2. Install dependencies:
    ```bash
-   pip install matplotlib scipy scikit-learn numpy requests PyPDF2
+   pip install matplotlib scipy scikit-learn numpy requests PyPDF2 python-dotenv
    ```
 
-3. Set up API keys:
-   - Configure API keys for Gemini and Groq in the model_manager.py file
+3. Set up environment variables:
+   - Copy the `.env.example` file to `.env`
+   - Configure your API keys and settings in the `.env` file:
+     ```
+     # API Keys
+     GEMINI_API_KEYS=your_key1,your_key2,your_key3
+     GROQ_API_KEYS=your_groq_key
+
+     # Engine Configuration
+     ENGINES_TO_USE=gemini,groq
+     USE_AUTO_ENGINE_DETECTION=False
+
+     # Processing Settings
+     MAX_RECORDS_TO_PROCESS=20
+     MAX_WORKER_THREADS=2
+     BATCH_SIZE=2
+     SLEEP_BETWEEN_RECORDS=1
+     ```
 
 ## Usage
 
 ### Basic Usage
 
 ```bash
-python evaluate_models.py
+python app.py
 ```
 
 This will:
 1. Process materials from the default CSV file
-2. Query material properties against Gemini and Groq models
+2. Query material properties against configured LLM engines
 3. Analyze and score each material
 4. Generate visualizations in the results/visualizations directory
 5. Save detailed analysis to JSON files
@@ -68,24 +86,27 @@ python test_dependencies.py
 - `data/raw/documents/` - Place semiconductor material PDFs and CSV data here
 - `results/` - Output files including analysis results and visualizations
 - `cache/` - Response cache storage for efficiency
+- `analyzed_images/` - Processed and marked images from analysis
 
 ## Advanced Configuration
 
-The script supports multiple configuration options:
+The system supports multiple configuration options through the `.env` file:
 
-```python
-# Number of materials to process (useful for testing)
-MAX_RECORDS_TO_PROCESS = 3
+### API Configuration
+- Multiple API keys support for load balancing
+- Configurable engine selection
+- Automatic engine detection option
 
-# Delay between API calls to avoid rate limits
-SLEEP_BETWEEN_RECORDS = 2  
+### Processing Settings
+- `MAX_RECORDS_TO_PROCESS`: Number of materials to process
+- `SLEEP_BETWEEN_RECORDS`: Delay between API calls
+- `MAX_WORKER_THREADS`: Number of parallel processing threads
+- `BATCH_SIZE`: Number of materials to process in each batch
 
-# Number of parallel processing threads
-MAX_WORKER_THREADS = 4
-
-# Number of materials to process in each batch
-BATCH_SIZE = 2
-```
+### Cache Configuration
+- `CACHE_DIRECTORY`: Location for storing API response cache
+- `API_SCAN_INTERVAL_MINUTES`: Interval for scanning API availability
+- `ENABLE_PERIODIC_API_SCAN`: Toggle automatic API availability checking
 
 ## Key Components
 
@@ -103,6 +124,7 @@ Materials are scored based on:
 1. **Score Bar Chart**: Overall material evaluation scores
 2. **Property Comparison**: Scatter plot comparing bandgap vs conductivity
 3. **Radar Chart**: Multi-dimensional property comparison
+4. **Heatmap**: Detailed property correlation analysis
 
 ### Semantic Search
 
