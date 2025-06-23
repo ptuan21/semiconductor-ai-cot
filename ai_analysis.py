@@ -2,8 +2,6 @@ import pandas as pd
 import numpy as np
 import torch
 import torch.nn as nn
-from torch_geometric.data import Data
-from torch_geometric.nn import GCNConv, global_mean_pool
 from transformers import AutoTokenizer, AutoModel
 from sklearn.preprocessing import StandardScaler
 from typing import List, Dict, Any, Tuple
@@ -40,10 +38,7 @@ class MaterialAIAnalyzer:
             nn.Linear(32, 3)  # 3 thuộc tính: bandgap, conductivity, absorption
         ).to(self.device)
         
-        # 2. Graph Neural Network cho phân tích cấu trúc
-        self.gnn_model = MaterialGNN().to(self.device)
-        
-        # 3. Khởi tạo các LLM engines từ model_manager
+        # 2. Khởi tạo các LLM engines từ model_manager
         self.engines = []
         for engine_name in ["gemini", "groq"]:
             engine_tuple = init_chat_engine(engine_name)
@@ -229,12 +224,14 @@ class DataProcessor:
         }
 
     def process(self, raw_data):
-        return {
-            'name': self._standardize_name(raw_data['name']),
-            'crystal_structure': self._process_structure(raw_data['crystal_structure']),
+        """Xử lý dữ liệu thô"""
+        processed_data = {
+            'name': self._standardize_name(raw_data.get('name', '')),
+            'crystal_structure': self._process_structure(raw_data.get('structure', {})),
             'composition': self._analyze_composition(raw_data.get('composition', {})),
             'properties': self._normalize_properties(raw_data.get('properties', {}))
         }
+        return processed_data
 
     def _standardize_name(self, name):
         """Chuẩn hóa tên vật liệu"""
@@ -445,45 +442,40 @@ class PropertyPredictor:
 
 class IntegratedMaterialAnalysis:
     def __init__(self):
-        self.ai_analyzer = MaterialAIAnalyzer('data/raw/documents/fake_materials_dataset.csv')
+        """Khởi tạo IntegratedMaterialAnalysis"""
         self.data_processor = DataProcessor()
         self.property_predictor = PropertyPredictor()
         self.result_manager = ResultManager()
-    
+
     def analyze_new_material(self, material_data):
-        """Pipeline phân tích tổng hợp"""
-        results = {
-            'material_info': material_data,
-            'basic_properties': {},
-            'ai_analysis': {},
-            'predictions': {},
-            'recommendations': {}
-        }
-        
+        """Phân tích vật liệu mới"""
         try:
-            # 1. Xử lý và chuẩn hóa dữ liệu
+            # Xử lý dữ liệu
             processed_data = self.data_processor.process(material_data)
             
-            # 2. Phân tích cơ bản
-            results['basic_properties'] = self.analyze_basic_properties(processed_data)
+            # Phân tích cơ bản
+            basic_analysis = self.analyze_basic_properties(processed_data)
             
-            # 3. Phân tích AI sử dụng LLMs
-            results['ai_analysis'] = self.ai_analyzer.analyze_with_llm(processed_data)
+            # Dự đoán thuộc tính
+            property_predictions = self.property_predictor.predict(processed_data)
             
-            # 4. Dự đoán thuộc tính
-            results['predictions'] = self.property_predictor.predict(processed_data)
+            # Tổng hợp kết quả
+            results = {
+                'basic_analysis': basic_analysis,
+                'predictions': property_predictions,
+                'recommendations': self.generate_recommendations({
+                    **basic_analysis,
+                    **property_predictions
+                })
+            }
             
-            # 5. Tổng hợp đề xuất
-            results['recommendations'] = self.generate_recommendations(results)
-            
-            # 6. Lưu kết quả
-            self.result_manager.save_analysis(material_data['name'], results)
+            return results
             
         except Exception as e:
-            print(f"❌ Lỗi trong quá trình phân tích: {str(e)}")
-            results['error'] = str(e)
-        
-        return results
+            return {
+                'error': f"Analysis failed: {str(e)}",
+                'timestamp': datetime.now().isoformat()
+            }
     
     def analyze_basic_properties(self, processed_data):
         """Phân tích các thuộc tính cơ bản"""
@@ -813,13 +805,10 @@ def main():
     print("\n1. Thuộc tính cơ bản:")
     print(results['basic_properties'])
     
-    print("\n2. Phân tích AI:")
-    print(results['ai_analysis'])
-    
-    print("\n3. Dự đoán:")
+    print("\n2. Dự đoán:")
     print(results['predictions'])
     
-    print("\n4. Đề xuất:")
+    print("\n3. Đề xuất:")
     print(results['recommendations'])
 
 if __name__ == "__main__":
