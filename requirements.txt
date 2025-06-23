@@ -11,6 +11,11 @@ py3Dmol>=2.0.0
 transformers>=4.33.2
 --find-links https://download.pytorch.org/whl/torch_stable.html
 torch>=2.2.0
+torch-scatter
+torch-sparse
+torch-cluster
+torch-spline-conv
+torch-geometric
 google-generativeai>=0.3.0
 groq>=0.3.0
 
