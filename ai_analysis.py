@@ -144,40 +144,9 @@ Format your response in a structured way with clear sections."""
             'model_confidence': self.calculate_confidence(predictions)
         }
     
-    def analyze_crystal_structure(self, structure_data: Dict[str, Any]) -> Dict[str, Any]:
-        """
-        Phân tích cấu trúc tinh thể sử dụng Graph Neural Network
-        Args:
-            structure_data: Thông tin về cấu trúc tinh thể
-        Returns:
-            Dict chứa kết quả phân tích cấu trúc
-        """
-        # Chuyển đổi dữ liệu cấu trúc thành graph
-        graph_data = self.convert_to_graph(structure_data)
-        
-        # Dự đoán sử dụng GNN
-        self.gnn_model.eval()
-        with torch.no_grad():
-            pred = self.gnn_model(graph_data)
-            
-        return {
-            'structure_analysis': {
-                'stability_score': float(pred[0]),
-                'symmetry_features': pred[1].tolist(),
-                'predicted_properties': pred[2].tolist()
-            }
-        }
-    
     def calculate_confidence(self, predictions: np.ndarray) -> float:
         """Tính độ tin cậy của dự đoán"""
-        # Implement phương pháp tính độ tin cậy phù hợp
         return float(np.mean(np.abs(predictions)))
-    
-    def convert_to_graph(self, structure_data: Dict[str, Any]) -> Data:
-        """Chuyển đổi dữ liệu cấu trúc thành graph"""
-        # Implement chuyển đổi dữ liệu cấu trúc thành graph
-        # Trả về đối tượng torch_geometric.data.Data
-        pass
     
     def save_results(self, results: Dict[str, Any], output_path: str = 'results/ai_analysis'):
         """Lưu kết quả phân tích"""
