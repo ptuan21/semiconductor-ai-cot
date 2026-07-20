@@ -4,12 +4,12 @@ This project focuses on leveraging **Large Language Models (LLMs)**, such as **L
 
 ---
 
-## 📂 Project Structure
+## Project Structure
 . ├── analyze_problems.py # Analyze and clean question-answer datasets ├── analyze_results.py # Analyze evaluation results ├── evaluate_models.py # Evaluate LLMs on specific tasks ├── extract_questions.py # Extract questions and answers from PDF documents ├── llm_models.py # LLM wrapper for text generation ├── model_evaluator.py # Evaluate model performance ├── model_manager.py # Manage LLaMA and Gemini models ├── prompts.py # Predefined prompts for LLMs ├── requirements.txt # Python dependencies ├── trained_model.pkl # Trained machine learning model ├── data/ │ ├── processed/ # Processed datasets │ └── raw/ # Raw datasets and scripts │ ├── data_gen.py # Generate fake materials data │ └── documents/ # Raw documents (e.g., PDFs, CSVs) ├── db/ │ └── questions/ # Question-answer datasets ├── model_cache/ # Cached models for LLaMA and Gemini ├── offload/ # Offloaded model data for memory optimization ├── results/ # Evaluation and analysis results │ ├── analysis_results.csv # Analysis results in CSV format │ └── evaluated_results.json # Evaluation results in JSON format └── README.md # Project documentation
 
 ---
 
-## 🚀 Features
+## Features
 
 ### 1. **Data Generation**
 - Generate synthetic datasets for semiconductor materials using `data_gen.py`.
@@ -32,7 +32,7 @@ This project focuses on leveraging **Large Language Models (LLMs)**, such as **L
 
 ---
 
-## 📊 Datasets
+## Datasets
 
 ### 1. **Fake Materials Data**
 - Located in `data/raw/documents/fake_materials_data_with_labels.csv`.
@@ -51,7 +51,7 @@ This project focuses on leveraging **Large Language Models (LLMs)**, such as **L
 
 ---
 
-## 🛠️ Setup
+## Setup
 
 ### 1. **Clone the Repository**
 ```bash
@@ -84,7 +84,7 @@ TRANSFORMERS_CACHE=./model_cache
    git push origin main
 ```
 
-🧑‍💻 Usage
+Usage
 1. Generate Fake Data
 Run the following command to generate synthetic materials data:
 
@@ -101,14 +101,14 @@ python evaluate_models.py
 Analyze evaluation results:
 
 python analyze_results.py
-📦 Dependencies
+Dependencies
 Key dependencies are listed in requirements.txt. Install them using:
 
 pip install -r requirements.txt
-📜 License
+License
 This project is licensed under the MIT License. See the LICENSE file for details.
 
-🤝 Contributing
+Contributing
 Contributions are welcome! Please follow these steps:
 
 Fork the repository.
